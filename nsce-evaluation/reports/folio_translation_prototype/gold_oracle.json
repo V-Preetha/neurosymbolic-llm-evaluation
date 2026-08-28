@@ -1,0 +1,217 @@
+{
+  "description": "Gold-FOL -> our JSON IR (via gold_fol_parser.py) -> src/folio/solver.py, for the 30-item prototype sample. Reference oracle only -- never used as translator input.",
+  "accuracy_vs_official_label": 0.9666666666666667,
+  "items": [
+    {
+      "idx": 6,
+      "gold_label": "True",
+      "oracle_status": "entailed",
+      "oracle_label": "True",
+      "matches_gold": true
+    },
+    {
+      "idx": 7,
+      "gold_label": "Uncertain",
+      "oracle_status": "uncertain",
+      "oracle_label": "Uncertain",
+      "matches_gold": true
+    },
+    {
+      "idx": 8,
+      "gold_label": "Uncertain",
+      "oracle_status": "uncertain",
+      "oracle_label": "Uncertain",
+      "matches_gold": true
+    },
+    {
+      "idx": 9,
+      "gold_label": "True",
+      "oracle_status": "entailed",
+      "oracle_label": "True",
+      "matches_gold": true
+    },
+    {
+      "idx": 10,
+      "gold_label": "False",
+      "oracle_status": "contradicted",
+      "oracle_label": "False",
+      "matches_gold": true
+    },
+    {
+      "idx": 11,
+      "gold_label": "Uncertain",
+      "oracle_status": "uncertain",
+      "oracle_label": "Uncertain",
+      "matches_gold": true
+    },
+    {
+      "idx": 51,
+      "gold_label": "True",
+      "oracle_status": "entailed",
+      "oracle_label": "True",
+      "matches_gold": true
+    },
+    {
+      "idx": 60,
+      "gold_label": "True",
+      "oracle_status": "entailed",
+      "oracle_label": "True",
+      "matches_gold": true
+    },
+    {
+      "idx": 76,
+      "gold_label": "Uncertain",
+      "oracle_status": "uncertain",
+      "oracle_label": "Uncertain",
+      "matches_gold": true
+    },
+    {
+      "idx": 77,
+      "gold_label": "True",
+      "oracle_status": "entailed",
+      "oracle_label": "True",
+      "matches_gold": true
+    },
+    {
+      "idx": 78,
+      "gold_label": "False",
+      "oracle_status": "contradicted",
+      "oracle_label": "False",
+      "matches_gold": true
+    },
+    {
+      "idx": 87,
+      "gold_label": "True",
+      "oracle_status": "parse_error",
+      "oracle_label": null,
+      "matches_gold": false,
+      "parse_error": "expected RPAREN, got ('COMMA', ',')"
+    },
+    {
+      "idx": 118,
+      "gold_label": "Uncertain",
+      "oracle_status": "uncertain",
+      "oracle_label": "Uncertain",
+      "matches_gold": true
+    },
+    {
+      "idx": 119,
+      "gold_label": "True",
+      "oracle_status": "entailed",
+      "oracle_label": "True",
+      "matches_gold": true
+    },
+    {
+      "idx": 120,
+      "gold_label": "False",
+      "oracle_status": "contradicted",
+      "oracle_label": "False",
+      "matches_gold": true
+    },
+    {
+      "idx": 153,
+      "gold_label": "Uncertain",
+      "oracle_status": "uncertain",
+      "oracle_label": "Uncertain",
+      "matches_gold": true
+    },
+    {
+      "idx": 155,
+      "gold_label": "True",
+      "oracle_status": "entailed",
+      "oracle_label": "True",
+      "matches_gold": true
+    },
+    {
+      "idx": 170,
+      "gold_label": "Uncertain",
+      "oracle_status": "uncertain",
+      "oracle_label": "Uncertain",
+      "matches_gold": true
+    },
+    {
+      "idx": 171,
+      "gold_label": "True",
+      "oracle_status": "entailed",
+      "oracle_label": "True",
+      "matches_gold": true
+    },
+    {
+      "idx": 172,
+      "gold_label": "False",
+      "oracle_status": "contradicted",
+      "oracle_label": "False",
+      "matches_gold": true
+    },
+    {
+      "idx": 173,
+      "gold_label": "Uncertain",
+      "oracle_status": "uncertain",
+      "oracle_label": "Uncertain",
+      "matches_gold": true
+    },
+    {
+      "idx": 174,
+      "gold_label": "False",
+      "oracle_status": "contradicted",
+      "oracle_label": "False",
+      "matches_gold": true
+    },
+    {
+      "idx": 175,
+      "gold_label": "True",
+      "oracle_status": "entailed",
+      "oracle_label": "True",
+      "matches_gold": true
+    },
+    {
+      "idx": 180,
+      "gold_label": "False",
+      "oracle_status": "contradicted",
+      "oracle_label": "False",
+      "matches_gold": true
+    },
+    {
+      "idx": 181,
+      "gold_label": "False",
+      "oracle_status": "contradicted",
+      "oracle_label": "False",
+      "matches_gold": true
+    },
+    {
+      "idx": 199,
+      "gold_label": "False",
+      "oracle_status": "contradicted",
+      "oracle_label": "False",
+      "matches_gold": true
+    },
+    {
+      "idx": 200,
+      "gold_label": "False",
+      "oracle_status": "contradicted",
+      "oracle_label": "False",
+      "matches_gold": true
+    },
+    {
+      "idx": 201,
+      "gold_label": "False",
+      "oracle_status": "contradicted",
+      "oracle_label": "False",
+      "matches_gold": true
+    },
+    {
+      "idx": 202,
+      "gold_label": "Uncertain",
+      "oracle_status": "uncertain",
+      "oracle_label": "Uncertain",
+      "matches_gold": true
+    },
+    {
+      "idx": 203,
+      "gold_label": "Uncertain",
+      "oracle_status": "uncertain",
+      "oracle_label": "Uncertain",
+      "matches_gold": true
+    }
+  ]
+}

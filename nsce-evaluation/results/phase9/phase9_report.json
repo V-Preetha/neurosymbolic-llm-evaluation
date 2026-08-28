@@ -1,0 +1,223 @@
+{
+  "eligible_claims": 3548,
+  "gold_ambiguous": 377,
+  "pilot_distribution": {
+    "SUPPORTED": 17,
+    "CONTRADICTED": 17,
+    "UNKNOWN": 16
+  },
+  "corpus_sha256": "5b4a1ffb1b011dfbe7ee9459ac83eec4b7b20a62027999e5e0844a62dfb887c7",
+  "index_ntotal": 162696,
+  "index_dimension": 384,
+  "methods": {
+    "llm_only": {
+      "claims": 50,
+      "accuracy": 0.46,
+      "macro_f1": 0.4548500881834215,
+      "per_class": {
+        "SUPPORTED": {
+          "support": 17,
+          "tp": 11,
+          "fp": 17,
+          "fn": 6,
+          "precision": 0.39285714285714285,
+          "recall": 0.6470588235294118,
+          "f1": 0.4888888888888888
+        },
+        "CONTRADICTED": {
+          "support": 17,
+          "tp": 5,
+          "fp": 6,
+          "fn": 12,
+          "precision": 0.45454545454545453,
+          "recall": 0.29411764705882354,
+          "f1": 0.35714285714285715
+        },
+        "UNKNOWN": {
+          "support": 16,
+          "tp": 7,
+          "fp": 4,
+          "fn": 9,
+          "precision": 0.6363636363636364,
+          "recall": 0.4375,
+          "f1": 0.5185185185185185
+        }
+      },
+      "abstention_rate": 0.22,
+      "false_support_rate": 0.34,
+      "false_contradiction_rate": 0.12,
+      "total_latency_ms": 15574.899,
+      "mean_latency_ms": 311.49798,
+      "total_tokens": 6130,
+      "mean_tokens": 122.6
+    },
+    "self_check": {
+      "claims": 50,
+      "accuracy": 0.42,
+      "macro_f1": 0.42370370370370375,
+      "per_class": {
+        "SUPPORTED": {
+          "support": 17,
+          "tp": 10,
+          "fp": 18,
+          "fn": 7,
+          "precision": 0.35714285714285715,
+          "recall": 0.5882352941176471,
+          "f1": 0.4444444444444445
+        },
+        "CONTRADICTED": {
+          "support": 17,
+          "tp": 4,
+          "fp": 9,
+          "fn": 13,
+          "precision": 0.3076923076923077,
+          "recall": 0.23529411764705882,
+          "f1": 0.26666666666666666
+        },
+        "UNKNOWN": {
+          "support": 16,
+          "tp": 7,
+          "fp": 2,
+          "fn": 9,
+          "precision": 0.7777777777777778,
+          "recall": 0.4375,
+          "f1": 0.56
+        }
+      },
+      "abstention_rate": 0.18,
+      "false_support_rate": 0.36,
+      "false_contradiction_rate": 0.18,
+      "total_latency_ms": 15784.08,
+      "mean_latency_ms": 315.6816,
+      "total_tokens": 5645,
+      "mean_tokens": 112.9
+    },
+    "rag": {
+      "claims": 50,
+      "accuracy": 0.5,
+      "macro_f1": 0.5028315110737315,
+      "per_class": {
+        "SUPPORTED": {
+          "support": 17,
+          "tp": 9,
+          "fp": 3,
+          "fn": 8,
+          "precision": 0.75,
+          "recall": 0.5294117647058824,
+          "f1": 0.6206896551724139
+        },
+        "CONTRADICTED": {
+          "support": 17,
+          "tp": 6,
+          "fp": 7,
+          "fn": 11,
+          "precision": 0.46153846153846156,
+          "recall": 0.35294117647058826,
+          "f1": 0.4000000000000001
+        },
+        "UNKNOWN": {
+          "support": 16,
+          "tp": 10,
+          "fp": 15,
+          "fn": 6,
+          "precision": 0.4,
+          "recall": 0.625,
+          "f1": 0.48780487804878053
+        }
+      },
+      "abstention_rate": 0.5,
+      "false_support_rate": 0.06,
+      "false_contradiction_rate": 0.14,
+      "total_latency_ms": 41200.437,
+      "mean_latency_ms": 824.00874,
+      "total_tokens": 79549,
+      "mean_tokens": 1590.98
+    },
+    "nsce": {
+      "claims": 50,
+      "accuracy": 0.52,
+      "macro_f1": 0.5190435198469632,
+      "per_class": {
+        "SUPPORTED": {
+          "support": 17,
+          "tp": 12,
+          "fp": 12,
+          "fn": 5,
+          "precision": 0.5,
+          "recall": 0.7058823529411765,
+          "f1": 0.5853658536585366
+        },
+        "CONTRADICTED": {
+          "support": 17,
+          "tp": 7,
+          "fp": 10,
+          "fn": 10,
+          "precision": 0.4117647058823529,
+          "recall": 0.4117647058823529,
+          "f1": 0.4117647058823529
+        },
+        "UNKNOWN": {
+          "support": 16,
+          "tp": 7,
+          "fp": 2,
+          "fn": 9,
+          "precision": 0.7777777777777778,
+          "recall": 0.4375,
+          "f1": 0.56
+        }
+      },
+      "abstention_rate": 0.18,
+      "false_support_rate": 0.24,
+      "false_contradiction_rate": 0.2,
+      "total_latency_ms": 54721.182,
+      "mean_latency_ms": 1094.42364,
+      "total_tokens": 101855,
+      "mean_tokens": 2037.1
+    }
+  },
+  "self_check": {
+    "correction_success_rate": 0.04,
+    "harmful_revision_rate": 0.08
+  },
+  "rag": {
+    "retrieval_coverage": 1.0,
+    "retrieval_failure_rate": 0.0,
+    "evidence_statuses": {
+      "PARTIAL_EVIDENCE": 46,
+      "SUFFICIENT_EVIDENCE": 4
+    },
+    "recall_at_5": null,
+    "precision_at_5": null,
+    "ranking_metric_note": "Unavailable: FELM provides no gold IDs into this independent frozen corpus."
+  },
+  "nsce": {
+    "deterministic_check_coverage": 0.04,
+    "verifier_coverage": 0.82,
+    "correction_success_rate": 0.16,
+    "justification_availability": 1.0
+  },
+  "failures": {
+    "llm_only": {
+      "CORRECT": 23,
+      "LLM_HALLUCINATION": 27
+    },
+    "self_check": {
+      "CORRECT": 21,
+      "SELF_CHECK_FAILURE": 25,
+      "SELF_CHECK_HARMFUL_REVISION": 4
+    },
+    "rag": {
+      "CORRECT": 25,
+      "PARTIAL_EVIDENCE_RETRIEVED": 24,
+      "RAG_REASONING_FAILURE": 1
+    },
+    "nsce": {
+      "CORRECT": 19,
+      "NSCE_CORRECT_ABSTENTION": 7,
+      "NSCE_FALSE_CONTRADICTION": 10,
+      "NSCE_FALSE_SUPPORT": 12,
+      "NSCE_UNNECESSARY_UNKNOWN": 2
+    }
+  },
+  "blockers": []
+}

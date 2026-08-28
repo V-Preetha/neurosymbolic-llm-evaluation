@@ -1,0 +1,22 @@
+Your previous answer conflicts with the deterministic symbolic analysis of the supplied knowledge.
+
+Facts:
+{facts}
+
+Rules:
+{rules}
+
+Query:
+{question}
+
+Previous answer:
+{previous_answer}
+
+Symbolic analysis:
+{symbolic_explanation}
+
+Proof:
+{proof_trace}
+
+Re-evaluate the query using this proof. Return exactly one label and no other text: True, False, or Unknown.
+

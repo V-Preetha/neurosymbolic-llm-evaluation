@@ -1,0 +1,10 @@
+{
+  "corpus_sha256": "5b4a1ffb1b011dfbe7ee9459ac83eec4b7b20a62027999e5e0844a62dfb887c7",
+  "index_ntotal": 162696,
+  "index_dimension": 384,
+  "device": "cuda",
+  "gpu_name": "NVIDIA GeForce RTX 5050 Laptop GPU",
+  "top_k": 5,
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "embedding_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41"
+}

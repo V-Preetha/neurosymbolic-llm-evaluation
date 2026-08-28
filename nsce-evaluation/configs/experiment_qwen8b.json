@@ -1,0 +1,14 @@
+{
+  "model_id": "Qwen/Qwen3-8B",
+  "model_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "temperature": 0.0,
+  "max_new_tokens": 128,
+  "seed": 42,
+  "quantization": "nf4",
+  "logical_labels": ["True", "False", "Unknown"],
+  "rag_top_k": 5,
+  "embedding_model_id": "sentence-transformers/all-MiniLM-L6-v2",
+  "embedding_model_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "rag_distractors": 40,
+  "proofwriter_phase1_samples": 20
+}

@@ -1,0 +1,17 @@
+You are verifying one atomic factual claim using only the supplied evidence.
+
+Question:
+{question}
+
+Claim:
+{claim}
+
+Evidence:
+{evidence}
+
+Return exactly one label:
+- Supported: the evidence entails the claim.
+- Contradicted: the evidence entails that the claim is false.
+- Unknown: the evidence is absent, irrelevant, ambiguous, or insufficient.
+
+Do not use unsupported background knowledge. Lack of support is Unknown, not Contradicted.

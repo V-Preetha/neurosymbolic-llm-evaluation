@@ -1,0 +1,17 @@
+You are solving a logical reasoning problem under an open-world assumption.
+
+Use only the supplied facts and rules.
+- Return True if the query follows from them.
+- Return False if the explicit negation of the query follows from them.
+- Return Unknown if neither the query nor its explicit negation follows.
+
+Facts:
+{facts}
+
+Rules:
+{rules}
+
+Query:
+{question}
+
+Return exactly one label and no other text: True, False, or Unknown.

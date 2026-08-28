@@ -1,0 +1,14 @@
+dataset:
+  id: yale-nlp/FOLIO
+  revision: null
+  train_split: train
+  validation_split: validation
+  test_split: validation
+  id_field: example-id
+  world_field: story-id
+  label_field: label
+  stratify_fields: [label]
+  note: Official public release has train and validation only; validation is held out and never used for checkpoint selection.
+sampling:
+  training: {smoke: 200, pilot: 500, main: null, full: null}
+  evaluation: {smoke: 30, pilot: 200, main: 2000, full: null}

@@ -1,0 +1,22 @@
+\begin{table}[t]
+\caption{Model and fine-tuning configuration.}
+\label{tab:configuration}
+\centering
+\small
+\begin{tabular}{ll}
+\toprule
+Item & Value \\
+\midrule
+Base model & Qwen3-1.7B \\
+Quantization & NF4, FP16 compute \\
+Training examples & 2,000 \\
+Validation examples & 2,000 \\
+LoRA rank / alpha / dropout & 16 / 32 / 0.05 \\
+Learning rate / epochs & 2.0e-04 / 3 \\
+Batch / accumulation & 1 / 16 \\
+Optimizer / schedule & paged AdamW 8-bit / cosine \\
+Selected adapter & checkpoint-250 \\
+Bridge & descriptive NL2Logic $\rightarrow$ AST $\rightarrow$ Z3 \\
+\bottomrule
+\end{tabular}
+\end{table}

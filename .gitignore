@@ -1,0 +1,42 @@
+# --- Python ---
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+
+# --- Model weights / caches / offload ---
+checkpoints/
+.model_cache/
+model_offload/
+*.safetensors
+*.bin
+*.pt
+
+# --- Large derived / raw data (regenerate with the build scripts) ---
+final_experiment/data/processed/
+nsce-evaluation/data/factual_corpus/
+nsce-evaluation/data/processed/
+*.faiss
+*.bz2
+
+# --- Archives (extracted contents are tracked instead) ---
+*.zip
+
+# --- LaTeX build artifacts ---
+*.aux
+*.log
+*.blg
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.toc
+
+# --- Separately versioned sibling repo ---
+nsce-llm-reliability-benchmark/
+
+# --- OS ---
+Thumbs.db
+.DS_Store

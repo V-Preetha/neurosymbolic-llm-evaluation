@@ -1,0 +1,17 @@
+--extra-index-url https://download.pytorch.org/whl/cu128
+torch==2.11.0+cu128
+transformers>=4.53,<5
+huggingface-hub>=0.34,<1.0
+datasets>=3.6,<5
+fsspec[http]>=2023.1.0,<=2026.2.0
+peft>=0.15,<1
+accelerate>=1.8,<2
+bitsandbytes>=0.46,<1; platform_system != "Darwin"
+z3-solver>=4.13,<5
+scikit-learn>=1.6,<2
+scipy>=1.15,<2
+PyYAML>=6,<7
+pandas>=2.2,<4
+matplotlib>=3.9,<4
+numpy>=2,<3
+tqdm>=4.67,<5

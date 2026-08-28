@@ -1,0 +1,885 @@
+{
+  "source": "Yale-LILY/FOLIO data/v0.0/folio-validation.jsonl (MIT license) -- chosen over the train split because only this split carries gold conclusion-FOL, needed for the verdict-preservation-vs-oracle metric (item 9 of the prototype deliverable); the train split has premises-FOL only, no conclusion-FOL.",
+  "note_on_split_semantics": "This is FOLIO's public 'validation' file, used here purely as a frozen development/prototype sample, per the phase's own instruction to use train/dev examples and not the final evaluation split. FOLIO's official held-out test annotations are not public. A separate, disjoint slice of this same validation file (or a fresh split) must be frozen as the actual held-out set before any headline end-to-end number is reported -- this 30-item set is prototype-only, exactly like the existing 72-example ProofWriter dev pilot vs. its 360-example frozen test.",
+  "excluded_indices_reason": "The 18 items already hand-audited in FOLIO_REPRESENTATION_FEASIBILITY.md are excluded from this pool so the two artifacts stay independent.",
+  "excluded_indices": [
+    12,
+    13,
+    14,
+    24,
+    25,
+    26,
+    58,
+    59,
+    69,
+    70,
+    135,
+    136,
+    137,
+    138,
+    139,
+    143,
+    144,
+    154
+  ],
+  "selection_method": "sha256(json(premises)) ascending over the remaining pool, top 10 per gold label (True/False/Uncertain), deterministic hash sort, no manual cherry-picking.",
+  "sample_size": 30,
+  "label_balance": {
+    "True": 10,
+    "Uncertain": 10,
+    "False": 10
+  },
+  "construct_coverage": {
+    "conjunction": 25,
+    "disjunction": 16,
+    "existential": 6,
+    "multi_step": 28,
+    "universal": 28,
+    "negation": 22,
+    "binary_relation": 12,
+    "xor": 5,
+    "multi_variable": 6
+  },
+  "checksum_sha256_of_idx_list": "af0b4798953ff7f86d4c6d70174d338e47770f04733bde7fed91b3c04a6b92a8",
+  "items": [
+    {
+      "idx": 6,
+      "label": "True",
+      "premises": [
+        "Monkeypox is an infectious disease caused by the monkeypox virus.",
+        "Monkeypox virus can occur in certain animals, including humans.",
+        "Humans are mammals.",
+        "Mammals are animals.",
+        "Symptons of Monkeypox include fever, headache, muscle pains, feeling tired, and so on.",
+        "People feel tired when they get a glu."
+      ],
+      "conclusion": "There is an animal.",
+      "premises_fol_gold": [
+        "∃x (OccurMonkeypoxVirus(x) ∧ GetMonkeypox(x))",
+        "∃x (Animal(x) ∧ OccurMonkeypoxVirus(x))",
+        "∀x (Human(x) → Mammal(x))",
+        "∀x (Mammal(x) → Animal(x))",
+        "∃x (GetMonkeypox(x) ∧ (Fever(x) ∨ Headache(x) ∨ MusclePain(x) ∨ Tired(x)))",
+        "∀x (Human(x) ∧ Flu(x) → Tired(x))"
+      ],
+      "conclusion_fol_gold": "∃x (Animal(x))",
+      "constructs": [
+        "conjunction",
+        "disjunction",
+        "existential",
+        "multi_step",
+        "universal"
+      ]
+    },
+    {
+      "idx": 7,
+      "label": "Uncertain",
+      "premises": [
+        "Monkeypox is an infectious disease caused by the monkeypox virus.",
+        "Monkeypox virus can occur in certain animals, including humans.",
+        "Humans are mammals.",
+        "Mammals are animals.",
+        "Symptons of Monkeypox include fever, headache, muscle pains, feeling tired, and so on.",
+        "People feel tired when they get a glu."
+      ],
+      "conclusion": "No one gets flu.",
+      "premises_fol_gold": [
+        "∃x (OccurMonkeypoxVirus(x) ∧ GetMonkeypox(x))",
+        "∃x (Animal(x) ∧ OccurMonkeypoxVirus(x))",
+        "∀x (Human(x) → Mammal(x))",
+        "∀x (Mammal(x) → Animal(x))",
+        "∃x (GetMonkeypox(x) ∧ (Fever(x) ∨ Headache(x) ∨ MusclePain(x) ∨ Tired(x)))",
+        "∀x (Human(x) ∧ Flu(x) → Tired(x))"
+      ],
+      "conclusion_fol_gold": "∀x (Human(x) → ¬Flu(x))",
+      "constructs": [
+        "conjunction",
+        "disjunction",
+        "existential",
+        "multi_step",
+        "negation",
+        "universal"
+      ]
+    },
+    {
+      "idx": 8,
+      "label": "Uncertain",
+      "premises": [
+        "Monkeypox is an infectious disease caused by the monkeypox virus.",
+        "Monkeypox virus can occur in certain animals, including humans.",
+        "Humans are mammals.",
+        "Mammals are animals.",
+        "Symptons of Monkeypox include fever, headache, muscle pains, feeling tired, and so on.",
+        "People feel tired when they get a glu."
+      ],
+      "conclusion": "Symptons of Monkeypox include coughing.",
+      "premises_fol_gold": [
+        "∃x (OccurMonkeypoxVirus(x) ∧ GetMonkeypox(x))",
+        "∃x (Animal(x) ∧ OccurMonkeypoxVirus(x))",
+        "∀x (Human(x) → Mammal(x))",
+        "∀x (Mammal(x) → Animal(x))",
+        "∃x (GetMonkeypox(x) ∧ (Fever(x) ∨ Headache(x) ∨ MusclePain(x) ∨ Tired(x)))",
+        "∀x (Human(x) ∧ Flu(x) → Tired(x))"
+      ],
+      "conclusion_fol_gold": "∃x (GetMonkeypox(x) ∧ Coughing(x))",
+      "constructs": [
+        "conjunction",
+        "disjunction",
+        "existential",
+        "multi_step",
+        "universal"
+      ]
+    },
+    {
+      "idx": 9,
+      "label": "True",
+      "premises": [
+        "There are six types of wild turkeys: Eastern wild turkey, Osceola wild turkey, Gould’s wild turkey, Merriam’s wild",
+        "turkey, Rio Grande wild turkey, and Ocellated wild turkey.",
+        "Tom is not an Eastern wild turkey.",
+        "Tom is not an Osceola wild turkey.",
+        "Tom is also not a Gould's wild turkey, or a Merriam's wild turkey, or a Rio Grande wild turkey.",
+        "Tom is a wild turkey."
+      ],
+      "conclusion": "Tom is an Ocellated wild turkey.",
+      "premises_fol_gold": [
+        "∀x (WildTurkey(x) → (Eastern(x) ∨ Osceola(x) ∨ Goulds(x) ∨ Merriams(x) ∨ Riogrande(x) ∨ Ocellated(x)))",
+        "¬(WildTurkey(tom) ∧ Eastern(tom))",
+        "¬(WildTurkey(tom) ∧ Osceola(tom))",
+        "WildTurkey(tom) → ¬(Goulds(tom) ∨ Merriams(tom) ∨ Riogrande(tom))",
+        "WildTurkey(tom)"
+      ],
+      "conclusion_fol_gold": "Ocellated(tom)",
+      "constructs": [
+        "conjunction",
+        "disjunction",
+        "multi_step",
+        "negation",
+        "universal"
+      ]
+    },
+    {
+      "idx": 10,
+      "label": "False",
+      "premises": [
+        "There are six types of wild turkeys: Eastern wild turkey, Osceola wild turkey, Gould’s wild turkey, Merriam’s wild",
+        "turkey, Rio Grande wild turkey, and Ocellated wild turkey.",
+        "Tom is not an Eastern wild turkey.",
+        "Tom is not an Osceola wild turkey.",
+        "Tom is also not a Gould's wild turkey, or a Merriam's wild turkey, or a Rio Grande wild turkey.",
+        "Tom is a wild turkey."
+      ],
+      "conclusion": "Tom is an Eastern wild turkey.",
+      "premises_fol_gold": [
+        "∀x (WildTurkey(x) → (Eastern(x) ∨ Osceola(x) ∨ Goulds(x) ∨ Merriams(x) ∨ Riogrande(x) ∨ Ocellated(x)))",
+        "¬(WildTurkey(tom) ∧ Eastern(tom))",
+        "¬(WildTurkey(tom) ∧ Osceola(tom))",
+        "WildTurkey(tom) → ¬(Goulds(tom) ∨ Merriams(tom) ∨ Riogrande(tom))",
+        "WildTurkey(tom)"
+      ],
+      "conclusion_fol_gold": "Eastern(tom)",
+      "constructs": [
+        "conjunction",
+        "disjunction",
+        "multi_step",
+        "negation",
+        "universal"
+      ]
+    },
+    {
+      "idx": 11,
+      "label": "Uncertain",
+      "premises": [
+        "There are six types of wild turkeys: Eastern wild turkey, Osceola wild turkey, Gould’s wild turkey, Merriam’s wild",
+        "turkey, Rio Grande wild turkey, and Ocellated wild turkey.",
+        "Tom is not an Eastern wild turkey.",
+        "Tom is not an Osceola wild turkey.",
+        "Tom is also not a Gould's wild turkey, or a Merriam's wild turkey, or a Rio Grande wild turkey.",
+        "Tom is a wild turkey."
+      ],
+      "conclusion": "Joey is a wild turkey.",
+      "premises_fol_gold": [
+        "∀x (WildTurkey(x) → (Eastern(x) ∨ Osceola(x) ∨ Goulds(x) ∨ Merriams(x) ∨ Riogrande(x) ∨ Ocellated(x)))",
+        "¬(WildTurkey(tom) ∧ Eastern(tom))",
+        "¬(WildTurkey(tom) ∧ Osceola(tom))",
+        "WildTurkey(tom) → ¬(Goulds(tom) ∨ Merriams(tom) ∨ Riogrande(tom))",
+        "WildTurkey(tom)"
+      ],
+      "conclusion_fol_gold": "WildTurkey(joey)",
+      "constructs": [
+        "conjunction",
+        "disjunction",
+        "multi_step",
+        "negation",
+        "universal"
+      ]
+    },
+    {
+      "idx": 51,
+      "label": "True",
+      "premises": [
+        "No digital media are analog.",
+        "Every printed text is analog.",
+        "All streaming services are digital.",
+        "If an object is a hardcover book then it is printed text.",
+        "If 1984 is a streaming service, then 1984 is a hardcover book."
+      ],
+      "conclusion": "1984 is not a streaming service.",
+      "premises_fol_gold": [
+        "∀x (Digital(x) → ¬Analog(x))",
+        "∀x (PrintedText(x) → Analog(x))",
+        "∀x (StreamingService(x) → Digital(x))",
+        "∀x (HardcoverBook(x) → PrintedText(x))",
+        "StreamingService(y1984) → HardcoverBook(y1984)"
+      ],
+      "conclusion_fol_gold": "¬StreamingService(y1984)",
+      "constructs": [
+        "multi_step",
+        "negation",
+        "universal"
+      ]
+    },
+    {
+      "idx": 60,
+      "label": "True",
+      "premises": [
+        "Billings is a city in Montana.",
+        "Montana includes the cities of Butte, Helena, and Missoula.",
+        "White Sulphur Springs and Butte are cities in the same state.",
+        "The city of Pierre is not in Montana.",
+        "Any city in Butte is not in Pierre."
+      ],
+      "conclusion": "Montana is home to the city of Missoula.",
+      "premises_fol_gold": [
+        "CityIn(billings, montana)",
+        "CityIn(butte, montana) ∧ CityIn(helena, montana) ∧ CityIn(missoula, montana)",
+        "∃x (CityIn(whitesulphursprings, x) ∧ CityIn(butte, x))",
+        "¬CityIn(pierre, montana)",
+        "∀x (CityIn(butte, x) → ¬CityIn(pierre, x))"
+      ],
+      "conclusion_fol_gold": "CityIn(missoula, montana)",
+      "constructs": [
+        "binary_relation",
+        "conjunction",
+        "existential",
+        "multi_step",
+        "negation",
+        "universal"
+      ]
+    },
+    {
+      "idx": 76,
+      "label": "Uncertain",
+      "premises": [
+        "If people work in student jobs on campus, then they need to earn money to help pay for their college tuition.",
+        "If people order takeout frequently in college, then they work in student jobs on campus.",
+        "People either order takeout frequently in college or enjoy the dining hall meals and recipes.",
+        "If people enjoy the dining hall meals and recipes, then they are not picky eaters.",
+        "If people enjoy the dining hall meals and recipes, then they spend a lot of their time eating and catching up with friends in the campus dining halls.",
+        "If Mary works in student jobs on campus and needs to earn money to help pay for her college tuition, then Mary is neither picky nor needs to earn money to help pay for her college tuition."
+      ],
+      "conclusion": "Mary needs to earn money to help pay for her college tuition.",
+      "premises_fol_gold": [
+        "∀x (StudentJobs(x) → Tuition(x))",
+        "∀x (Takeout(x) → StudentJobs(x))",
+        "∀x (Takeout(x) ∨ DiningHall(x))",
+        "∀x (DiningHall(x) → NotPicky(x))",
+        "∀x (DiningHall(x) → Eating(x))",
+        "StudentJobs(mary) ∧ Tuition(mary) → ¬(NotPicky(mary) ∨ Tuition(mary))"
+      ],
+      "conclusion_fol_gold": "Tuition(mary)",
+      "constructs": [
+        "conjunction",
+        "disjunction",
+        "multi_step",
+        "negation",
+        "universal"
+      ]
+    },
+    {
+      "idx": 77,
+      "label": "True",
+      "premises": [
+        "If people work in student jobs on campus, then they need to earn money to help pay for their college tuition.",
+        "If people order takeout frequently in college, then they work in student jobs on campus.",
+        "People either order takeout frequently in college or enjoy the dining hall meals and recipes.",
+        "If people enjoy the dining hall meals and recipes, then they are not picky eaters.",
+        "If people enjoy the dining hall meals and recipes, then they spend a lot of their time eating and catching up with friends in the campus dining halls.",
+        "If Mary works in student jobs on campus and needs to earn money to help pay for her college tuition, then Mary is neither picky nor needs to earn money to help pay for her college tuition."
+      ],
+      "conclusion": "Mary is not a picky eater and spends a lot of her time eating and catching up with friends in the campus dining halls.",
+      "premises_fol_gold": [
+        "∀x (StudentJobs(x) → Tuition(x))",
+        "∀x (Takeout(x) → StudentJobs(x))",
+        "∀x (Takeout(x) ∨ DiningHall(x))",
+        "∀x (DiningHall(x) → NotPicky(x))",
+        "∀x (DiningHall(x) → Eating(x))",
+        "StudentJobs(mary) ∧ Tuition(mary) → ¬(NotPicky(mary) ∨ Tuition(mary))"
+      ],
+      "conclusion_fol_gold": "NotPicky(mary) ∧ Eating(mary)",
+      "constructs": [
+        "conjunction",
+        "disjunction",
+        "multi_step",
+        "negation",
+        "universal"
+      ]
+    },
+    {
+      "idx": 78,
+      "label": "False",
+      "premises": [
+        "If people work in student jobs on campus, then they need to earn money to help pay for their college tuition.",
+        "If people order takeout frequently in college, then they work in student jobs on campus.",
+        "People either order takeout frequently in college or enjoy the dining hall meals and recipes.",
+        "If people enjoy the dining hall meals and recipes, then they are not picky eaters.",
+        "If people enjoy the dining hall meals and recipes, then they spend a lot of their time eating and catching up with friends in the campus dining halls.",
+        "If Mary works in student jobs on campus and needs to earn money to help pay for her college tuition, then Mary is neither picky nor needs to earn money to help pay for her college tuition."
+      ],
+      "conclusion": "Mary either is not a picky eater or, if she is, then she spends a lot of her time eating and catching up with friends in the campus dining halls.",
+      "premises_fol_gold": [
+        "∀x (StudentJobs(x) → Tuition(x))",
+        "∀x (Takeout(x) → StudentJobs(x))",
+        "∀x (Takeout(x) ∨ DiningHall(x))",
+        "∀x (DiningHall(x) → NotPicky(x))",
+        "∀x (DiningHall(x) → Eating(x))",
+        "StudentJobs(mary) ∧ Tuition(mary) → ¬(NotPicky(mary) ∨ Tuition(mary))"
+      ],
+      "conclusion_fol_gold": "NotPicky(mary) ⊕ Eating(mary)",
+      "constructs": [
+        "conjunction",
+        "disjunction",
+        "multi_step",
+        "negation",
+        "universal",
+        "xor"
+      ]
+    },
+    {
+      "idx": 87,
+      "label": "True",
+      "premises": [
+        "In superhero movies, the good guys always win.",
+        "The Surprising Adventures of Sir Digby Chicken Caesar is a superhero movie.",
+        "Good guys fight bad guys and vice versa.",
+        "Sir Digby fights his nemesis.",
+        "If a superhero movie is named after a character, that character is a good guy.",
+        "The Surprising Adventures of Sir Digby Chicken Caesar is named after Sir Digby.",
+        "If somebody wins a fight, the person they are fighting loses.",
+        "If a superhero movie is named after a character, that character appears in the movie."
+      ],
+      "conclusion": "Sir Digby’s nemesis loses.",
+      "premises_fol_gold": [
+        "∀x ∀y (SuperheroMovie(x) ∧ GoodGuy(y) ∧ AppearsIn(y, x) → Wins(y))",
+        "SuperheroMovie(surprisingAdventuresofSirDigbyChickenCaesar)",
+        "∀x ∀y (GoodGuy(x) ∧ Fights(x, y) ⟷ BadGuy(y) ∧ Fights(y, x))",
+        "Fights(sirDigby, sirDigbyNemesis)",
+        "∀x ∀y (SuperheroMovie(x), NamedAfter(x, y) → GoodGuy(y))",
+        "NamedAfter(surprisingAdventuresofSirDigbyChickenCaesar, sirDigby)",
+        "∀x ∀y (Fights(x, y) ∧ Wins(x) → ¬Wins(y))"
+      ],
+      "conclusion_fol_gold": "∀x ∀y (SuperheroMovie(x) ∧ AppearsIn(y, x) → GoodGuy(y))",
+      "constructs": [
+        "binary_relation",
+        "conjunction",
+        "multi_step",
+        "multi_variable",
+        "negation",
+        "universal"
+      ]
+    },
+    {
+      "idx": 118,
+      "label": "Uncertain",
+      "premises": [
+        "Barutin Cove is named after the Bulgarian settlement of Barutin.",
+        "Barutin Cove is on the southwest coast of Snow Island.",
+        "The South Shetland Islands include Snow Island, Greenwich Island, and Deception Island.",
+        "The South Shetland Islands are considered part of Antarctica.",
+        "If A is located in B and B is located in C, then A is located in C."
+      ],
+      "conclusion": "Barutin is named after all islands in Antarctica.",
+      "premises_fol_gold": [
+        "Cove(barutin) ∧ NameAfter(barutin, settlement) ∧ Locate(settlement, bulgaria)",
+        "Locate(barutin, snow)",
+        "Locate(snow, shetland) ∧ Locate(greenwich, shetland) ∧ Locate(deception, shetland)",
+        "Locate(shetland, antarctica)",
+        "∀x ∀y ∀z ((Locate(x, y) ∧ Locate(y, z)) → Locate(x, z))"
+      ],
+      "conclusion_fol_gold": "∀x (Locate(x, antarctica) → NameAfter(barutin, x))",
+      "constructs": [
+        "binary_relation",
+        "conjunction",
+        "multi_step",
+        "multi_variable",
+        "universal"
+      ]
+    },
+    {
+      "idx": 119,
+      "label": "True",
+      "premises": [
+        "Barutin Cove is named after the Bulgarian settlement of Barutin.",
+        "Barutin Cove is on the southwest coast of Snow Island.",
+        "The South Shetland Islands include Snow Island, Greenwich Island, and Deception Island.",
+        "The South Shetland Islands are considered part of Antarctica.",
+        "If A is located in B and B is located in C, then A is located in C."
+      ],
+      "conclusion": "There is at least one cove in Antarctica named after a place in Bulgaria.",
+      "premises_fol_gold": [
+        "Cove(barutin) ∧ NameAfter(barutin, settlement) ∧ Locate(settlement, bulgaria)",
+        "Locate(barutin, snow)",
+        "Locate(snow, shetland) ∧ Locate(greenwich, shetland) ∧ Locate(deception, shetland)",
+        "Locate(shetland, antarctica)",
+        "∀x ∀y ∀z ((Locate(x, y) ∧ Locate(y, z)) → Locate(x, z))"
+      ],
+      "conclusion_fol_gold": "∃x ∃y (Cove(x) ∧ NameAfter(x, y) ∧ Locate(y, bulgaria))",
+      "constructs": [
+        "binary_relation",
+        "conjunction",
+        "existential",
+        "multi_step",
+        "multi_variable",
+        "universal"
+      ]
+    },
+    {
+      "idx": 120,
+      "label": "False",
+      "premises": [
+        "Barutin Cove is named after the Bulgarian settlement of Barutin.",
+        "Barutin Cove is on the southwest coast of Snow Island.",
+        "The South Shetland Islands include Snow Island, Greenwich Island, and Deception Island.",
+        "The South Shetland Islands are considered part of Antarctica.",
+        "If A is located in B and B is located in C, then A is located in C."
+      ],
+      "conclusion": "Barutin is not located in Antarctica.",
+      "premises_fol_gold": [
+        "Cove(barutin) ∧ NameAfter(barutin, settlement) ∧ Locate(settlement, bulgaria)",
+        "Locate(barutin, snow)",
+        "Locate(snow, shetland) ∧ Locate(greenwich, shetland) ∧ Locate(deception, shetland)",
+        "Locate(shetland, antarctica)",
+        "∀x ∀y ∀z ((Locate(x, y) ∧ Locate(y, z)) → Locate(x, z))"
+      ],
+      "conclusion_fol_gold": "¬Locate(barutin, antarctica)",
+      "constructs": [
+        "binary_relation",
+        "conjunction",
+        "multi_step",
+        "multi_variable",
+        "negation",
+        "universal"
+      ]
+    },
+    {
+      "idx": 153,
+      "label": "Uncertain",
+      "premises": [
+        "If people own a large desktop monitor at their home, then they work regularly and often at home.",
+        "All people who have a fully stocked and impressive home office are people who own a large desktop monitor at their home.",
+        "All people who work regularly and often at home spend their free time tidying and organizing the spaces in their homes.",
+        "All people who work regularly and often at home visit the office supply store regularly.",
+        "If people spend their free time tidying and organizing the spaces in their home, then they do not go to bed late and wake up every day after noon. ",
+        "Remy either both goes to bed late and wakes up every day after noon and spends their free time tidying and organizing the spaces in their home, or they do not go to bed late and wake up every day after noon nor spend their free time tidying and organizing the spaces in their home. "
+      ],
+      "conclusion": "Remy visits the office supply store regularly.",
+      "premises_fol_gold": [
+        "∀x (Desktop(x) → WorkHome(x))",
+        "∀x (HomeOffice(x) → Desktop(x))",
+        "∀x (WorkHome(x) → Tidying(x))",
+        "∀x (WorkHome(x) → OfficeStore(x))",
+        "∀x (Tidying(x) → ¬Late(x))",
+        "(Late(remy) ∧ Tidying(remy)) ⊕ (¬Late(remy) ∧ ¬Tidying(remy))"
+      ],
+      "conclusion_fol_gold": "OfficeStore(remy)",
+      "constructs": [
+        "conjunction",
+        "multi_step",
+        "negation",
+        "universal",
+        "xor"
+      ]
+    },
+    {
+      "idx": 155,
+      "label": "True",
+      "premises": [
+        "If people own a large desktop monitor at their home, then they work regularly and often at home.",
+        "All people who have a fully stocked and impressive home office are people who own a large desktop monitor at their home.",
+        "All people who work regularly and often at home spend their free time tidying and organizing the spaces in their homes.",
+        "All people who work regularly and often at home visit the office supply store regularly.",
+        "If people spend their free time tidying and organizing the spaces in their home, then they do not go to bed late and wake up every day after noon. ",
+        "Remy either both goes to bed late and wakes up every day after noon and spends their free time tidying and organizing the spaces in their home, or they do not go to bed late and wake up every day after noon nor spend their free time tidying and organizing the spaces in their home. "
+      ],
+      "conclusion": "If Remy either goes to bed late and wakes up every day after noon or visits the office supply store regularly, then Remy neither spends their free time tidying and organizing the spaces in their home nor has a fully stocked and impressive home office.",
+      "premises_fol_gold": [
+        "∀x (Desktop(x) → WorkHome(x))",
+        "∀x (HomeOffice(x) → Desktop(x))",
+        "∀x (WorkHome(x) → Tidying(x))",
+        "∀x (WorkHome(x) → OfficeStore(x))",
+        "∀x (Tidying(x) → ¬Late(x))",
+        "(Late(remy) ∧ Tidying(remy)) ⊕ (¬Late(remy) ∧ ¬Tidying(remy))"
+      ],
+      "conclusion_fol_gold": "Late(remy) ∨ OfficeStore(remy) → ¬(Tidying(remy) ∨ HomeOffice(remy))",
+      "constructs": [
+        "conjunction",
+        "disjunction",
+        "multi_step",
+        "negation",
+        "universal",
+        "xor"
+      ]
+    },
+    {
+      "idx": 170,
+      "label": "Uncertain",
+      "premises": [
+        "If something is a deadly disease, then its survival rate is low. ",
+        "All severe cancers are deadly diseases.",
+        "Bile duct cancer is a severe cancer. ",
+        "All Cholangiocarcinoma is bile duct cancer.",
+        "No one with mild flu has a low survival rate.",
+        "If colorectal cancer is a bile duct cancer and the survival rate is low, then colorectal cancer is not a bile duct cancer."
+      ],
+      "conclusion": "Colorectal cancer is a severe cancer",
+      "premises_fol_gold": [
+        "∀x (DeadlyDiseases(x) → SurvivalRateIsLow(x))",
+        "∀x (SevereCancer(x) → DeadlyDiseases(x))",
+        "∀x (BileDuctCancer(x) → SevereCancer(x))",
+        "∀x (Cholangiocarcinoma(x) → BileDuctCancer(x))",
+        "∀x (MildFlu(x) → ¬SurvivalRateIsLow(x)) ",
+        "BileDuctCancer(colorectalCancer) ∨ SurvivalRateIsLow(colorectalCancer) → ¬BileDuctCancer(colorectalCancer)"
+      ],
+      "conclusion_fol_gold": "SevereCancer(colorectalCancer)",
+      "constructs": [
+        "disjunction",
+        "multi_step",
+        "negation",
+        "universal"
+      ]
+    },
+    {
+      "idx": 171,
+      "label": "True",
+      "premises": [
+        "If something is a deadly disease, then its survival rate is low. ",
+        "All severe cancers are deadly diseases.",
+        "Bile duct cancer is a severe cancer. ",
+        "All Cholangiocarcinoma is bile duct cancer.",
+        "No one with mild flu has a low survival rate.",
+        "If colorectal cancer is a bile duct cancer and the survival rate is low, then colorectal cancer is not a bile duct cancer."
+      ],
+      "conclusion": "If colorectal cancer is a bile duct cancer or a Cholangiocarcinoma, then colorectal cancer is a bile duct cancer and a mild flu.",
+      "premises_fol_gold": [
+        "∀x (DeadlyDiseases(x) → SurvivalRateIsLow(x))",
+        "∀x (SevereCancer(x) → DeadlyDiseases(x))",
+        "∀x (BileDuctCancer(x) → SevereCancer(x))",
+        "∀x (Cholangiocarcinoma(x) → BileDuctCancer(x))",
+        "∀x (MildFlu(x) → ¬SurvivalRateIsLow(x)) ",
+        "BileDuctCancer(colorectalCancer) ∨ SurvivalRateIsLow(colorectalCancer) → ¬BileDuctCancer(colorectalCancer)"
+      ],
+      "conclusion_fol_gold": "BileDuctCancer(colorectalCancer) ∨ Cholangiocarcinoma(colorectalCancer) → BileDuctCancer(colorectalCancer) ∧ MildFlu(colorectalCancer)",
+      "constructs": [
+        "conjunction",
+        "disjunction",
+        "multi_step",
+        "negation",
+        "universal"
+      ]
+    },
+    {
+      "idx": 172,
+      "label": "False",
+      "premises": [
+        "If something is a deadly disease, then its survival rate is low. ",
+        "All severe cancers are deadly diseases.",
+        "Bile duct cancer is a severe cancer. ",
+        "All Cholangiocarcinoma is bile duct cancer.",
+        "No one with mild flu has a low survival rate.",
+        "If colorectal cancer is a bile duct cancer and the survival rate is low, then colorectal cancer is not a bile duct cancer."
+      ],
+      "conclusion": "If colorectal cancer is not a mild flu and a Cholangiocarcinoma, then colorectal cancer is a bile duct cancer or a Cholangiocarcinoma.",
+      "premises_fol_gold": [
+        "∀x (DeadlyDiseases(x) → SurvivalRateIsLow(x))",
+        "∀x (SevereCancer(x) → DeadlyDiseases(x))",
+        "∀x (BileDuctCancer(x) → SevereCancer(x))",
+        "∀x (Cholangiocarcinoma(x) → BileDuctCancer(x))",
+        "∀x (MildFlu(x) → ¬SurvivalRateIsLow(x)) ",
+        "BileDuctCancer(colorectalCancer) ∨ SurvivalRateIsLow(colorectalCancer) → ¬BileDuctCancer(colorectalCancer)"
+      ],
+      "conclusion_fol_gold": "¬MildFlu(colorectalCancer) ∨ ¬Cholangiocarcinoma(colorectalCancer) → BileDuctCancer(colorectalCancer) ∨ Cholangiocarcinoma(colorectalCancer)",
+      "constructs": [
+        "disjunction",
+        "multi_step",
+        "negation",
+        "universal"
+      ]
+    },
+    {
+      "idx": 173,
+      "label": "Uncertain",
+      "premises": [
+        "All people who eat salads regularly are very conscious about their health and eating habits.",
+        "All people who grew up in health-conscious childhood homes eat salads regularly.",
+        "All people who fulfill their nutritional daily intakes grew up in health-conscious childhood homes.",
+        "If people have good relationships with their parents, then they fulfill their nutritional daily intakes.",
+        "If people have good relationships with their parents, then they do not eat salads regularly.",
+        "If people visit the gym at least once a day, then they always fulfill their daily nutritional intakes.",
+        "It is either both true that Taylor grew up in a health-conscious childhood home and she has a good relationship with her parents, or it is true that Taylor neither grew up in a health-conscious childhood home nor has a good relationship with her parents."
+      ],
+      "conclusion": "Taylor eats salads regularly.",
+      "premises_fol_gold": [
+        "∀x (Salad(x) → HealthyHabits(x))",
+        "∀x (HealthyChildhood(x) → Salad(x))",
+        "∀x (Nutritional(x) → HealthyChildhood(x))",
+        "∀x (GoodRelationship(x) → ¬HealthyHabits(x))",
+        "∀x (Gym(x) → Nutritional(x))",
+        "(HealthyChildhood(taylor) ∧ GoodRelationship(taylor)) ∨ ¬HealthyChildhood(taylor) ∧ ¬GoodRelationship(marcy)"
+      ],
+      "conclusion_fol_gold": "Salad(taylor)",
+      "constructs": [
+        "conjunction",
+        "disjunction",
+        "multi_step",
+        "negation",
+        "universal"
+      ]
+    },
+    {
+      "idx": 174,
+      "label": "False",
+      "premises": [
+        "All people who eat salads regularly are very conscious about their health and eating habits.",
+        "All people who grew up in health-conscious childhood homes eat salads regularly.",
+        "All people who fulfill their nutritional daily intakes grew up in health-conscious childhood homes.",
+        "If people have good relationships with their parents, then they fulfill their nutritional daily intakes.",
+        "If people have good relationships with their parents, then they do not eat salads regularly.",
+        "If people visit the gym at least once a day, then they always fulfill their daily nutritional intakes.",
+        "It is either both true that Taylor grew up in a health-conscious childhood home and she has a good relationship with her parents, or it is true that Taylor neither grew up in a health-conscious childhood home nor has a good relationship with her parents."
+      ],
+      "conclusion": "Taylor visits the gym at least once a day.",
+      "premises_fol_gold": [
+        "∀x (Salad(x) → HealthyHabits(x))",
+        "∀x (HealthyChildhood(x) → Salad(x))",
+        "∀x (Nutritional(x) → HealthyChildhood(x))",
+        "∀x (GoodRelationship(x) → ¬HealthyHabits(x))",
+        "∀x (Gym(x) → Nutritional(x))",
+        "(HealthyChildhood(taylor) ∧ GoodRelationship(taylor)) ∨ ¬HealthyChildhood(taylor) ∧ ¬GoodRelationship(marcy)"
+      ],
+      "conclusion_fol_gold": "Gym(taylor)",
+      "constructs": [
+        "conjunction",
+        "disjunction",
+        "multi_step",
+        "negation",
+        "universal"
+      ]
+    },
+    {
+      "idx": 175,
+      "label": "True",
+      "premises": [
+        "All people who eat salads regularly are very conscious about their health and eating habits.",
+        "All people who grew up in health-conscious childhood homes eat salads regularly.",
+        "All people who fulfill their nutritional daily intakes grew up in health-conscious childhood homes.",
+        "If people have good relationships with their parents, then they fulfill their nutritional daily intakes.",
+        "If people have good relationships with their parents, then they do not eat salads regularly.",
+        "If people visit the gym at least once a day, then they always fulfill their daily nutritional intakes.",
+        "It is either both true that Taylor grew up in a health-conscious childhood home and she has a good relationship with her parents, or it is true that Taylor neither grew up in a health-conscious childhood home nor has a good relationship with her parents."
+      ],
+      "conclusion": "Taylor neither grew up in a health-conscious childhood home nor does she visit the gym at least once a day.",
+      "premises_fol_gold": [
+        "∀x (Salad(x) → HealthyHabits(x))",
+        "∀x (HealthyChildhood(x) → Salad(x))",
+        "∀x (Nutritional(x) → HealthyChildhood(x))",
+        "∀x (GoodRelationship(x) → ¬HealthyHabits(x))",
+        "∀x (Gym(x) → Nutritional(x))",
+        "(HealthyChildhood(taylor) ∧ GoodRelationship(taylor)) ∨ ¬HealthyChildhood(taylor) ∧ ¬GoodRelationship(marcy)"
+      ],
+      "conclusion_fol_gold": "¬(HealthyChildhood(taylor) ∨ Gym(taylor))",
+      "constructs": [
+        "conjunction",
+        "disjunction",
+        "multi_step",
+        "negation",
+        "universal"
+      ]
+    },
+    {
+      "idx": 180,
+      "label": "False",
+      "premises": [
+        "Susan flies to LGA airport.",
+        "The departure and arrival can not be the same airport.",
+        "John flies from LGA airport."
+      ],
+      "conclusion": "Susan flies from LGA airport.",
+      "premises_fol_gold": [
+        "FlyTo(susan, lga)",
+        "∀x ∀y (FlyFrom(x, y) ⊕ FlyTo(x, y))",
+        "FlyFrom(john, lga)"
+      ],
+      "conclusion_fol_gold": "FlyFrom(susan, lga)",
+      "constructs": [
+        "binary_relation",
+        "multi_variable",
+        "universal",
+        "xor"
+      ]
+    },
+    {
+      "idx": 181,
+      "label": "False",
+      "premises": [
+        "Susan flies to LGA airport.",
+        "The departure and arrival can not be the same airport.",
+        "John flies from LGA airport."
+      ],
+      "conclusion": "John flies to LGA airport.",
+      "premises_fol_gold": [
+        "FlyTo(susan, lga)",
+        "∀x ∀y (FlyFrom(x, y) ⊕ FlyTo(x, y))",
+        "FlyFrom(john, lga)"
+      ],
+      "conclusion_fol_gold": "FlyTo(john, lga)",
+      "constructs": [
+        "binary_relation",
+        "multi_variable",
+        "universal",
+        "xor"
+      ]
+    },
+    {
+      "idx": 199,
+      "label": "False",
+      "premises": [
+        "Ailton Silva, born in 1995, is commonly known as Ailton.",
+        "Ailton is a football player who was loaned out to Braga.",
+        "Ailton Silva is a Brazillian footballer who plays for Nautico.",
+        "Nautico is a football club along with Braga.",
+        "Fluminense is a football club."
+      ],
+      "conclusion": "No one playing for Nautico is Brazilian.",
+      "premises_fol_gold": [
+        "BornIn(ailtonsilva, y1995) ∧ CommonlyKnownAs(ailtonsilva, ailton)",
+        "FootballPlayer(ailton) ∧ LoanedTo(ailton, braga)",
+        "Brazilian(ailtonsilva) ∧ Footballplayer(ailtonsilva) ∧ PlaysFor(ailtonsilva, nautico)",
+        "FootballClub(nautico) ∧ FootballClub(braga)",
+        "FootballClub(fluminense)"
+      ],
+      "conclusion_fol_gold": "∀x (PlaysFor(x, nautico) → ¬Brazilian(x))",
+      "constructs": [
+        "binary_relation",
+        "conjunction",
+        "multi_step",
+        "negation",
+        "universal"
+      ]
+    },
+    {
+      "idx": 200,
+      "label": "False",
+      "premises": [
+        "Ailton Silva, born in 1995, is commonly known as Ailton.",
+        "Ailton is a football player who was loaned out to Braga.",
+        "Ailton Silva is a Brazillian footballer who plays for Nautico.",
+        "Nautico is a football club along with Braga.",
+        "Fluminense is a football club."
+      ],
+      "conclusion": "Ailton Silva foes not play for a football club.",
+      "premises_fol_gold": [
+        "BornIn(ailtonsilva, y1995) ∧ CommonlyKnownAs(ailtonsilva, ailton)",
+        "FootballPlayer(ailton) ∧ LoanedTo(ailton, braga)",
+        "Brazilian(ailtonsilva) ∧ Footballplayer(ailtonsilva) ∧ PlaysFor(ailtonsilva, nautico)",
+        "FootballClub(nautico) ∧ FootballClub(braga)",
+        "FootballClub(fluminense)"
+      ],
+      "conclusion_fol_gold": "∀x (FootballClub(x) → ¬PlaysFor(ailtonsilva, x))",
+      "constructs": [
+        "binary_relation",
+        "conjunction",
+        "multi_step",
+        "negation",
+        "universal"
+      ]
+    },
+    {
+      "idx": 201,
+      "label": "False",
+      "premises": [
+        "Ailton Silva, born in 1995, is commonly known as Ailton.",
+        "Ailton is a football player who was loaned out to Braga.",
+        "Ailton Silva is a Brazillian footballer who plays for Nautico.",
+        "Nautico is a football club along with Braga.",
+        "Fluminense is a football club."
+      ],
+      "conclusion": "Ailton was not loaned out to a football club.",
+      "premises_fol_gold": [
+        "BornIn(ailtonsilva, y1995) ∧ CommonlyKnownAs(ailtonsilva, ailton)",
+        "FootballPlayer(ailton) ∧ LoanedTo(ailton, braga)",
+        "Brazilian(ailtonsilva) ∧ Footballplayer(ailtonsilva) ∧ PlaysFor(ailtonsilva, nautico)",
+        "FootballClub(nautico) ∧ FootballClub(braga)",
+        "FootballClub(fluminense)"
+      ],
+      "conclusion_fol_gold": "∀x (FootballClub(x) → ¬LoanedTo(ailton, x))",
+      "constructs": [
+        "binary_relation",
+        "conjunction",
+        "multi_step",
+        "negation",
+        "universal"
+      ]
+    },
+    {
+      "idx": 202,
+      "label": "Uncertain",
+      "premises": [
+        "Ailton Silva, born in 1995, is commonly known as Ailton.",
+        "Ailton is a football player who was loaned out to Braga.",
+        "Ailton Silva is a Brazillian footballer who plays for Nautico.",
+        "Nautico is a football club along with Braga.",
+        "Fluminense is a football club."
+      ],
+      "conclusion": "Ailton Silva played for Fluminense.",
+      "premises_fol_gold": [
+        "BornIn(ailtonsilva, y1995) ∧ CommonlyKnownAs(ailtonsilva, ailton)",
+        "FootballPlayer(ailton) ∧ LoanedTo(ailton, braga)",
+        "Brazilian(ailtonsilva) ∧ Footballplayer(ailtonsilva) ∧ PlaysFor(ailtonsilva, nautico)",
+        "FootballClub(nautico) ∧ FootballClub(braga)",
+        "FootballClub(fluminense)"
+      ],
+      "conclusion_fol_gold": "PlaysFor(ailtonsilva, fluminense)",
+      "constructs": [
+        "binary_relation",
+        "conjunction",
+        "multi_step"
+      ]
+    },
+    {
+      "idx": 203,
+      "label": "Uncertain",
+      "premises": [
+        "Ailton Silva, born in 1995, is commonly known as Ailton.",
+        "Ailton is a football player who was loaned out to Braga.",
+        "Ailton Silva is a Brazillian footballer who plays for Nautico.",
+        "Nautico is a football club along with Braga.",
+        "Fluminense is a football club."
+      ],
+      "conclusion": "Ailton Silva was loaned out to a football club.",
+      "premises_fol_gold": [
+        "BornIn(ailtonsilva, y1995) ∧ CommonlyKnownAs(ailtonsilva, ailton)",
+        "FootballPlayer(ailton) ∧ LoanedTo(ailton, braga)",
+        "Brazilian(ailtonsilva) ∧ Footballplayer(ailtonsilva) ∧ PlaysFor(ailtonsilva, nautico)",
+        "FootballClub(nautico) ∧ FootballClub(braga)",
+        "FootballClub(fluminense)"
+      ],
+      "conclusion_fol_gold": "∃x (FootballClub(x) ∧ LoanedTo(ailtonsilva, x))",
+      "constructs": [
+        "binary_relation",
+        "conjunction",
+        "existential",
+        "multi_step"
+      ]
+    }
+  ]
+}

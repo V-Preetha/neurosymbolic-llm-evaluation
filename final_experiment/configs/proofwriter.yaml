@@ -1,0 +1,17 @@
+dataset:
+  id: tasksource/proofwriter
+  revision: null
+  train_split: train
+  validation_split: validation
+  test_split: test
+  id_field: id
+  world_field: id
+  label_field: answer
+  stratify_fields: [answer, QDep]
+sampling:
+  training: {smoke: 200, pilot: 2000, main: 2000, full: null}
+  training_validation: {main: 2000}
+  training_pool: {main: controlled_language}
+  evaluation: {smoke: 30, pilot: 200, main: 2000, full: null}
+training:
+  epochs: 3
