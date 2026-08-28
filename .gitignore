@@ -21,18 +21,17 @@ nsce-evaluation/data/processed/
 *.faiss
 *.bz2
 
-# --- Archives (extracted contents are tracked instead) ---
+# --- Archives ---
 *.zip
 
-# --- LaTeX build artifacts ---
-*.aux
-*.log
-*.blg
-*.out
-*.synctex.gz
-*.fls
-*.fdb_latexmk
-*.toc
+# --- Papers, templates, planning docs (implementation + results only) ---
+*.pdf
+*.docx
+conference-latex-template/
+Evaluating_Logical_Reasoning_in_Large_Language_Models_Through_Fine_Tuning_and_Neuro_Symbolic_Bridging__1_/
+docs/
+final_experiment/docs/
+final_experiment/paper/
 
 # --- Separately versioned sibling repo ---
 nsce-llm-reliability-benchmark/

@@ -1,0 +1,711 @@
+{
+  "dataset": "proofwriter",
+  "mode": "main",
+  "evaluation_size": 20,
+  "frozen_ids": [
+    "AttNonegNatLang-OWA-205::q28348",
+    "AttNoneg-OWA-D0-1600::q18855",
+    "AttNoneg-OWA-D0-5942::q10124",
+    "RelNeg-OWA-D1-622::q172964",
+    "RelNeg-OWA-D3-851::q42464",
+    "RelNeg-OWA-D0-4134::q6502",
+    "AttNonegNatLang-OWA-133::q53250",
+    "AttNeg-OWA-D1-2498::q169660",
+    "RelNoneg-OWA-D2-1649::q75422",
+    "AttNeg-OWA-D1-518::q157393",
+    "AttNeg-OWA-D0-4416::q16881",
+    "AttNeg-OWA-D1-2824::q169230",
+    "AttNoneg-OWA-D3-1332::q114981",
+    "RelNoneg-OWA-D5-556::q145032",
+    "AttNeg-OWA-D5-439::q141564",
+    "AttNoneg-OWA-D0-1648::q1527",
+    "RelNoneg-OWA-D1-1889::q158168",
+    "AttNonegNatLang-OWA-109::q33235",
+    "AttNoneg-OWA-D3-728::q115123",
+    "AttNeg-OWA-D2-1118::q69001"
+  ],
+  "gold_distribution": {
+    "Unknown": 11,
+    "True": 6,
+    "False": 3
+  },
+  "schema_variant_for_bridge_paths": "descriptive",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "base_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+  "checkpoint_for_c3_c4": "E:\\SRM\\Projects and Internships\\Univeristy of Hull\\final_experiment\\checkpoints\\proofwriter_direct_qwen3_1_7b_lora\\main\\latest\\checkpoint-250",
+  "conditions": {
+    "1": {
+      "name": "base_direct",
+      "run_dir": "E:\\SRM\\Projects and Internships\\Univeristy of Hull\\final_experiment\\results\\20260826T191629Z_proofwriter_frozen20_c1_base_direct_18564",
+      "accuracy": 0.0,
+      "macro_f1": 0.0,
+      "classwise_f1": {
+        "True": 0.0,
+        "False": 0.0,
+        "Unknown": 0.0
+      },
+      "classwise_precision_recall_f1": {
+        "True": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        },
+        "False": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        },
+        "Unknown": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        }
+      },
+      "confusion_matrix_label_order": [
+        "True",
+        "False",
+        "Unknown"
+      ],
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "valid_output_rate": 0.0,
+      "system_failures": 20,
+      "latency": {
+        "total_runtime_s": 7.289693799888482,
+        "mean_latency_ms": 364.4846899944241,
+        "median_latency_ms": 336.1340499832295,
+        "p95_latency_ms": 795.3517000132706,
+        "generated_token_count": 3065
+      }
+    },
+    "2": {
+      "name": "base_bridge",
+      "run_dir": "E:\\SRM\\Projects and Internships\\Univeristy of Hull\\final_experiment\\results\\20260826T191637Z_proofwriter_frozen20_c2_base_bridge_descriptive_18564",
+      "accuracy": 0.0,
+      "macro_f1": 0.0,
+      "classwise_f1": {
+        "True": 0.0,
+        "False": 0.0,
+        "Unknown": 0.0
+      },
+      "classwise_precision_recall_f1": {
+        "True": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        },
+        "False": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        },
+        "Unknown": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1
+        }
+      },
+      "confusion_matrix_label_order": [
+        "True",
+        "False",
+        "Unknown"
+      ],
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "valid_output_rate": 0.05,
+      "system_failures": 19,
+      "latency": {
+        "total_runtime_s": 95.86781869994593,
+        "mean_latency_ms": 4793.390934997296,
+        "median_latency_ms": 2699.3187999760266,
+        "p95_latency_ms": 17310.342899989337,
+        "generated_token_count": 12364
+      },
+      "bridge_diagnostics": {
+        "trace_rows": 128,
+        "schema_valid": 1,
+        "parser_valid": 1,
+        "ast_valid": 1,
+        "z3_compile_success": 1,
+        "successful_solver_executions": 1,
+        "system_failures": 19,
+        "inconsistent_premises": 0,
+        "binary_selector_decisions": 55,
+        "accepted_binary_decompositions": 5,
+        "binary_fallbacks": 50,
+        "opaque_atom_fallbacks": 50,
+        "dropped_consequent_or_content_guards": 3,
+        "empty_right_operand_guards": 43,
+        "negation_lifts": 0,
+        "fallback_reason_counts": {
+          "binary parser dropped clause content: alan, describe, qualities": 1,
+          "binary parser dropped clause content: charlie, describe, qualities": 1,
+          "binary parser returned an empty right operand": 43,
+          "binary parser returned no valid operator": 4,
+          "binary parser dropped clause content: young": 1
+        },
+        "error_category_counts": {
+          "malformed_output": 19,
+          "incorrect_final_symbolic_answer": 1
+        },
+        "mean_total_pipeline_latency_ms": 13447.86696000374,
+        "median_total_pipeline_latency_ms": 11812.4147500057
+      }
+    },
+    "3": {
+      "name": "finetuned_direct",
+      "run_dir": "E:\\SRM\\Projects and Internships\\Univeristy of Hull\\final_experiment\\results\\20260826T192114Z_proofwriter_frozen20_c3_checkpoint250_direct_18564",
+      "accuracy": 0.85,
+      "macro_f1": 0.8492063492063492,
+      "classwise_f1": {
+        "True": 0.8333333333333334,
+        "False": 0.8571428571428571,
+        "Unknown": 0.8571428571428572
+      },
+      "classwise_precision_recall_f1": {
+        "True": {
+          "precision": 0.8333333333333334,
+          "recall": 0.8333333333333334,
+          "f1": 0.8333333333333334,
+          "support": 6
+        },
+        "False": {
+          "precision": 0.75,
+          "recall": 1.0,
+          "f1": 0.8571428571428571,
+          "support": 3
+        },
+        "Unknown": {
+          "precision": 0.9,
+          "recall": 0.8181818181818182,
+          "f1": 0.8571428571428572,
+          "support": 11
+        }
+      },
+      "confusion_matrix_label_order": [
+        "True",
+        "False",
+        "Unknown"
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          1
+        ],
+        [
+          0,
+          3,
+          0
+        ],
+        [
+          1,
+          1,
+          9
+        ]
+      ],
+      "valid_output_rate": 1.0,
+      "system_failures": 0,
+      "latency": {
+        "total_runtime_s": 6.761502100009238,
+        "mean_latency_ms": 338.0751050004619,
+        "median_latency_ms": 337.42090000305325,
+        "p95_latency_ms": 439.37239999650046,
+        "generated_token_count": 2945
+      }
+    },
+    "4": {
+      "name": "finetuned_bridge",
+      "run_dir": "E:\\SRM\\Projects and Internships\\Univeristy of Hull\\final_experiment\\results\\20260826T192121Z_proofwriter_frozen20_c4_checkpoint250_bridge_descriptive_18564",
+      "accuracy": 0.7,
+      "macro_f1": 0.5952380952380952,
+      "classwise_f1": {
+        "True": 0.5,
+        "False": 0.5,
+        "Unknown": 0.7857142857142858
+      },
+      "classwise_precision_recall_f1": {
+        "True": {
+          "precision": 1.0,
+          "recall": 0.3333333333333333,
+          "f1": 0.5,
+          "support": 6
+        },
+        "False": {
+          "precision": 1.0,
+          "recall": 0.3333333333333333,
+          "f1": 0.5,
+          "support": 3
+        },
+        "Unknown": {
+          "precision": 0.6470588235294118,
+          "recall": 1.0,
+          "f1": 0.7857142857142858,
+          "support": 11
+        }
+      },
+      "confusion_matrix_label_order": [
+        "True",
+        "False",
+        "Unknown"
+      ],
+      "confusion_matrix": [
+        [
+          2,
+          0,
+          4
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          0,
+          11
+        ]
+      ],
+      "valid_output_rate": 1.0,
+      "system_failures": 0,
+      "latency": {
+        "total_runtime_s": 854.7564908998902,
+        "mean_latency_ms": 42737.82454499451,
+        "median_latency_ms": 43110.12620001566,
+        "p95_latency_ms": 84784.44260003744,
+        "generated_token_count": 104592
+      },
+      "bridge_diagnostics": {
+        "trace_rows": 389,
+        "schema_valid": 20,
+        "parser_valid": 20,
+        "ast_valid": 20,
+        "z3_compile_success": 20,
+        "successful_solver_executions": 20,
+        "system_failures": 0,
+        "inconsistent_premises": 0,
+        "binary_selector_decisions": 77,
+        "accepted_binary_decompositions": 48,
+        "binary_fallbacks": 29,
+        "opaque_atom_fallbacks": 26,
+        "dropped_consequent_or_content_guards": 14,
+        "empty_right_operand_guards": 15,
+        "negation_lifts": 17,
+        "fallback_reason_counts": {
+          "binary parser returned an empty right operand": 15,
+          "binary parser dropped clause content: see, tiger": 1,
+          "binary parser dropped clause content: young": 2,
+          "binary parser dropped clause content: lion, sees": 1,
+          "binary parser dropped clause content: likes, lion": 1,
+          "binary parser dropped clause content: bald, eagle, needs": 1,
+          "binary parser dropped clause content: eat, squirrel": 2,
+          "binary parser dropped clause content: furry": 1,
+          "binary parser dropped clause content: quiet": 1,
+          "binary parser dropped clause content: chases": 1,
+          "unary parser returned a self-referential operand": 1,
+          "binary parser dropped clause content: eats, mouse": 1,
+          "binary parser dropped clause content: visits": 1,
+          "binary parser dropped clause content: bear, visit": 1
+        },
+        "error_category_counts": {
+          "incorrect_final_symbolic_answer": 6
+        },
+        "mean_total_pipeline_latency_ms": 42800.09958999872,
+        "median_total_pipeline_latency_ms": 43185.14089999371
+      }
+    }
+  },
+  "transition_counts": {
+    "c2_vs_c1_bridge_effect": {
+      "both_wrong": 20
+    },
+    "c3_vs_c1_finetuning_effect": {
+      "fixes": 17,
+      "both_wrong": 3
+    },
+    "c4_vs_c3_bridge_effect": {
+      "both_correct": 12,
+      "both_wrong": 1,
+      "breaks": 5,
+      "fixes": 2
+    }
+  },
+  "per_example": [
+    {
+      "sample_id": "AttNonegNatLang-OWA-205::q28348",
+      "gold": "Unknown",
+      "c1_base_direct": null,
+      "c1_correct": false,
+      "c2_base_bridge": null,
+      "c2_correct": false,
+      "c3_checkpoint250_direct": "Unknown",
+      "c3_correct": true,
+      "c4_checkpoint250_bridge": "Unknown",
+      "c4_correct": true,
+      "c2_vs_c1_bridge_effect": "both_wrong",
+      "c3_vs_c1_finetuning_effect": "fixes",
+      "c4_vs_c3_bridge_effect": "both_correct",
+      "c2_error": "malformed_output",
+      "c4_error": null
+    },
+    {
+      "sample_id": "AttNoneg-OWA-D0-1600::q18855",
+      "gold": "Unknown",
+      "c1_base_direct": null,
+      "c1_correct": false,
+      "c2_base_bridge": "True",
+      "c2_correct": false,
+      "c3_checkpoint250_direct": "Unknown",
+      "c3_correct": true,
+      "c4_checkpoint250_bridge": "Unknown",
+      "c4_correct": true,
+      "c2_vs_c1_bridge_effect": "both_wrong",
+      "c3_vs_c1_finetuning_effect": "fixes",
+      "c4_vs_c3_bridge_effect": "both_correct",
+      "c2_error": "incorrect_final_symbolic_answer",
+      "c4_error": null
+    },
+    {
+      "sample_id": "AttNoneg-OWA-D0-5942::q10124",
+      "gold": "True",
+      "c1_base_direct": null,
+      "c1_correct": false,
+      "c2_base_bridge": null,
+      "c2_correct": false,
+      "c3_checkpoint250_direct": "True",
+      "c3_correct": true,
+      "c4_checkpoint250_bridge": "True",
+      "c4_correct": true,
+      "c2_vs_c1_bridge_effect": "both_wrong",
+      "c3_vs_c1_finetuning_effect": "fixes",
+      "c4_vs_c3_bridge_effect": "both_correct",
+      "c2_error": "malformed_output",
+      "c4_error": null
+    },
+    {
+      "sample_id": "RelNeg-OWA-D1-622::q172964",
+      "gold": "Unknown",
+      "c1_base_direct": null,
+      "c1_correct": false,
+      "c2_base_bridge": null,
+      "c2_correct": false,
+      "c3_checkpoint250_direct": "Unknown",
+      "c3_correct": true,
+      "c4_checkpoint250_bridge": "Unknown",
+      "c4_correct": true,
+      "c2_vs_c1_bridge_effect": "both_wrong",
+      "c3_vs_c1_finetuning_effect": "fixes",
+      "c4_vs_c3_bridge_effect": "both_correct",
+      "c2_error": "malformed_output",
+      "c4_error": null
+    },
+    {
+      "sample_id": "RelNeg-OWA-D3-851::q42464",
+      "gold": "Unknown",
+      "c1_base_direct": null,
+      "c1_correct": false,
+      "c2_base_bridge": null,
+      "c2_correct": false,
+      "c3_checkpoint250_direct": "Unknown",
+      "c3_correct": true,
+      "c4_checkpoint250_bridge": "Unknown",
+      "c4_correct": true,
+      "c2_vs_c1_bridge_effect": "both_wrong",
+      "c3_vs_c1_finetuning_effect": "fixes",
+      "c4_vs_c3_bridge_effect": "both_correct",
+      "c2_error": "malformed_output",
+      "c4_error": null
+    },
+    {
+      "sample_id": "RelNeg-OWA-D0-4134::q6502",
+      "gold": "Unknown",
+      "c1_base_direct": null,
+      "c1_correct": false,
+      "c2_base_bridge": null,
+      "c2_correct": false,
+      "c3_checkpoint250_direct": "Unknown",
+      "c3_correct": true,
+      "c4_checkpoint250_bridge": "Unknown",
+      "c4_correct": true,
+      "c2_vs_c1_bridge_effect": "both_wrong",
+      "c3_vs_c1_finetuning_effect": "fixes",
+      "c4_vs_c3_bridge_effect": "both_correct",
+      "c2_error": "malformed_output",
+      "c4_error": null
+    },
+    {
+      "sample_id": "AttNonegNatLang-OWA-133::q53250",
+      "gold": "True",
+      "c1_base_direct": null,
+      "c1_correct": false,
+      "c2_base_bridge": null,
+      "c2_correct": false,
+      "c3_checkpoint250_direct": "Unknown",
+      "c3_correct": false,
+      "c4_checkpoint250_bridge": "Unknown",
+      "c4_correct": false,
+      "c2_vs_c1_bridge_effect": "both_wrong",
+      "c3_vs_c1_finetuning_effect": "both_wrong",
+      "c4_vs_c3_bridge_effect": "both_wrong",
+      "c2_error": "malformed_output",
+      "c4_error": "incorrect_final_symbolic_answer"
+    },
+    {
+      "sample_id": "AttNeg-OWA-D1-2498::q169660",
+      "gold": "Unknown",
+      "c1_base_direct": null,
+      "c1_correct": false,
+      "c2_base_bridge": null,
+      "c2_correct": false,
+      "c3_checkpoint250_direct": "Unknown",
+      "c3_correct": true,
+      "c4_checkpoint250_bridge": "Unknown",
+      "c4_correct": true,
+      "c2_vs_c1_bridge_effect": "both_wrong",
+      "c3_vs_c1_finetuning_effect": "fixes",
+      "c4_vs_c3_bridge_effect": "both_correct",
+      "c2_error": "malformed_output",
+      "c4_error": null
+    },
+    {
+      "sample_id": "RelNoneg-OWA-D2-1649::q75422",
+      "gold": "True",
+      "c1_base_direct": null,
+      "c1_correct": false,
+      "c2_base_bridge": null,
+      "c2_correct": false,
+      "c3_checkpoint250_direct": "True",
+      "c3_correct": true,
+      "c4_checkpoint250_bridge": "Unknown",
+      "c4_correct": false,
+      "c2_vs_c1_bridge_effect": "both_wrong",
+      "c3_vs_c1_finetuning_effect": "fixes",
+      "c4_vs_c3_bridge_effect": "breaks",
+      "c2_error": "malformed_output",
+      "c4_error": "incorrect_final_symbolic_answer"
+    },
+    {
+      "sample_id": "AttNeg-OWA-D1-518::q157393",
+      "gold": "False",
+      "c1_base_direct": null,
+      "c1_correct": false,
+      "c2_base_bridge": null,
+      "c2_correct": false,
+      "c3_checkpoint250_direct": "False",
+      "c3_correct": true,
+      "c4_checkpoint250_bridge": "Unknown",
+      "c4_correct": false,
+      "c2_vs_c1_bridge_effect": "both_wrong",
+      "c3_vs_c1_finetuning_effect": "fixes",
+      "c4_vs_c3_bridge_effect": "breaks",
+      "c2_error": "malformed_output",
+      "c4_error": "incorrect_final_symbolic_answer"
+    },
+    {
+      "sample_id": "AttNeg-OWA-D0-4416::q16881",
+      "gold": "False",
+      "c1_base_direct": null,
+      "c1_correct": false,
+      "c2_base_bridge": null,
+      "c2_correct": false,
+      "c3_checkpoint250_direct": "False",
+      "c3_correct": true,
+      "c4_checkpoint250_bridge": "False",
+      "c4_correct": true,
+      "c2_vs_c1_bridge_effect": "both_wrong",
+      "c3_vs_c1_finetuning_effect": "fixes",
+      "c4_vs_c3_bridge_effect": "both_correct",
+      "c2_error": "malformed_output",
+      "c4_error": null
+    },
+    {
+      "sample_id": "AttNeg-OWA-D1-2824::q169230",
+      "gold": "True",
+      "c1_base_direct": null,
+      "c1_correct": false,
+      "c2_base_bridge": null,
+      "c2_correct": false,
+      "c3_checkpoint250_direct": "True",
+      "c3_correct": true,
+      "c4_checkpoint250_bridge": "True",
+      "c4_correct": true,
+      "c2_vs_c1_bridge_effect": "both_wrong",
+      "c3_vs_c1_finetuning_effect": "fixes",
+      "c4_vs_c3_bridge_effect": "both_correct",
+      "c2_error": "malformed_output",
+      "c4_error": null
+    },
+    {
+      "sample_id": "AttNoneg-OWA-D3-1332::q114981",
+      "gold": "False",
+      "c1_base_direct": null,
+      "c1_correct": false,
+      "c2_base_bridge": null,
+      "c2_correct": false,
+      "c3_checkpoint250_direct": "False",
+      "c3_correct": true,
+      "c4_checkpoint250_bridge": "Unknown",
+      "c4_correct": false,
+      "c2_vs_c1_bridge_effect": "both_wrong",
+      "c3_vs_c1_finetuning_effect": "fixes",
+      "c4_vs_c3_bridge_effect": "breaks",
+      "c2_error": "malformed_output",
+      "c4_error": "incorrect_final_symbolic_answer"
+    },
+    {
+      "sample_id": "RelNoneg-OWA-D5-556::q145032",
+      "gold": "Unknown",
+      "c1_base_direct": null,
+      "c1_correct": false,
+      "c2_base_bridge": null,
+      "c2_correct": false,
+      "c3_checkpoint250_direct": "False",
+      "c3_correct": false,
+      "c4_checkpoint250_bridge": "Unknown",
+      "c4_correct": true,
+      "c2_vs_c1_bridge_effect": "both_wrong",
+      "c3_vs_c1_finetuning_effect": "both_wrong",
+      "c4_vs_c3_bridge_effect": "fixes",
+      "c2_error": "malformed_output",
+      "c4_error": null
+    },
+    {
+      "sample_id": "AttNeg-OWA-D5-439::q141564",
+      "gold": "True",
+      "c1_base_direct": null,
+      "c1_correct": false,
+      "c2_base_bridge": null,
+      "c2_correct": false,
+      "c3_checkpoint250_direct": "True",
+      "c3_correct": true,
+      "c4_checkpoint250_bridge": "Unknown",
+      "c4_correct": false,
+      "c2_vs_c1_bridge_effect": "both_wrong",
+      "c3_vs_c1_finetuning_effect": "fixes",
+      "c4_vs_c3_bridge_effect": "breaks",
+      "c2_error": "malformed_output",
+      "c4_error": "incorrect_final_symbolic_answer"
+    },
+    {
+      "sample_id": "AttNoneg-OWA-D0-1648::q1527",
+      "gold": "Unknown",
+      "c1_base_direct": null,
+      "c1_correct": false,
+      "c2_base_bridge": null,
+      "c2_correct": false,
+      "c3_checkpoint250_direct": "Unknown",
+      "c3_correct": true,
+      "c4_checkpoint250_bridge": "Unknown",
+      "c4_correct": true,
+      "c2_vs_c1_bridge_effect": "both_wrong",
+      "c3_vs_c1_finetuning_effect": "fixes",
+      "c4_vs_c3_bridge_effect": "both_correct",
+      "c2_error": "malformed_output",
+      "c4_error": null
+    },
+    {
+      "sample_id": "RelNoneg-OWA-D1-1889::q158168",
+      "gold": "True",
+      "c1_base_direct": null,
+      "c1_correct": false,
+      "c2_base_bridge": null,
+      "c2_correct": false,
+      "c3_checkpoint250_direct": "True",
+      "c3_correct": true,
+      "c4_checkpoint250_bridge": "Unknown",
+      "c4_correct": false,
+      "c2_vs_c1_bridge_effect": "both_wrong",
+      "c3_vs_c1_finetuning_effect": "fixes",
+      "c4_vs_c3_bridge_effect": "breaks",
+      "c2_error": "malformed_output",
+      "c4_error": "incorrect_final_symbolic_answer"
+    },
+    {
+      "sample_id": "AttNonegNatLang-OWA-109::q33235",
+      "gold": "Unknown",
+      "c1_base_direct": null,
+      "c1_correct": false,
+      "c2_base_bridge": null,
+      "c2_correct": false,
+      "c3_checkpoint250_direct": "Unknown",
+      "c3_correct": true,
+      "c4_checkpoint250_bridge": "Unknown",
+      "c4_correct": true,
+      "c2_vs_c1_bridge_effect": "both_wrong",
+      "c3_vs_c1_finetuning_effect": "fixes",
+      "c4_vs_c3_bridge_effect": "both_correct",
+      "c2_error": "malformed_output",
+      "c4_error": null
+    },
+    {
+      "sample_id": "AttNoneg-OWA-D3-728::q115123",
+      "gold": "Unknown",
+      "c1_base_direct": null,
+      "c1_correct": false,
+      "c2_base_bridge": null,
+      "c2_correct": false,
+      "c3_checkpoint250_direct": "Unknown",
+      "c3_correct": true,
+      "c4_checkpoint250_bridge": "Unknown",
+      "c4_correct": true,
+      "c2_vs_c1_bridge_effect": "both_wrong",
+      "c3_vs_c1_finetuning_effect": "fixes",
+      "c4_vs_c3_bridge_effect": "both_correct",
+      "c2_error": "malformed_output",
+      "c4_error": null
+    },
+    {
+      "sample_id": "AttNeg-OWA-D2-1118::q69001",
+      "gold": "Unknown",
+      "c1_base_direct": null,
+      "c1_correct": false,
+      "c2_base_bridge": null,
+      "c2_correct": false,
+      "c3_checkpoint250_direct": "True",
+      "c3_correct": false,
+      "c4_checkpoint250_bridge": "Unknown",
+      "c4_correct": true,
+      "c2_vs_c1_bridge_effect": "both_wrong",
+      "c3_vs_c1_finetuning_effect": "both_wrong",
+      "c4_vs_c3_bridge_effect": "fixes",
+      "c2_error": "malformed_output",
+      "c4_error": null
+    }
+  ]
+}

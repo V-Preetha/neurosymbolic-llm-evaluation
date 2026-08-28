@@ -1,0 +1,4 @@
+condition,condition_name,n,valid_output_rate,accuracy,accuracy_on_valid,macro_f1,f1_true,f1_false,f1_unknown,executable_rate,compile_success_rate,parser_valid_rate,exact_match_rate,mean_latency_ms,p95_latency_ms,mean_total_ms,mean_tokens,wall_clock_s
+1,base_direct,200,1.0,0.485,0.485,0.2511,0.1071,0.0,0.646,,,,,135,213,136,175,27.2
+3,finetuned_direct,200,1.0,0.825,0.825,0.8263,0.8544,0.8039,0.8205,,,,,227,342,228,175,45.7
+4,finetuned_bridge,200,0.895,0.495,0.5531,0.4589,0.3908,0.3692,0.6167,0.895,0.9,0.9,0.0,21557,38595,22600,4783,4520.1

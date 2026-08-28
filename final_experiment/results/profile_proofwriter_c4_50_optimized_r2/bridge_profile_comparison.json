@@ -1,0 +1,390 @@
+{
+  "ids_identical": true,
+  "baseline": {
+    "examples": 50,
+    "generated_parser_sequences": 2069,
+    "model_invocations": 2069,
+    "parser_call_requests": 2069,
+    "mean_generated_calls_per_example": 41.38,
+    "max_generated_calls_per_example": 95,
+    "mean_model_invocations_per_example": 41.38,
+    "max_model_invocations_per_example": 95,
+    "unique_normalized_clauses": 693,
+    "cache_hits": 0,
+    "cache_lookups": 0,
+    "cache_hit_rate": 0,
+    "selector_cache_hits": 0,
+    "subparser_cache_hits": 0,
+    "prefetch_cache_hits": 0,
+    "ast_cache_hits": 0,
+    "batch_invocations": 0,
+    "total_latency_minutes": 48.183963401667036,
+    "mean_latency_seconds": 57.82075608200044,
+    "max_latency_seconds": 172.2469592000125,
+    "projected_2000_hours": 32.122642267778026,
+    "system_failures": 36,
+    "error_categories": {
+      "parser_cycle": 14,
+      "incorrect_final_symbolic_answer": 10,
+      "None": 4,
+      "schema_invalid": 19,
+      "inconsistent_premises": 3
+    },
+    "failure_reasons": {
+      "cycle guard": 14,
+      "other": 20,
+      "bad selector decision": 2,
+      "depth guard": 0,
+      "invalid JSON": 0,
+      "invalid AST": 0
+    }
+  },
+  "optimized": {
+    "examples": 50,
+    "generated_parser_sequences": 2395,
+    "model_invocations": 502,
+    "parser_call_requests": 1972,
+    "mean_generated_calls_per_example": 47.9,
+    "max_generated_calls_per_example": 95,
+    "mean_model_invocations_per_example": 10.04,
+    "max_model_invocations_per_example": 32,
+    "unique_normalized_clauses": 691,
+    "cache_hits": 1851,
+    "cache_lookups": 2678,
+    "cache_hit_rate": 0.6911874533233756,
+    "selector_cache_hits": 1244,
+    "subparser_cache_hits": 592,
+    "prefetch_cache_hits": 1836,
+    "ast_cache_hits": 15,
+    "batch_invocations": 366,
+    "total_latency_minutes": 10.657459393334284,
+    "mean_latency_seconds": 12.78895127200114,
+    "max_latency_seconds": 34.823806300002616,
+    "projected_2000_hours": 7.104972928889522,
+    "system_failures": 36,
+    "error_categories": {
+      "schema_invalid": 32,
+      "incorrect_final_symbolic_answer": 10,
+      "None": 4,
+      "inconsistent_premises": 1,
+      "parser_cycle": 3
+    },
+    "failure_reasons": {
+      "other": 32,
+      "cycle guard": 3,
+      "bad selector decision": 1,
+      "depth guard": 0,
+      "invalid JSON": 0,
+      "invalid AST": 0
+    }
+  },
+  "changes": {
+    "generated_sequences": 326,
+    "model_invocations": -1567,
+    "latency_reduction_percent": 77.88172943663334,
+    "cycle_failures": -11,
+    "malformed_subparser_failures": 14
+  },
+  "optimized_failure_details": [
+    {
+      "example_id": "AttNonegNatLang-OWA-205::q28348",
+      "category": "other",
+      "status": "schema_invalid",
+      "failure_reasons": [
+        "schema_invalid: right_clause must be non-empty string"
+      ]
+    },
+    {
+      "example_id": "AttNoneg-OWA-D0-5942::q10124",
+      "category": "other",
+      "status": "schema_invalid",
+      "failure_reasons": [
+        "schema_invalid: right_clause must be non-empty string"
+      ]
+    },
+    {
+      "example_id": "RelNeg-OWA-D3-851::q42464",
+      "category": "other",
+      "status": "schema_invalid",
+      "failure_reasons": [
+        "schema_invalid: right_clause must be non-empty string"
+      ]
+    },
+    {
+      "example_id": "RelNeg-OWA-D0-4134::q6502",
+      "category": "other",
+      "status": "schema_invalid",
+      "failure_reasons": [
+        "schema_invalid: right_clause must be non-empty string"
+      ]
+    },
+    {
+      "example_id": "AttNonegNatLang-OWA-133::q53250",
+      "category": "other",
+      "status": "schema_invalid",
+      "failure_reasons": [
+        "schema_invalid: right_clause must be non-empty string"
+      ]
+    },
+    {
+      "example_id": "AttNeg-OWA-D1-2498::q169660",
+      "category": "other",
+      "status": "success",
+      "failure_reasons": []
+    },
+    {
+      "example_id": "AttNeg-OWA-D1-518::q157393",
+      "category": "cycle guard",
+      "status": "parser_cycle",
+      "failure_reasons": [
+        "parser_cycle: unchanged child clause: If someone is round then they are not smart"
+      ]
+    },
+    {
+      "example_id": "AttNeg-OWA-D0-4416::q16881",
+      "category": "other",
+      "status": "schema_invalid",
+      "failure_reasons": [
+        "schema_invalid: right must be non-empty string",
+        "schema_invalid: right must be non-empty string"
+      ]
+    },
+    {
+      "example_id": "AttNeg-OWA-D1-2824::q169230",
+      "category": "other",
+      "status": "schema_invalid",
+      "failure_reasons": [
+        "schema_invalid: right must be non-empty string",
+        "schema_invalid: right must be non-empty string"
+      ]
+    },
+    {
+      "example_id": "AttNoneg-OWA-D3-1332::q114981",
+      "category": "other",
+      "status": "schema_invalid",
+      "failure_reasons": [
+        "schema_invalid: right_clause must be non-empty string"
+      ]
+    },
+    {
+      "example_id": "RelNoneg-OWA-D5-556::q145032",
+      "category": "other",
+      "status": "schema_invalid",
+      "failure_reasons": [
+        "schema_invalid: right_clause must be non-empty string",
+        "schema_invalid: right_clause must be non-empty string"
+      ]
+    },
+    {
+      "example_id": "AttNeg-OWA-D5-439::q141564",
+      "category": "other",
+      "status": "schema_invalid",
+      "failure_reasons": [
+        "schema_invalid: right_clause must be non-empty string"
+      ]
+    },
+    {
+      "example_id": "RelNoneg-OWA-D1-1889::q158168",
+      "category": "other",
+      "status": "schema_invalid",
+      "failure_reasons": [
+        "schema_invalid: right must be non-empty string",
+        "schema_invalid: right must be non-empty string"
+      ]
+    },
+    {
+      "example_id": "AttNonegNatLang-OWA-109::q33235",
+      "category": "other",
+      "status": "schema_invalid",
+      "failure_reasons": [
+        "schema_invalid: right must be non-empty string",
+        "schema_invalid: right must be non-empty string"
+      ]
+    },
+    {
+      "example_id": "AttNoneg-OWA-D3-728::q115123",
+      "category": "other",
+      "status": "schema_invalid",
+      "failure_reasons": [
+        "schema_invalid: right_clause must be non-empty string"
+      ]
+    },
+    {
+      "example_id": "AttNeg-OWA-D2-1118::q69001",
+      "category": "other",
+      "status": "schema_invalid",
+      "failure_reasons": [
+        "schema_invalid: right_clause must be non-empty string"
+      ]
+    },
+    {
+      "example_id": "AttNoneg-OWA-D0-5183::q10368",
+      "category": "other",
+      "status": "schema_invalid",
+      "failure_reasons": [
+        "schema_invalid: right must be non-empty string"
+      ]
+    },
+    {
+      "example_id": "RelNeg-OWA-D2-991::q86390",
+      "category": "bad selector decision",
+      "status": "schema_invalid",
+      "failure_reasons": [
+        "schema_invalid: parser must be one of ['atomic', 'binary', 'quantified', 'unary']",
+        "schema_invalid: parser must be one of ['atomic', 'binary', 'quantified', 'unary']",
+        "schema_invalid: parser must be one of ['atomic', 'binary', 'quantified', 'unary']"
+      ]
+    },
+    {
+      "example_id": "AttNeg-OWA-D3-1542::q88370",
+      "category": "other",
+      "status": "schema_invalid",
+      "failure_reasons": [
+        "schema_invalid: right must be non-empty string"
+      ]
+    },
+    {
+      "example_id": "RelNeg-OWA-D3-879::q91144",
+      "category": "cycle guard",
+      "status": "parser_cycle",
+      "failure_reasons": [
+        "parser_cycle: unchanged child clause: If something is rough and not kind then it is not red"
+      ]
+    },
+    {
+      "example_id": "RelNoneg-OWA-D0-492::q107299",
+      "category": "other",
+      "status": "schema_invalid",
+      "failure_reasons": [
+        "schema_invalid: right must be non-empty string",
+        "schema_invalid: right must be non-empty string"
+      ]
+    },
+    {
+      "example_id": "RelNoneg-OWA-D1-705::q174359",
+      "category": "other",
+      "status": "schema_invalid",
+      "failure_reasons": [
+        "schema_invalid: right must be non-empty string",
+        "schema_invalid: right must be non-empty string"
+      ]
+    },
+    {
+      "example_id": "RelNeg-OWA-D5-57::q141758",
+      "category": "other",
+      "status": "schema_invalid",
+      "failure_reasons": [
+        "schema_invalid: right_clause must be non-empty string"
+      ]
+    },
+    {
+      "example_id": "AttNoneg-OWA-D3-1081::q61850",
+      "category": "other",
+      "status": "schema_invalid",
+      "failure_reasons": [
+        "schema_invalid: right must be non-empty string"
+      ]
+    },
+    {
+      "example_id": "RelNoneg-OWA-D3-1472::q37576",
+      "category": "other",
+      "status": "schema_invalid",
+      "failure_reasons": [
+        "schema_invalid: right_clause must be non-empty string"
+      ]
+    },
+    {
+      "example_id": "AttNoneg-OWA-D5-199::q148459",
+      "category": "other",
+      "status": "schema_invalid",
+      "failure_reasons": [
+        "schema_invalid: right must be non-empty string",
+        "schema_invalid: right must be non-empty string",
+        "schema_invalid: right must be non-empty string"
+      ]
+    },
+    {
+      "example_id": "RelNoneg-OWA-D3-641::q123724",
+      "category": "other",
+      "status": "schema_invalid",
+      "failure_reasons": [
+        "schema_invalid: right_clause must be non-empty string"
+      ]
+    },
+    {
+      "example_id": "RelNeg-OWA-D3-1308::q108774",
+      "category": "other",
+      "status": "schema_invalid",
+      "failure_reasons": [
+        "schema_invalid: right must be non-empty string",
+        "schema_invalid: right must be non-empty string"
+      ]
+    },
+    {
+      "example_id": "AttNoneg-OWA-D3-1107::q50295",
+      "category": "other",
+      "status": "schema_invalid",
+      "failure_reasons": [
+        "schema_invalid: right_clause must be non-empty string"
+      ]
+    },
+    {
+      "example_id": "AttNoneg-OWA-D3-1768::q128535",
+      "category": "other",
+      "status": "schema_invalid",
+      "failure_reasons": [
+        "schema_invalid: right_clause must be non-empty string"
+      ]
+    },
+    {
+      "example_id": "AttNoneg-OWA-D3-1554::q56131",
+      "category": "other",
+      "status": "schema_invalid",
+      "failure_reasons": [
+        "schema_invalid: right_clause must be non-empty string"
+      ]
+    },
+    {
+      "example_id": "AttNeg-OWA-D3-712::q33588",
+      "category": "other",
+      "status": "schema_invalid",
+      "failure_reasons": [
+        "schema_invalid: right_clause must be non-empty string"
+      ]
+    },
+    {
+      "example_id": "RelNoneg-OWA-D1-2459::q167332",
+      "category": "cycle guard",
+      "status": "parser_cycle",
+      "failure_reasons": [
+        "parser_cycle: unchanged child clause: If something needs the lion then the lion chases the bald eagle"
+      ]
+    },
+    {
+      "example_id": "RelNoneg-OWA-D1-275::q155135",
+      "category": "other",
+      "status": "schema_invalid",
+      "failure_reasons": [
+        "schema_invalid: right_clause must be non-empty string"
+      ]
+    },
+    {
+      "example_id": "RelNeg-OWA-D3-239::q112333",
+      "category": "other",
+      "status": "schema_invalid",
+      "failure_reasons": [
+        "schema_invalid: right must be non-empty string",
+        "schema_invalid: right must be non-empty string"
+      ]
+    },
+    {
+      "example_id": "AttNeg-OWA-D3-1652::q55816",
+      "category": "other",
+      "status": "schema_invalid",
+      "failure_reasons": [
+        "schema_invalid: right_clause must be non-empty string",
+        "schema_invalid: right_clause must be non-empty string"
+      ]
+    }
+  ]
+}

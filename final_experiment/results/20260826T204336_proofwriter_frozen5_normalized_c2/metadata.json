@@ -1,0 +1,130 @@
+{
+  "created_utc": "2026-08-26T20:43:40.763877+00:00",
+  "config": {
+    "model": {
+      "id": "Qwen/Qwen3-1.7B",
+      "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+      "trust_remote_code": false,
+      "quantization": "nf4",
+      "max_sequence_length": 292,
+      "max_new_tokens_direct": 256,
+      "max_new_tokens_bridge": 1024
+    },
+    "bridge": {
+      "id": "nl2logic_ast_two_pass_z3_v1",
+      "frozen": true,
+      "adapter_training": false,
+      "pipeline": [
+        "nl2logic_parser",
+        "fol_ast",
+        "two_pass_compiler",
+        "z3"
+      ],
+      "generation_caps": {
+        "selector": 256,
+        "atomic": 64,
+        "quantified": 1024,
+        "logical": 64
+      },
+      "decoding": {
+        "temperature": 0.0,
+        "do_sample": false,
+        "use_cache": true
+      }
+    },
+    "training": {
+      "dynamic_padding": true,
+      "answer_only_loss": true,
+      "learning_rate": 0.0002,
+      "epochs": 3,
+      "early_stopping_patience": 2,
+      "load_best_model_at_end": true,
+      "metric_for_best_model": "macro_f1",
+      "batch_size": 1,
+      "gradient_accumulation": 16,
+      "lora_rank": 16,
+      "lora_alpha": 32,
+      "lora_dropout": 0.05,
+      "warmup_ratio": 0.03,
+      "eval_steps": 100,
+      "save_steps": 100,
+      "logging_steps": 10,
+      "gradient_checkpointing": true,
+      "optimizer": "paged_adamw_8bit",
+      "scheduler": "cosine",
+      "fp16": true,
+      "bf16": false
+    },
+    "experiment": {
+      "seed": 42,
+      "solver_timeout_ms": 10000,
+      "bootstrap_samples": 2000
+    },
+    "dataset": {
+      "id": "tasksource/proofwriter",
+      "revision": null,
+      "train_split": "train",
+      "validation_split": "validation",
+      "test_split": "test",
+      "id_field": "id",
+      "world_field": "id",
+      "label_field": "answer",
+      "stratify_fields": [
+        "answer",
+        "QDep"
+      ]
+    },
+    "sampling": {
+      "training": {
+        "smoke": 200,
+        "pilot": 2000,
+        "main": 2000,
+        "full": null
+      },
+      "training_validation": {
+        "main": 2000
+      },
+      "training_pool": {
+        "main": "controlled_language"
+      },
+      "evaluation": {
+        "smoke": 30,
+        "pilot": 200,
+        "main": 2000,
+        "full": null
+      }
+    }
+  },
+  "python": "3.12.13 (main, Aug  7 2026, 02:26:41) [MSC v.1944 64 bit (AMD64)]",
+  "os": "Windows-11-10.0.26200-SP0",
+  "git_commit": null,
+  "versions": {
+    "torch": "2.11.0+cu128",
+    "transformers": "4.57.6",
+    "peft": "0.20.0",
+    "datasets": "4.8.5",
+    "z3-solver": "4.16.0.0",
+    "scikit-learn": "1.9.0"
+  },
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5050 Laptop GPU",
+  "dataset": "proofwriter",
+  "mode": "frozen5",
+  "condition": 2,
+  "condition_name": "base_bridge",
+  "evaluation_size": 5,
+  "selection_rule": "first five IDs in existing frozen-20 order",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "base_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+  "adapter_checkpoint": null,
+  "schema_variant": "normalized",
+  "frozen_bridge_id": "nl2logic_ast_two_pass_z3_v1",
+  "post_boundary_fix": true,
+  "test_ids": [
+    "AttNonegNatLang-OWA-205::q28348",
+    "AttNoneg-OWA-D0-1600::q18855",
+    "AttNoneg-OWA-D0-5942::q10124",
+    "RelNeg-OWA-D1-622::q172964",
+    "RelNeg-OWA-D3-851::q42464"
+  ]
+}

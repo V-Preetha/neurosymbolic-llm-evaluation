@@ -1,0 +1,5820 @@
+{
+  "v1": {
+    "run_id": "prototype2_pw_c4_20_v1",
+    "variant": "v1",
+    "examples": 20,
+    "atomic_nodes": 333,
+    "predicate_nodes": 207,
+    "echo_nodes": 207,
+    "echo_rate": 0.6216216216216216,
+    "long_name_nodes": 0,
+    "long_name_rate": 0.0,
+    "copula_prefixed_nodes": 0,
+    "copula_prefixed_rate": 0.0,
+    "is_prefix_collisions": 0,
+    "relation_mix": {
+      "atomic.proposition": 180,
+      "atomic.equality": 126,
+      "atomic.transitive": 22,
+      "atomic.adjective": 5
+    },
+    "parser_failures": 0,
+    "system_failures": 2,
+    "correct": 10,
+    "incorrect": 8,
+    "correct_with_degenerate_predicate": 0,
+    "total_runtime_minutes": 12.855691263332847,
+    "mean_runtime_seconds": 38.56707378999854,
+    "model_invocations": 356,
+    "error_categories": {
+      "AttNonegNatLang-OWA-205::q28348": null,
+      "AttNoneg-OWA-D0-1600::q18855": "incorrect_final_symbolic_answer",
+      "AttNoneg-OWA-D0-5942::q10124": null,
+      "RelNeg-OWA-D1-622::q172964": null,
+      "RelNeg-OWA-D3-851::q42464": "incorrect_final_symbolic_answer",
+      "RelNeg-OWA-D0-4134::q6502": null,
+      "AttNonegNatLang-OWA-133::q53250": null,
+      "AttNeg-OWA-D1-2498::q169660": "inconsistent_premises",
+      "RelNoneg-OWA-D2-1649::q75422": "incorrect_final_symbolic_answer",
+      "AttNeg-OWA-D1-518::q157393": "incorrect_final_symbolic_answer",
+      "AttNeg-OWA-D0-4416::q16881": "incorrect_final_symbolic_answer",
+      "AttNeg-OWA-D1-2824::q169230": "inconsistent_premises",
+      "AttNoneg-OWA-D3-1332::q114981": "incorrect_final_symbolic_answer",
+      "RelNoneg-OWA-D5-556::q145032": null,
+      "AttNeg-OWA-D5-439::q141564": "incorrect_final_symbolic_answer",
+      "AttNoneg-OWA-D0-1648::q1527": null,
+      "RelNoneg-OWA-D1-1889::q158168": null,
+      "AttNonegNatLang-OWA-109::q33235": null,
+      "AttNoneg-OWA-D3-728::q115123": "incorrect_final_symbolic_answer",
+      "AttNeg-OWA-D2-1118::q69001": null
+    },
+    "predicted_labels": {
+      "AttNonegNatLang-OWA-205::q28348": "Unknown",
+      "AttNoneg-OWA-D0-1600::q18855": "True",
+      "AttNoneg-OWA-D0-5942::q10124": "True",
+      "RelNeg-OWA-D1-622::q172964": "Unknown",
+      "RelNeg-OWA-D3-851::q42464": "True",
+      "RelNeg-OWA-D0-4134::q6502": "Unknown",
+      "AttNonegNatLang-OWA-133::q53250": "True",
+      "AttNeg-OWA-D1-2498::q169660": null,
+      "RelNoneg-OWA-D2-1649::q75422": "Unknown",
+      "AttNeg-OWA-D1-518::q157393": "True",
+      "AttNeg-OWA-D0-4416::q16881": "True",
+      "AttNeg-OWA-D1-2824::q169230": null,
+      "AttNoneg-OWA-D3-1332::q114981": "Unknown",
+      "RelNoneg-OWA-D5-556::q145032": "Unknown",
+      "AttNeg-OWA-D5-439::q141564": "Unknown",
+      "AttNoneg-OWA-D0-1648::q1527": "Unknown",
+      "RelNoneg-OWA-D1-1889::q158168": "True",
+      "AttNonegNatLang-OWA-109::q33235": "Unknown",
+      "AttNoneg-OWA-D3-728::q115123": "True",
+      "AttNeg-OWA-D2-1118::q69001": "Unknown"
+    },
+    "atomic_parses": {
+      "AttNonegNatLang-OWA-205::q28348|Green, big and red are qualities which all describe Alan.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-205::q28348|Green, big and red are qualities which all describe Charlie.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-205::q28348|That guy Fred sure is nice.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-205::q28348|Harry is a round and rough around the edges, and he is also big.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-205::q28348|Red people are almost always rough.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-205::q28348|If a person is described as being nice, cold and young it usually follow that they are red.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-205::q28348|Cold people that are big and red": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-205::q28348|are usually nice": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-205::q28348|People who are feeling blue and green are said to be red.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-205::q28348|Rough people who look red are cold.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-205::q28348|Alan is not round.": {
+        "type": "equals",
+        "left": "alan",
+        "right": "round"
+      },
+      "AttNoneg-OWA-D0-1600::q18855|Anne is green.": {
+        "type": "equals",
+        "left": "anne",
+        "right": "green"
+      },
+      "AttNoneg-OWA-D0-1600::q18855|Anne is kind.": {
+        "type": "equals",
+        "left": "anne",
+        "right": "kind"
+      },
+      "AttNoneg-OWA-D0-1600::q18855|Anne is round.": {
+        "type": "equals",
+        "left": "anne",
+        "right": "round"
+      },
+      "AttNoneg-OWA-D0-1600::q18855|Charlie is green.": {
+        "type": "equals",
+        "left": "charlie",
+        "right": "green"
+      },
+      "AttNoneg-OWA-D0-1600::q18855|Charlie is kind.": {
+        "type": "equals",
+        "left": "charlie",
+        "right": "kind"
+      },
+      "AttNoneg-OWA-D0-1600::q18855|Gary is furry.": {
+        "type": "equals",
+        "left": "gary",
+        "right": "furry"
+      },
+      "AttNoneg-OWA-D0-1600::q18855|Gary is kind.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNoneg-OWA-D0-1600::q18855|Gary is quiet.": {
+        "type": "equals",
+        "left": "gary",
+        "right": "quiet"
+      },
+      "AttNoneg-OWA-D0-1600::q18855|Gary is round.": {
+        "type": "equals",
+        "left": "gary",
+        "right": "round"
+      },
+      "AttNoneg-OWA-D0-1600::q18855|Gary is young.": {
+        "type": "equals",
+        "left": "gary",
+        "right": "young"
+      },
+      "AttNoneg-OWA-D0-1600::q18855|Furry things are kind.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNoneg-OWA-D0-1600::q18855|Gary is green.": {
+        "type": "equals",
+        "left": "gary",
+        "right": "green"
+      },
+      "AttNoneg-OWA-D0-5942::q10124|Harry is smart.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNoneg-OWA-D0-5942::q10124|If someone is nice then they are red.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNoneg-OWA-D0-5942::q10124|If someone is quiet then they are big.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNoneg-OWA-D0-5942::q10124|Quiet people are red.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNeg-OWA-D1-622::q172964|The cat eats the lion.": {
+        "type": "predicate",
+        "name": "base_verb",
+        "args": [
+          "cat",
+          "lion"
+        ]
+      },
+      "RelNeg-OWA-D1-622::q172964|The cat does not eat the tiger.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNeg-OWA-D1-622::q172964|The cat is blue.": {
+        "type": "equals",
+        "left": "cat",
+        "right": "blue"
+      },
+      "RelNeg-OWA-D1-622::q172964|The cat is kind.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNeg-OWA-D1-622::q172964|The cat sees the tiger.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNeg-OWA-D1-622::q172964|The cat does not visit the lion.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNeg-OWA-D1-622::q172964|The lion eats the cat.": {
+        "type": "predicate",
+        "name": "base_verb",
+        "args": [
+          "lion",
+          "cat"
+        ]
+      },
+      "RelNeg-OWA-D1-622::q172964|The lion eats the tiger.": {
+        "type": "predicate",
+        "name": "base_verb",
+        "args": [
+          "lion",
+          "tiger"
+        ]
+      },
+      "RelNeg-OWA-D1-622::q172964|The lion is kind.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNeg-OWA-D1-622::q172964|The lion is nice.": {
+        "type": "equals",
+        "left": "lion",
+        "right": "nice"
+      },
+      "RelNeg-OWA-D1-622::q172964|The lion is young.": {
+        "type": "equals",
+        "left": "lion",
+        "right": "young"
+      },
+      "RelNeg-OWA-D1-622::q172964|The lion does not see the tiger.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNeg-OWA-D1-622::q172964|The lion visits the tiger.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNeg-OWA-D1-622::q172964|The tiger is nice.": {
+        "type": "equals",
+        "left": "tiger",
+        "right": "nice"
+      },
+      "RelNeg-OWA-D1-622::q172964|The tiger is round.": {
+        "type": "equals",
+        "left": "tiger",
+        "right": "round"
+      },
+      "RelNeg-OWA-D1-622::q172964|something visits the lion": {
+        "type": "predicate",
+        "name": "base_verb",
+        "args": [
+          "something",
+          "lion"
+        ]
+      },
+      "RelNeg-OWA-D1-622::q172964|If something visits the lion": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNeg-OWA-D1-622::q172964|the lion does not visit the tiger": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNeg-OWA-D1-622::q172964|the lion is round": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNeg-OWA-D1-622::q172964|the lion is blue": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNeg-OWA-D1-622::q172964|something visits the tiger": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNeg-OWA-D1-622::q172964|the tiger eats the cat": {
+        "type": "predicate",
+        "name": "base_verb",
+        "args": [
+          "tiger",
+          "cat"
+        ]
+      },
+      "RelNeg-OWA-D1-622::q172964|something is nice": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNeg-OWA-D1-622::q172964|it does not eat the cat": {
+        "type": "equals",
+        "left": "cat",
+        "right": "cat"
+      },
+      "RelNeg-OWA-D1-622::q172964|something sees the lion": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNeg-OWA-D1-622::q172964|the lion sees the cat": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNeg-OWA-D1-622::q172964|The lion is not blue.": {
+        "type": "equals",
+        "left": "lion",
+        "right": "blue"
+      },
+      "RelNeg-OWA-D3-851::q42464|The bald eagle does not chase the squirrel.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNeg-OWA-D3-851::q42464|The bald eagle is blue.": {
+        "type": "equals",
+        "left": "bald_eagle",
+        "right": "blue"
+      },
+      "RelNeg-OWA-D3-851::q42464|The bald eagle likes the lion.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNeg-OWA-D3-851::q42464|The bald eagle likes the squirrel.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNeg-OWA-D3-851::q42464|The lion does not chase the bald eagle.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNeg-OWA-D3-851::q42464|The lion chases the squirrel.": {
+        "type": "predicate",
+        "name": "base_verb",
+        "args": [
+          "lion",
+          "squirrel"
+        ]
+      },
+      "RelNeg-OWA-D3-851::q42464|The lion is not blue.": {
+        "type": "equals",
+        "left": "lion",
+        "right": "blue"
+      },
+      "RelNeg-OWA-D3-851::q42464|The squirrel is big.": {
+        "type": "equals",
+        "left": "squirrel",
+        "right": "big"
+      },
+      "RelNeg-OWA-D3-851::q42464|The squirrel is young.": {
+        "type": "equals",
+        "left": "squirrel",
+        "right": "young"
+      },
+      "RelNeg-OWA-D3-851::q42464|The squirrel needs the lion.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNeg-OWA-D3-851::q42464|If someone needs the bald eagle then they like the squirrel.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNeg-OWA-D3-851::q42464|If someone chases the lion": {
+        "type": "predicate",
+        "name": "base_verb",
+        "args": [
+          "lion",
+          "chaser"
+        ]
+      },
+      "RelNeg-OWA-D3-851::q42464|the lion is red": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNeg-OWA-D3-851::q42464|someone is young": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNeg-OWA-D3-851::q42464|they need the squirrel": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNeg-OWA-D3-851::q42464|someone needs the bald eagle": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNeg-OWA-D3-851::q42464|the bald eagle needs the squirrel": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNeg-OWA-D3-851::q42464|If someone chases the squirrel": {
+        "type": "predicate",
+        "name": "base_verb",
+        "args": [
+          "squirrel",
+          "entity"
+        ]
+      },
+      "RelNeg-OWA-D3-851::q42464|they like the bald eagle": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNeg-OWA-D3-851::q42464|the squirrel is nice": {
+        "type": "equals",
+        "left": "squirrel",
+        "right": "nice"
+      },
+      "RelNeg-OWA-D3-851::q42464|If someone needs the lion then they are nice.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNeg-OWA-D3-851::q42464|the bald eagle does not chase the lion": {
+        "type": "equals",
+        "left": "bald_eagle",
+        "right": "lion"
+      },
+      "RelNeg-OWA-D3-851::q42464|the bald eagle chases the squirrel": {
+        "type": "predicate",
+        "name": "base_verb",
+        "args": [
+          "bald_eagle",
+          "squirrel"
+        ]
+      },
+      "RelNeg-OWA-D3-851::q42464|The squirrel does not like the bald eagle.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNeg-OWA-D0-4134::q6502|The bald eagle sees the squirrel.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNeg-OWA-D0-4134::q6502|The mouse visits the bald eagle.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNeg-OWA-D0-4134::q6502|The squirrel eats the tiger.": {
+        "type": "predicate",
+        "name": "base_verb",
+        "args": [
+          "squirrel",
+          "tiger"
+        ]
+      },
+      "RelNeg-OWA-D0-4134::q6502|The tiger eats the bald eagle.": {
+        "type": "predicate",
+        "name": "base_verb",
+        "args": [
+          "tiger",
+          "bald_eagle"
+        ]
+      },
+      "RelNeg-OWA-D0-4134::q6502|the bald eagle does not see the mouse": {
+        "type": "equals",
+        "left": "bald_eagle",
+        "right": "mouse"
+      },
+      "RelNeg-OWA-D0-4134::q6502|the bald eagle is young": {
+        "type": "equals",
+        "left": "young",
+        "right": "bald_eagle"
+      },
+      "RelNeg-OWA-D0-4134::q6502|the squirrel is young": {
+        "type": "equals",
+        "left": "squirrel",
+        "right": "young"
+      },
+      "RelNeg-OWA-D0-4134::q6502|If someone eats the tiger then they eat the bald eagle.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNeg-OWA-D0-4134::q6502|young": {
+        "type": "predicate",
+        "name": "base_property",
+        "args": [
+          "entity"
+        ]
+      },
+      "RelNeg-OWA-D0-4134::q6502|do not eat the tiger": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNeg-OWA-D0-4134::q6502|the bald eagle sees the mouse": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNeg-OWA-D0-4134::q6502|the bald eagle does not visit the mouse": {
+        "type": "equals",
+        "left": "bald_eagle",
+        "right": "mouse"
+      },
+      "RelNeg-OWA-D0-4134::q6502|If someone eats the bald eagle": {
+        "type": "predicate",
+        "name": "base_verb",
+        "args": [
+          "entity",
+          "entity"
+        ]
+      },
+      "RelNeg-OWA-D0-4134::q6502|the bald eagle does not eat the mouse": {
+        "type": "equals",
+        "left": "bald_eagle",
+        "right": "mouse"
+      },
+      "RelNeg-OWA-D0-4134::q6502|visit tiger": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNeg-OWA-D0-4134::q6502|round": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNeg-OWA-D0-4134::q6502|someone visits the mouse": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNeg-OWA-D0-4134::q6502|the mouse sees the tiger": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNeg-OWA-D0-4134::q6502|The bald eagle is not round.": {
+        "type": "equals",
+        "left": "bald_eagle",
+        "right": "not_round"
+      },
+      "AttNonegNatLang-OWA-133::q53250|Bob is cold to his ex-wife.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-133::q53250|She knows he is round and red.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-133::q53250|He is kind to everyone else.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-133::q53250|That guy Dave sure is nice.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-133::q53250|For being so cold, it's good Eric can remain nice.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-133::q53250|If you're truly nice, cold, and blue, you're kind, too.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-133::q53250|Every time you meet someone kind and nice": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-133::q53250|they'll be green, too": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-133::q53250|Anybody young person covered in blue and green will be kind.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-133::q53250|Rough, cold people are blue.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-133::q53250|Most big and cold people are also rough.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-133::q53250|Kind people that are round are on the big side.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-133::q53250|Someone who has a round shape with a nice personality with big size are always kind.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-133::q53250|Bob is red.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNeg-OWA-D1-2498::q169660|Bob is big.": {
+        "type": "equals",
+        "left": "bob",
+        "right": "big"
+      },
+      "AttNeg-OWA-D1-2498::q169660|Bob is blue.": {
+        "type": "equals",
+        "left": "bob",
+        "right": "blue"
+      },
+      "AttNeg-OWA-D1-2498::q169660|Bob is not furry.": {
+        "type": "equals",
+        "left": "bob",
+        "right": "not"
+      },
+      "AttNeg-OWA-D1-2498::q169660|Bob is not quiet.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNeg-OWA-D1-2498::q169660|Bob is not young.": {
+        "type": "equals",
+        "left": "bob",
+        "right": "not_young"
+      },
+      "AttNeg-OWA-D1-2498::q169660|Charlie is kind.": {
+        "type": "equals",
+        "left": "charlie",
+        "right": "kind"
+      },
+      "AttNeg-OWA-D1-2498::q169660|Charlie is not quiet.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNeg-OWA-D1-2498::q169660|Dave is big.": {
+        "type": "equals",
+        "left": "dave",
+        "right": "big"
+      },
+      "AttNeg-OWA-D1-2498::q169660|Dave is blue.": {
+        "type": "equals",
+        "left": "dave",
+        "right": "blue"
+      },
+      "AttNeg-OWA-D1-2498::q169660|Dave is kind.": {
+        "type": "equals",
+        "left": "dave",
+        "right": "kind"
+      },
+      "AttNeg-OWA-D1-2498::q169660|Dave is red.": {
+        "type": "equals",
+        "left": "dave",
+        "right": "red"
+      },
+      "AttNeg-OWA-D1-2498::q169660|Gary is big.": {
+        "type": "equals",
+        "left": "gary",
+        "right": "big"
+      },
+      "AttNeg-OWA-D1-2498::q169660|Gary is blue.": {
+        "type": "equals",
+        "left": "gary",
+        "right": "blue"
+      },
+      "AttNeg-OWA-D1-2498::q169660|Gary is kind.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNeg-OWA-D1-2498::q169660|Gary is quiet.": {
+        "type": "equals",
+        "left": "gary",
+        "right": "quiet"
+      },
+      "AttNeg-OWA-D1-2498::q169660|Gary is red.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNeg-OWA-D1-2498::q169660|Dave is young": {
+        "type": "equals",
+        "left": "dave",
+        "right": "young"
+      },
+      "AttNeg-OWA-D1-2498::q169660|Dave is furry": {
+        "type": "equals",
+        "left": "dave",
+        "right": "furry"
+      },
+      "AttNeg-OWA-D1-2498::q169660|Red things are big.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNeg-OWA-D1-2498::q169660|Bob is young": {
+        "type": "equals",
+        "left": "bob",
+        "right": "young"
+      },
+      "AttNeg-OWA-D1-2498::q169660|Bob is kind": {
+        "type": "equals",
+        "left": "bob",
+        "right": "kind"
+      },
+      "AttNeg-OWA-D1-2498::q169660|All furry things are not young.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNeg-OWA-D1-2498::q169660|something is young": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNeg-OWA-D1-2498::q169660|something is big": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNeg-OWA-D1-2498::q169660|Big, red things are quiet.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNeg-OWA-D1-2498::q169660|Charlie is not red.": {
+        "type": "equals",
+        "left": "charlie",
+        "right": "red"
+      },
+      "RelNoneg-OWA-D2-1649::q75422|The cat is kind.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNoneg-OWA-D2-1649::q75422|The rabbit is round.": {
+        "type": "equals",
+        "left": "rabbit",
+        "right": "round"
+      },
+      "RelNoneg-OWA-D2-1649::q75422|The rabbit needs the cat.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNoneg-OWA-D2-1649::q75422|the cat likes the rabbit": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNoneg-OWA-D2-1649::q75422|something needs the rabbit and it likes the cat": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNoneg-OWA-D2-1649::q75422|the cat is young": {
+        "type": "equals",
+        "left": "cat",
+        "right": "young"
+      },
+      "RelNoneg-OWA-D2-1649::q75422|If something needs the cat then the cat likes the rabbit.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNoneg-OWA-D2-1649::q75422|The cat chases the rabbit.": {
+        "type": "predicate",
+        "name": "base_verb",
+        "args": [
+          "cat",
+          "rabbit"
+        ]
+      },
+      "AttNeg-OWA-D1-518::q157393|Bob is smart.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNeg-OWA-D1-518::q157393|Charlie is rough.": {
+        "type": "equals",
+        "left": "charlie",
+        "right": "rough"
+      },
+      "AttNeg-OWA-D1-518::q157393|Dave is round.": {
+        "type": "equals",
+        "left": "dave",
+        "right": "round"
+      },
+      "AttNeg-OWA-D1-518::q157393|Erin is smart.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNeg-OWA-D1-518::q157393|Bob is big": {
+        "type": "equals",
+        "left": "bob",
+        "right": "big"
+      },
+      "AttNeg-OWA-D1-518::q157393|Bob is green": {
+        "type": "equals",
+        "left": "bob",
+        "right": "green"
+      },
+      "AttNeg-OWA-D1-518::q157393|If someone is round then they are not smart.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNeg-OWA-D1-518::q157393|Dave is smart.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNeg-OWA-D0-4416::q16881|Bob is not blue.": {
+        "type": "equals",
+        "left": "bob",
+        "right": "blue"
+      },
+      "AttNeg-OWA-D0-4416::q16881|Bob is quiet.": {
+        "type": "equals",
+        "left": "bob",
+        "right": "quiet"
+      },
+      "AttNeg-OWA-D0-4416::q16881|Bob is round.": {
+        "type": "equals",
+        "left": "bob",
+        "right": "round"
+      },
+      "AttNeg-OWA-D0-4416::q16881|Charlie is rough.": {
+        "type": "equals",
+        "left": "charlie",
+        "right": "rough"
+      },
+      "AttNeg-OWA-D0-4416::q16881|Dave is blue.": {
+        "type": "equals",
+        "left": "dave",
+        "right": "blue"
+      },
+      "AttNeg-OWA-D0-4416::q16881|Dave is nice.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNeg-OWA-D0-4416::q16881|Harry is quiet.": {
+        "type": "equals",
+        "left": "quiet",
+        "right": "harry"
+      },
+      "AttNeg-OWA-D0-4416::q16881|someone is blue": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNeg-OWA-D0-4416::q16881|someone is cold": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNeg-OWA-D0-4416::q16881|they are round": {
+        "type": "predicate",
+        "name": "base_property",
+        "args": [
+          "entity"
+        ]
+      },
+      "AttNeg-OWA-D0-4416::q16881|someone is round": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNeg-OWA-D0-4416::q16881|blue": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNeg-OWA-D0-4416::q16881|they are not cold": {
+        "type": "equals",
+        "left": "cold",
+        "right": "not"
+      },
+      "AttNeg-OWA-D0-4416::q16881|Charlie is not rough.": {
+        "type": "equals",
+        "left": "charlie",
+        "right": "rough"
+      },
+      "AttNeg-OWA-D1-2824::q169230|Charlie is not big.": {
+        "type": "equals",
+        "left": "charlie",
+        "right": "not_big"
+      },
+      "AttNeg-OWA-D1-2824::q169230|Charlie is cold.": {
+        "type": "equals",
+        "left": "charlie",
+        "right": "cold"
+      },
+      "AttNeg-OWA-D1-2824::q169230|Charlie is not green.": {
+        "type": "equals",
+        "left": "charlie",
+        "right": "not_green"
+      },
+      "AttNeg-OWA-D1-2824::q169230|Charlie is nice.": {
+        "type": "equals",
+        "left": "charlie",
+        "right": "nice"
+      },
+      "AttNeg-OWA-D1-2824::q169230|Charlie is not round.": {
+        "type": "equals",
+        "left": "charlie",
+        "right": "not_round"
+      },
+      "AttNeg-OWA-D1-2824::q169230|Dave is big.": {
+        "type": "equals",
+        "left": "dave",
+        "right": "big"
+      },
+      "AttNeg-OWA-D1-2824::q169230|Dave is green.": {
+        "type": "equals",
+        "left": "dave",
+        "right": "green"
+      },
+      "AttNeg-OWA-D1-2824::q169230|Dave is not round.": {
+        "type": "equals",
+        "left": "dave",
+        "right": "round"
+      },
+      "AttNeg-OWA-D1-2824::q169230|Gary is not blue.": {
+        "type": "equals",
+        "left": "gary",
+        "right": "not_blue"
+      },
+      "AttNeg-OWA-D1-2824::q169230|Gary is cold.": {
+        "type": "equals",
+        "left": "gary",
+        "right": "cold"
+      },
+      "AttNeg-OWA-D1-2824::q169230|Gary is green.": {
+        "type": "equals",
+        "left": "gary",
+        "right": "green"
+      },
+      "AttNeg-OWA-D1-2824::q169230|Gary is not nice.": {
+        "type": "equals",
+        "left": "gary",
+        "right": "not_nice"
+      },
+      "AttNeg-OWA-D1-2824::q169230|Harry is big.": {
+        "type": "equals",
+        "left": "harry",
+        "right": "big"
+      },
+      "AttNeg-OWA-D1-2824::q169230|Harry is not cold.": {
+        "type": "equals",
+        "left": "harry",
+        "right": "not_cold"
+      },
+      "AttNeg-OWA-D1-2824::q169230|Harry is not nice.": {
+        "type": "equals",
+        "left": "harry",
+        "right": "not_nice"
+      },
+      "AttNeg-OWA-D1-2824::q169230|Harry is smart.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNeg-OWA-D1-2824::q169230|If Charlie is not big then Charlie is smart.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNeg-OWA-D1-2824::q169230|something is blue": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNeg-OWA-D1-2824::q169230|nice": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNeg-OWA-D1-2824::q169230|it is cold": {
+        "type": "predicate",
+        "name": "base_property",
+        "args": [
+          "entity"
+        ]
+      },
+      "AttNoneg-OWA-D3-1332::q114981|Anne is nice.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-1332::q114981|Anne is quiet.": {
+        "type": "equals",
+        "left": "anne",
+        "right": "quiet"
+      },
+      "AttNoneg-OWA-D3-1332::q114981|Bob is cold.": {
+        "type": "equals",
+        "left": "bob",
+        "right": "cold"
+      },
+      "AttNoneg-OWA-D3-1332::q114981|Bob is nice.": {
+        "type": "equals",
+        "left": "bob",
+        "right": "nice"
+      },
+      "AttNoneg-OWA-D3-1332::q114981|Bob is white.": {
+        "type": "equals",
+        "left": "bob",
+        "right": "white"
+      },
+      "AttNoneg-OWA-D3-1332::q114981|Charlie is big.": {
+        "type": "equals",
+        "left": "charlie",
+        "right": "big"
+      },
+      "AttNoneg-OWA-D3-1332::q114981|Charlie is blue.": {
+        "type": "equals",
+        "left": "charlie",
+        "right": "blue"
+      },
+      "AttNoneg-OWA-D3-1332::q114981|Charlie is quiet.": {
+        "type": "equals",
+        "left": "charlie",
+        "right": "quiet"
+      },
+      "AttNoneg-OWA-D3-1332::q114981|Charlie is smart.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-1332::q114981|Charlie is white.": {
+        "type": "equals",
+        "left": "charlie",
+        "right": "white"
+      },
+      "AttNoneg-OWA-D3-1332::q114981|someone is nice": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-1332::q114981|someone is smart": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-1332::q114981|they are big": {
+        "type": "equals",
+        "left": "big",
+        "right": "big"
+      },
+      "AttNoneg-OWA-D3-1332::q114981|Quiet, white people are smart.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-1332::q114981|If someone is cold then they are smart.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-1332::q114981|Big, quiet people are nice.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-1332::q114981|Charlie is nice": {
+        "type": "equals",
+        "left": "charlie",
+        "right": "nice"
+      },
+      "AttNoneg-OWA-D3-1332::q114981|All big people are nice.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-1332::q114981|Nice people are cold.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-1332::q114981|If someone is white then they are smart.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-1332::q114981|Charlie is not cold.": {
+        "type": "equals",
+        "left": "charlie",
+        "right": "not_cold"
+      },
+      "RelNoneg-OWA-D5-556::q145032|The cow eats the squirrel.": {
+        "type": "predicate",
+        "name": "base_verb",
+        "args": [
+          "cow",
+          "squirrel"
+        ]
+      },
+      "RelNoneg-OWA-D5-556::q145032|The cow is blue.": {
+        "type": "equals",
+        "left": "cow",
+        "right": "blue"
+      },
+      "RelNoneg-OWA-D5-556::q145032|The cow is nice.": {
+        "type": "equals",
+        "left": "cow",
+        "right": "nice"
+      },
+      "RelNoneg-OWA-D5-556::q145032|The cow is red.": {
+        "type": "equals",
+        "left": "cow",
+        "right": "red"
+      },
+      "RelNoneg-OWA-D5-556::q145032|The dog eats the cow.": {
+        "type": "predicate",
+        "name": "base_verb",
+        "args": [
+          "dog",
+          "cow"
+        ]
+      },
+      "RelNoneg-OWA-D5-556::q145032|The mouse is big.": {
+        "type": "equals",
+        "left": "mouse",
+        "right": "big"
+      },
+      "RelNoneg-OWA-D5-556::q145032|The mouse is kind.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNoneg-OWA-D5-556::q145032|The mouse is red.": {
+        "type": "equals",
+        "left": "mouse",
+        "right": "red"
+      },
+      "RelNoneg-OWA-D5-556::q145032|The mouse visits the dog.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNoneg-OWA-D5-556::q145032|The squirrel chases the cow.": {
+        "type": "predicate",
+        "name": "base_verb",
+        "args": [
+          "squirrel",
+          "cow"
+        ]
+      },
+      "RelNoneg-OWA-D5-556::q145032|The squirrel visits the cow.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNoneg-OWA-D5-556::q145032|The squirrel visits the dog.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNoneg-OWA-D5-556::q145032|someone eats the cow": {
+        "type": "predicate",
+        "name": "base_verb",
+        "args": [
+          "entity",
+          "entity"
+        ]
+      },
+      "RelNoneg-OWA-D5-556::q145032|they visit the dog": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNoneg-OWA-D5-556::q145032|someone eats the mouse": {
+        "type": "predicate",
+        "name": "base_verb",
+        "args": [
+          "mouse",
+          "entity"
+        ]
+      },
+      "RelNoneg-OWA-D5-556::q145032|they chase the squirrel": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNoneg-OWA-D5-556::q145032|If someone chases the squirrel": {
+        "type": "predicate",
+        "name": "base_verb",
+        "args": [
+          "squirrel",
+          "entity"
+        ]
+      },
+      "RelNoneg-OWA-D5-556::q145032|the squirrel chases the mouse": {
+        "type": "predicate",
+        "name": "base_verb",
+        "args": [
+          "squirrel",
+          "mouse"
+        ]
+      },
+      "RelNoneg-OWA-D5-556::q145032|If someone visits the cow then the cow eats the dog.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNoneg-OWA-D5-556::q145032|someone is red": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNoneg-OWA-D5-556::q145032|they eat the mouse": {
+        "type": "predicate",
+        "name": "base_verb",
+        "args": [
+          "mouse",
+          "entity"
+        ]
+      },
+      "RelNoneg-OWA-D5-556::q145032|the mouse eats the cow": {
+        "type": "predicate",
+        "name": "base_verb",
+        "args": [
+          "mouse",
+          "cow"
+        ]
+      },
+      "RelNoneg-OWA-D5-556::q145032|the cow is big": {
+        "type": "equals",
+        "left": "cow",
+        "right": "big"
+      },
+      "RelNoneg-OWA-D5-556::q145032|the cow visits the dog": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNoneg-OWA-D5-556::q145032|someone visits the squirrel": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNoneg-OWA-D5-556::q145032|mouse visits dog": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNoneg-OWA-D5-556::q145032|dog visits squirrel": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNoneg-OWA-D5-556::q145032|The cow does not chase the squirrel.": {
+        "type": "equals",
+        "left": "cow",
+        "right": "squirrel"
+      },
+      "AttNeg-OWA-D5-439::q141564|Anne is nice.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNeg-OWA-D5-439::q141564|Anne is smart.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNeg-OWA-D5-439::q141564|Charlie is green.": {
+        "type": "equals",
+        "left": "charlie",
+        "right": "green"
+      },
+      "AttNeg-OWA-D5-439::q141564|Fiona is nice.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNeg-OWA-D5-439::q141564|Fiona is round.": {
+        "type": "equals",
+        "left": "fiona",
+        "right": "round"
+      },
+      "AttNeg-OWA-D5-439::q141564|Fiona is white.": {
+        "type": "equals",
+        "left": "fiona",
+        "right": "white"
+      },
+      "AttNeg-OWA-D5-439::q141564|Harry is blue.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNeg-OWA-D5-439::q141564|White, kind things are nice.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNeg-OWA-D5-439::q141564|If something is smart and kind then it is green.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNeg-OWA-D5-439::q141564|If something is round and kind then it is white.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNeg-OWA-D5-439::q141564|Smart things are kind.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNeg-OWA-D5-439::q141564|Nice, white things are kind.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNeg-OWA-D5-439::q141564|Round things are kind.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNeg-OWA-D5-439::q141564|If something is nice then it is smart.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNeg-OWA-D5-439::q141564|All white things are round.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNeg-OWA-D5-439::q141564|Charlie is white": {
+        "type": "equals",
+        "left": "charlie",
+        "right": "white"
+      },
+      "AttNeg-OWA-D5-439::q141564|Charlie is nice.": {
+        "type": "equals",
+        "left": "charlie",
+        "right": "nice"
+      },
+      "AttNoneg-OWA-D0-1648::q1527|Anne is kind.": {
+        "type": "equals",
+        "left": "anne",
+        "right": "kind"
+      },
+      "AttNoneg-OWA-D0-1648::q1527|Charlie is quiet.": {
+        "type": "equals",
+        "left": "charlie",
+        "right": "quiet"
+      },
+      "AttNoneg-OWA-D0-1648::q1527|Dave is round.": {
+        "type": "equals",
+        "left": "dave",
+        "right": "round"
+      },
+      "AttNoneg-OWA-D0-1648::q1527|Harry is rough.": {
+        "type": "equals",
+        "left": "rough",
+        "right": "harry"
+      },
+      "AttNoneg-OWA-D0-1648::q1527|All rough things are young.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNoneg-OWA-D0-1648::q1527|Round things are young.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNoneg-OWA-D0-1648::q1527|All cold, round things are smart.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNoneg-OWA-D0-1648::q1527|Dave is kind.": {
+        "type": "equals",
+        "left": "dave",
+        "right": "kind"
+      },
+      "RelNoneg-OWA-D1-1889::q158168|The bear needs the cow.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNoneg-OWA-D1-1889::q158168|The bear sees the cow.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNoneg-OWA-D1-1889::q158168|The bear visits the cow.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNoneg-OWA-D1-1889::q158168|The cow is nice.": {
+        "type": "equals",
+        "left": "cow",
+        "right": "nice"
+      },
+      "RelNoneg-OWA-D1-1889::q158168|The cow is young.": {
+        "type": "equals",
+        "left": "cow",
+        "right": "young"
+      },
+      "RelNoneg-OWA-D1-1889::q158168|The cow sees the bear.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNoneg-OWA-D1-1889::q158168|The cow visits the bear.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNoneg-OWA-D1-1889::q158168|the cow needs the bear": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNoneg-OWA-D1-1889::q158168|If the cow is green": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNoneg-OWA-D1-1889::q158168|someone needs the cow": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNoneg-OWA-D1-1889::q158168|they visit the cow": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNoneg-OWA-D1-1889::q158168|they are red": {
+        "type": "predicate",
+        "name": "base_property",
+        "args": [
+          "entity"
+        ]
+      },
+      "RelNoneg-OWA-D1-1889::q158168|someone is big": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNoneg-OWA-D1-1889::q158168|the bear is red": {
+        "type": "equals",
+        "left": "bear",
+        "right": "red"
+      },
+      "RelNoneg-OWA-D1-1889::q158168|someone sees the cow": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "RelNoneg-OWA-D1-1889::q158168|they are nice": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-109::q33235|Alan is green": {
+        "type": "equals",
+        "left": "green",
+        "right": "alan"
+      },
+      "AttNonegNatLang-OWA-109::q33235|Alan is cold": {
+        "type": "predicate",
+        "name": "base_property",
+        "args": [
+          "entity"
+        ]
+      },
+      "AttNonegNatLang-OWA-109::q33235|Bob who is young and nice is also quite big and feels green.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-109::q33235|Eric is a big fellow, often blue and sad, but he is nice.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-109::q33235|Harry was proud of being round, yet rough.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-109::q33235|His red cheeks glowed.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-109::q33235|nice and round and cold": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-109::q33235|look blue": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-109::q33235|Rough people who are red in color and big": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-109::q33235|are usually round in shape": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-109::q33235|A rather big person is a red person.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-109::q33235|Kind people with rough skin are usually red because it's wind burn.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-109::q33235|Kind red and round people often look green.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-109::q33235|Big people who are blue": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-109::q33235|and red": {
+        "type": "equals",
+        "left": "red",
+        "right": "and"
+      },
+      "AttNonegNatLang-OWA-109::q33235|are afflicted with rough skin": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-109::q33235|Rough people who look red are cold.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-109::q33235|Harry is kind.": {
+        "type": "equals",
+        "left": "kind",
+        "right": "harry"
+      },
+      "AttNoneg-OWA-D3-728::q115123|Anne is blue.": {
+        "type": "equals",
+        "left": "anne",
+        "right": "blue"
+      },
+      "AttNoneg-OWA-D3-728::q115123|Anne is kind.": {
+        "type": "equals",
+        "left": "anne",
+        "right": "kind"
+      },
+      "AttNoneg-OWA-D3-728::q115123|Anne is nice.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-728::q115123|Bob is big.": {
+        "type": "equals",
+        "left": "bob",
+        "right": "big"
+      },
+      "AttNoneg-OWA-D3-728::q115123|Bob is blue.": {
+        "type": "equals",
+        "left": "bob",
+        "right": "blue"
+      },
+      "AttNoneg-OWA-D3-728::q115123|Bob is furry.": {
+        "type": "equals",
+        "left": "bob",
+        "right": "furry"
+      },
+      "AttNoneg-OWA-D3-728::q115123|Bob is kind.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-728::q115123|Bob is smart.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-728::q115123|Dave is big.": {
+        "type": "equals",
+        "left": "dave",
+        "right": "big"
+      },
+      "AttNoneg-OWA-D3-728::q115123|Dave is kind.": {
+        "type": "equals",
+        "left": "dave",
+        "right": "kind"
+      },
+      "AttNoneg-OWA-D3-728::q115123|Dave is nice.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-728::q115123|Dave is smart.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-728::q115123|Dave is young.": {
+        "type": "equals",
+        "left": "dave",
+        "right": "young"
+      },
+      "AttNoneg-OWA-D3-728::q115123|Erin is furry.": {
+        "type": "equals",
+        "left": "erin",
+        "right": "furry"
+      },
+      "AttNoneg-OWA-D3-728::q115123|Erin is smart.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-728::q115123|If something is blue then it is big.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-728::q115123|Young things are big.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-728::q115123|Blue things are kind.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-728::q115123|All smart, kind things are young.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-728::q115123|All blue, big things are smart.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-728::q115123|All nice, furry things are kind.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-728::q115123|Erin is nice.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNeg-OWA-D2-1118::q69001|Bob is smart.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNeg-OWA-D2-1118::q69001|Charlie is blue.": {
+        "type": "equals",
+        "left": "charlie",
+        "right": "blue"
+      },
+      "AttNeg-OWA-D2-1118::q69001|Charlie is nice.": {
+        "type": "equals",
+        "left": "charlie",
+        "right": "nice"
+      },
+      "AttNeg-OWA-D2-1118::q69001|Charlie is quiet.": {
+        "type": "equals",
+        "left": "charlie",
+        "right": "quiet"
+      },
+      "AttNeg-OWA-D2-1118::q69001|Erin is not kind.": {
+        "type": "equals",
+        "left": "erin",
+        "right": "not_kind"
+      },
+      "AttNeg-OWA-D2-1118::q69001|Erin is nice.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNeg-OWA-D2-1118::q69001|Erin is round.": {
+        "type": "equals",
+        "left": "erin",
+        "right": "round"
+      },
+      "AttNeg-OWA-D2-1118::q69001|Erin is smart.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNeg-OWA-D2-1118::q69001|Harry is blue.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNeg-OWA-D2-1118::q69001|Harry is quiet.": {
+        "type": "equals",
+        "left": "quiet",
+        "right": "harry"
+      },
+      "AttNeg-OWA-D2-1118::q69001|If someone is red then they are blue.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNeg-OWA-D2-1118::q69001|someone is red": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNeg-OWA-D2-1118::q69001|someone is quiet": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNeg-OWA-D2-1118::q69001|they are smart": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNeg-OWA-D2-1118::q69001|Smart, nice people are red.": {
+        "type": "predicate",
+        "name": "base_proposition",
+        "args": []
+      },
+      "AttNeg-OWA-D2-1118::q69001|Bob is blue.": {
+        "type": "equals",
+        "left": "bob",
+        "right": "blue"
+      }
+    }
+  },
+  "descriptive": {
+    "run_id": "prototype2_pw_c4_20_descriptive",
+    "variant": "descriptive",
+    "examples": 20,
+    "atomic_nodes": 333,
+    "predicate_nodes": 302,
+    "echo_nodes": 1,
+    "echo_rate": 0.003003003003003003,
+    "long_name_nodes": 61,
+    "long_name_rate": 0.20198675496688742,
+    "copula_prefixed_nodes": 47,
+    "copula_prefixed_rate": 0.15562913907284767,
+    "is_prefix_collisions": 6,
+    "relation_mix": {
+      "atomic.proposition": 180,
+      "atomic.adjective": 100,
+      "atomic.equality": 31,
+      "atomic.transitive": 22
+    },
+    "parser_failures": 0,
+    "system_failures": 0,
+    "correct": 14,
+    "incorrect": 6,
+    "correct_with_degenerate_predicate": 13,
+    "total_runtime_minutes": 18.324102798334206,
+    "mean_runtime_seconds": 54.97230839500262,
+    "model_invocations": 451,
+    "error_categories": {
+      "AttNonegNatLang-OWA-205::q28348": null,
+      "AttNoneg-OWA-D0-1600::q18855": null,
+      "AttNoneg-OWA-D0-5942::q10124": null,
+      "RelNeg-OWA-D1-622::q172964": null,
+      "RelNeg-OWA-D3-851::q42464": null,
+      "RelNeg-OWA-D0-4134::q6502": null,
+      "AttNonegNatLang-OWA-133::q53250": "incorrect_final_symbolic_answer",
+      "AttNeg-OWA-D1-2498::q169660": null,
+      "RelNoneg-OWA-D2-1649::q75422": "incorrect_final_symbolic_answer",
+      "AttNeg-OWA-D1-518::q157393": "incorrect_final_symbolic_answer",
+      "AttNeg-OWA-D0-4416::q16881": "incorrect_final_symbolic_answer",
+      "AttNeg-OWA-D1-2824::q169230": null,
+      "AttNoneg-OWA-D3-1332::q114981": "incorrect_final_symbolic_answer",
+      "RelNoneg-OWA-D5-556::q145032": null,
+      "AttNeg-OWA-D5-439::q141564": "incorrect_final_symbolic_answer",
+      "AttNoneg-OWA-D0-1648::q1527": null,
+      "RelNoneg-OWA-D1-1889::q158168": null,
+      "AttNonegNatLang-OWA-109::q33235": null,
+      "AttNoneg-OWA-D3-728::q115123": null,
+      "AttNeg-OWA-D2-1118::q69001": null
+    },
+    "predicted_labels": {
+      "AttNonegNatLang-OWA-205::q28348": "Unknown",
+      "AttNoneg-OWA-D0-1600::q18855": "Unknown",
+      "AttNoneg-OWA-D0-5942::q10124": "True",
+      "RelNeg-OWA-D1-622::q172964": "Unknown",
+      "RelNeg-OWA-D3-851::q42464": "Unknown",
+      "RelNeg-OWA-D0-4134::q6502": "Unknown",
+      "AttNonegNatLang-OWA-133::q53250": "Unknown",
+      "AttNeg-OWA-D1-2498::q169660": "Unknown",
+      "RelNoneg-OWA-D2-1649::q75422": "Unknown",
+      "AttNeg-OWA-D1-518::q157393": "Unknown",
+      "AttNeg-OWA-D0-4416::q16881": "Unknown",
+      "AttNeg-OWA-D1-2824::q169230": "True",
+      "AttNoneg-OWA-D3-1332::q114981": "Unknown",
+      "RelNoneg-OWA-D5-556::q145032": "Unknown",
+      "AttNeg-OWA-D5-439::q141564": "Unknown",
+      "AttNoneg-OWA-D0-1648::q1527": "Unknown",
+      "RelNoneg-OWA-D1-1889::q158168": "True",
+      "AttNonegNatLang-OWA-109::q33235": "Unknown",
+      "AttNoneg-OWA-D3-728::q115123": "Unknown",
+      "AttNeg-OWA-D2-1118::q69001": "Unknown"
+    },
+    "atomic_parses": {
+      "AttNonegNatLang-OWA-205::q28348|Green, big and red are qualities which all describe Alan.": {
+        "type": "predicate",
+        "name": "green_big_and_red_are_qualities_which_all_describe_alan",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-205::q28348|Green, big and red are qualities which all describe Charlie.": {
+        "type": "predicate",
+        "name": "green_big_red_are_qualities_which_all_describe_charlie",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-205::q28348|That guy Fred sure is nice.": {
+        "type": "predicate",
+        "name": "nice",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-205::q28348|Harry is a round and rough around the edges, and he is also big.": {
+        "type": "predicate",
+        "name": "round_rough_around_the_edges_big",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-205::q28348|Red people are almost always rough.": {
+        "type": "predicate",
+        "name": "red_people_are_almost_always_rough",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-205::q28348|If a person is described as being nice, cold and young it usually follow that they are red.": {
+        "type": "predicate",
+        "name": "nice_cold_young_red",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-205::q28348|Cold people that are big and red": {
+        "type": "predicate",
+        "name": "cold_people_that_are_big_and_red",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-205::q28348|are usually nice": {
+        "type": "predicate",
+        "name": "are_usually_nice",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-205::q28348|People who are feeling blue and green are said to be red.": {
+        "type": "predicate",
+        "name": "feeling_blue_and_green_are_red",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-205::q28348|Rough people who look red are cold.": {
+        "type": "predicate",
+        "name": "rough_people_who_look_red_are_cold",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-205::q28348|Alan is not round.": {
+        "type": "predicate",
+        "name": "is_not_round",
+        "args": [
+          "alan"
+        ]
+      },
+      "AttNoneg-OWA-D0-1600::q18855|Anne is green.": {
+        "type": "predicate",
+        "name": "green",
+        "args": [
+          "anne"
+        ]
+      },
+      "AttNoneg-OWA-D0-1600::q18855|Anne is kind.": {
+        "type": "predicate",
+        "name": "kind",
+        "args": [
+          "anne"
+        ]
+      },
+      "AttNoneg-OWA-D0-1600::q18855|Anne is round.": {
+        "type": "equals",
+        "left": "anne",
+        "right": "round"
+      },
+      "AttNoneg-OWA-D0-1600::q18855|Charlie is green.": {
+        "type": "predicate",
+        "name": "green",
+        "args": [
+          "charlie"
+        ]
+      },
+      "AttNoneg-OWA-D0-1600::q18855|Charlie is kind.": {
+        "type": "predicate",
+        "name": "kind",
+        "args": [
+          "charlie"
+        ]
+      },
+      "AttNoneg-OWA-D0-1600::q18855|Gary is furry.": {
+        "type": "predicate",
+        "name": "is_furry",
+        "args": [
+          "gary"
+        ]
+      },
+      "AttNoneg-OWA-D0-1600::q18855|Gary is kind.": {
+        "type": "predicate",
+        "name": "gary_is_kind",
+        "args": []
+      },
+      "AttNoneg-OWA-D0-1600::q18855|Gary is quiet.": {
+        "type": "predicate",
+        "name": "quiet",
+        "args": [
+          "gary"
+        ]
+      },
+      "AttNoneg-OWA-D0-1600::q18855|Gary is round.": {
+        "type": "predicate",
+        "name": "round",
+        "args": [
+          "gary"
+        ]
+      },
+      "AttNoneg-OWA-D0-1600::q18855|Gary is young.": {
+        "type": "predicate",
+        "name": "young",
+        "args": [
+          "gary"
+        ]
+      },
+      "AttNoneg-OWA-D0-1600::q18855|Furry things are kind.": {
+        "type": "predicate",
+        "name": "furry_things_are_kind",
+        "args": []
+      },
+      "AttNoneg-OWA-D0-1600::q18855|Gary is green.": {
+        "type": "predicate",
+        "name": "green",
+        "args": [
+          "gary"
+        ]
+      },
+      "AttNoneg-OWA-D0-5942::q10124|Harry is smart.": {
+        "type": "predicate",
+        "name": "harry_is_smart",
+        "args": []
+      },
+      "AttNoneg-OWA-D0-5942::q10124|If someone is nice then they are red.": {
+        "type": "predicate",
+        "name": "nice_red",
+        "args": []
+      },
+      "AttNoneg-OWA-D0-5942::q10124|If someone is quiet then they are big.": {
+        "type": "predicate",
+        "name": "quiet_big",
+        "args": []
+      },
+      "AttNoneg-OWA-D0-5942::q10124|Quiet people are red.": {
+        "type": "predicate",
+        "name": "quiet_people_are_red",
+        "args": []
+      },
+      "RelNeg-OWA-D1-622::q172964|The cat eats the lion.": {
+        "type": "predicate",
+        "name": "eats",
+        "args": [
+          "the_cat",
+          "the_lion"
+        ]
+      },
+      "RelNeg-OWA-D1-622::q172964|The cat does not eat the tiger.": {
+        "type": "predicate",
+        "name": "does_not_eat",
+        "args": []
+      },
+      "RelNeg-OWA-D1-622::q172964|The cat is blue.": {
+        "type": "equals",
+        "left": "cat",
+        "right": "blue"
+      },
+      "RelNeg-OWA-D1-622::q172964|The cat is kind.": {
+        "type": "predicate",
+        "name": "the_cat_is_kind",
+        "args": []
+      },
+      "RelNeg-OWA-D1-622::q172964|The cat sees the tiger.": {
+        "type": "predicate",
+        "name": "the_cat_sees_the_tiger",
+        "args": []
+      },
+      "RelNeg-OWA-D1-622::q172964|The cat does not visit the lion.": {
+        "type": "predicate",
+        "name": "does_not_visit",
+        "args": []
+      },
+      "RelNeg-OWA-D1-622::q172964|The lion eats the cat.": {
+        "type": "predicate",
+        "name": "eats",
+        "args": [
+          "lion",
+          "cat"
+        ]
+      },
+      "RelNeg-OWA-D1-622::q172964|The lion eats the tiger.": {
+        "type": "predicate",
+        "name": "eats",
+        "args": [
+          "lion",
+          "tiger"
+        ]
+      },
+      "RelNeg-OWA-D1-622::q172964|The lion is kind.": {
+        "type": "predicate",
+        "name": "the_lion_is_kind",
+        "args": []
+      },
+      "RelNeg-OWA-D1-622::q172964|The lion is nice.": {
+        "type": "equals",
+        "left": "lion",
+        "right": "nice"
+      },
+      "RelNeg-OWA-D1-622::q172964|The lion is young.": {
+        "type": "predicate",
+        "name": "young",
+        "args": [
+          "lion"
+        ]
+      },
+      "RelNeg-OWA-D1-622::q172964|The lion does not see the tiger.": {
+        "type": "predicate",
+        "name": "does_not_see",
+        "args": []
+      },
+      "RelNeg-OWA-D1-622::q172964|The lion visits the tiger.": {
+        "type": "predicate",
+        "name": "the_lion_visits_the_tiger",
+        "args": []
+      },
+      "RelNeg-OWA-D1-622::q172964|The tiger is nice.": {
+        "type": "equals",
+        "left": "tiger",
+        "right": "nice"
+      },
+      "RelNeg-OWA-D1-622::q172964|The tiger is round.": {
+        "type": "equals",
+        "left": "tiger",
+        "right": "round"
+      },
+      "RelNeg-OWA-D1-622::q172964|something visits the lion": {
+        "type": "predicate",
+        "name": "visits",
+        "args": [
+          "something",
+          "the_lion"
+        ]
+      },
+      "RelNeg-OWA-D1-622::q172964|If something visits the lion": {
+        "type": "predicate",
+        "name": "something_visits_lion",
+        "args": []
+      },
+      "RelNeg-OWA-D1-622::q172964|the lion does not visit the tiger": {
+        "type": "predicate",
+        "name": "does_not_visit",
+        "args": []
+      },
+      "RelNeg-OWA-D1-622::q172964|the lion is round": {
+        "type": "predicate",
+        "name": "the_lion_is_round",
+        "args": []
+      },
+      "RelNeg-OWA-D1-622::q172964|the lion is blue": {
+        "type": "predicate",
+        "name": "the_lion_is_blue",
+        "args": []
+      },
+      "RelNeg-OWA-D1-622::q172964|something visits the tiger": {
+        "type": "predicate",
+        "name": "something_visits_tiger",
+        "args": []
+      },
+      "RelNeg-OWA-D1-622::q172964|the tiger eats the cat": {
+        "type": "predicate",
+        "name": "eats",
+        "args": [
+          "the_tiger",
+          "the_cat"
+        ]
+      },
+      "RelNeg-OWA-D1-622::q172964|something is nice": {
+        "type": "predicate",
+        "name": "something_is_nice",
+        "args": []
+      },
+      "RelNeg-OWA-D1-622::q172964|it does not eat the cat": {
+        "type": "equals",
+        "left": "cat",
+        "right": "cat"
+      },
+      "RelNeg-OWA-D1-622::q172964|something sees the lion": {
+        "type": "predicate",
+        "name": "something_sees_the_lion",
+        "args": []
+      },
+      "RelNeg-OWA-D1-622::q172964|the lion sees the cat": {
+        "type": "predicate",
+        "name": "the_lion_sees_the_cat",
+        "args": []
+      },
+      "RelNeg-OWA-D1-622::q172964|The lion is not blue.": {
+        "type": "predicate",
+        "name": "is_not_blue",
+        "args": [
+          "lion"
+        ]
+      },
+      "RelNeg-OWA-D3-851::q42464|The bald eagle does not chase the squirrel.": {
+        "type": "predicate",
+        "name": "does_not_chase",
+        "args": []
+      },
+      "RelNeg-OWA-D3-851::q42464|The bald eagle is blue.": {
+        "type": "equals",
+        "left": "bald_eagle",
+        "right": "blue"
+      },
+      "RelNeg-OWA-D3-851::q42464|The bald eagle likes the lion.": {
+        "type": "predicate",
+        "name": "likes",
+        "args": []
+      },
+      "RelNeg-OWA-D3-851::q42464|The bald eagle likes the squirrel.": {
+        "type": "predicate",
+        "name": "likes",
+        "args": []
+      },
+      "RelNeg-OWA-D3-851::q42464|The lion does not chase the bald eagle.": {
+        "type": "predicate",
+        "name": "does_not_chase",
+        "args": []
+      },
+      "RelNeg-OWA-D3-851::q42464|The lion chases the squirrel.": {
+        "type": "predicate",
+        "name": "chases",
+        "args": [
+          "lion",
+          "squirrel"
+        ]
+      },
+      "RelNeg-OWA-D3-851::q42464|The lion is not blue.": {
+        "type": "predicate",
+        "name": "is_not_blue",
+        "args": [
+          "lion"
+        ]
+      },
+      "RelNeg-OWA-D3-851::q42464|The squirrel is big.": {
+        "type": "equals",
+        "left": "squirrel",
+        "right": "big"
+      },
+      "RelNeg-OWA-D3-851::q42464|The squirrel is young.": {
+        "type": "predicate",
+        "name": "young",
+        "args": [
+          "squirrel"
+        ]
+      },
+      "RelNeg-OWA-D3-851::q42464|The squirrel needs the lion.": {
+        "type": "predicate",
+        "name": "the_squirrel_needs_the_lion",
+        "args": []
+      },
+      "RelNeg-OWA-D3-851::q42464|If someone needs the bald eagle then they like the squirrel.": {
+        "type": "predicate",
+        "name": "needs_the_bald_eagle_then_they_like_the_squirrel",
+        "args": []
+      },
+      "RelNeg-OWA-D3-851::q42464|If someone chases the lion": {
+        "type": "predicate",
+        "name": "chases",
+        "args": [
+          "someone",
+          "lion"
+        ]
+      },
+      "RelNeg-OWA-D3-851::q42464|the lion is red": {
+        "type": "predicate",
+        "name": "the_lion_is_red",
+        "args": []
+      },
+      "RelNeg-OWA-D3-851::q42464|someone is young": {
+        "type": "predicate",
+        "name": "young",
+        "args": []
+      },
+      "RelNeg-OWA-D3-851::q42464|they need the squirrel": {
+        "type": "predicate",
+        "name": "need_the_squirrel",
+        "args": []
+      },
+      "RelNeg-OWA-D3-851::q42464|someone needs the bald eagle": {
+        "type": "predicate",
+        "name": "needs_the_bald_eagle",
+        "args": []
+      },
+      "RelNeg-OWA-D3-851::q42464|the bald eagle needs the squirrel": {
+        "type": "predicate",
+        "name": "needs",
+        "args": []
+      },
+      "RelNeg-OWA-D3-851::q42464|If someone chases the squirrel": {
+        "type": "predicate",
+        "name": "chases",
+        "args": [
+          "someone",
+          "the_squirrel"
+        ]
+      },
+      "RelNeg-OWA-D3-851::q42464|they like the bald eagle": {
+        "type": "predicate",
+        "name": "like",
+        "args": []
+      },
+      "RelNeg-OWA-D3-851::q42464|the squirrel is nice": {
+        "type": "equals",
+        "left": "squirrel",
+        "right": "nice"
+      },
+      "RelNeg-OWA-D3-851::q42464|If someone needs the lion then they are nice.": {
+        "type": "predicate",
+        "name": "needs_the_lion_then_they_are_nice",
+        "args": []
+      },
+      "RelNeg-OWA-D3-851::q42464|the bald eagle does not chase the lion": {
+        "type": "equals",
+        "left": "bald_eagle",
+        "right": "lion"
+      },
+      "RelNeg-OWA-D3-851::q42464|the bald eagle chases the squirrel": {
+        "type": "predicate",
+        "name": "chases",
+        "args": [
+          "the_bald_eagle",
+          "the_squirrel"
+        ]
+      },
+      "RelNeg-OWA-D3-851::q42464|The squirrel does not like the bald eagle.": {
+        "type": "predicate",
+        "name": "does_not_like",
+        "args": []
+      },
+      "RelNeg-OWA-D0-4134::q6502|The bald eagle sees the squirrel.": {
+        "type": "predicate",
+        "name": "sees",
+        "args": []
+      },
+      "RelNeg-OWA-D0-4134::q6502|The mouse visits the bald eagle.": {
+        "type": "predicate",
+        "name": "the_mouse_visits_the_bald_eagle",
+        "args": []
+      },
+      "RelNeg-OWA-D0-4134::q6502|The squirrel eats the tiger.": {
+        "type": "predicate",
+        "name": "eats",
+        "args": [
+          "squirrel",
+          "tiger"
+        ]
+      },
+      "RelNeg-OWA-D0-4134::q6502|The tiger eats the bald eagle.": {
+        "type": "predicate",
+        "name": "eats",
+        "args": [
+          "the_tiger",
+          "the_bald_eagle"
+        ]
+      },
+      "RelNeg-OWA-D0-4134::q6502|the bald eagle does not see the mouse": {
+        "type": "equals",
+        "left": "bald_eagle",
+        "right": "mouse"
+      },
+      "RelNeg-OWA-D0-4134::q6502|the bald eagle is young": {
+        "type": "predicate",
+        "name": "young",
+        "args": [
+          "bald_eagle"
+        ]
+      },
+      "RelNeg-OWA-D0-4134::q6502|the squirrel is young": {
+        "type": "predicate",
+        "name": "young",
+        "args": [
+          "squirrel"
+        ]
+      },
+      "RelNeg-OWA-D0-4134::q6502|If someone eats the tiger then they eat the bald eagle.": {
+        "type": "predicate",
+        "name": "if_someone_eats_the_tiger_then_they_eat_the_bald_eagle",
+        "args": []
+      },
+      "RelNeg-OWA-D0-4134::q6502|young": {
+        "type": "predicate",
+        "name": "young",
+        "args": [
+          "the_entity_that_property_describes"
+        ]
+      },
+      "RelNeg-OWA-D0-4134::q6502|do not eat the tiger": {
+        "type": "predicate",
+        "name": "do_not_eat_the_tiger",
+        "args": []
+      },
+      "RelNeg-OWA-D0-4134::q6502|the bald eagle sees the mouse": {
+        "type": "predicate",
+        "name": "the_bald_eagle_sees_the_mouse",
+        "args": []
+      },
+      "RelNeg-OWA-D0-4134::q6502|the bald eagle does not visit the mouse": {
+        "type": "equals",
+        "left": "bald_eagle",
+        "right": "mouse"
+      },
+      "RelNeg-OWA-D0-4134::q6502|If someone eats the bald eagle": {
+        "type": "predicate",
+        "name": "eats",
+        "args": [
+          "someone",
+          "the_bald_eagle"
+        ]
+      },
+      "RelNeg-OWA-D0-4134::q6502|the bald eagle does not eat the mouse": {
+        "type": "equals",
+        "left": "bald_eagle",
+        "right": "mouse"
+      },
+      "RelNeg-OWA-D0-4134::q6502|visit tiger": {
+        "type": "predicate",
+        "name": "visit_tiger",
+        "args": []
+      },
+      "RelNeg-OWA-D0-4134::q6502|round": {
+        "type": "predicate",
+        "name": "round",
+        "args": []
+      },
+      "RelNeg-OWA-D0-4134::q6502|someone visits the mouse": {
+        "type": "predicate",
+        "name": "visit_mouse",
+        "args": []
+      },
+      "RelNeg-OWA-D0-4134::q6502|the mouse sees the tiger": {
+        "type": "predicate",
+        "name": "the_mouse_sees_the_tiger",
+        "args": []
+      },
+      "RelNeg-OWA-D0-4134::q6502|The bald eagle is not round.": {
+        "type": "equals",
+        "left": "bald_eagle",
+        "right": "not_round"
+      },
+      "AttNonegNatLang-OWA-133::q53250|Bob is cold to his ex-wife.": {
+        "type": "predicate",
+        "name": "bob_is_cold_to_ex_wife",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-133::q53250|She knows he is round and red.": {
+        "type": "predicate",
+        "name": "knows_he_is_round_and_red",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-133::q53250|He is kind to everyone else.": {
+        "type": "predicate",
+        "name": "kind_to_everyone_else",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-133::q53250|That guy Dave sure is nice.": {
+        "type": "predicate",
+        "name": "nice",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-133::q53250|For being so cold, it's good Eric can remain nice.": {
+        "type": "predicate",
+        "name": "cold_nice",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-133::q53250|If you're truly nice, cold, and blue, you're kind, too.": {
+        "type": "predicate",
+        "name": "kind",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-133::q53250|Every time you meet someone kind and nice": {
+        "type": "predicate",
+        "name": "every_time_you_meet_someone_kind_and_nice",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-133::q53250|they'll be green, too": {
+        "type": "predicate",
+        "name": "they_ll_be_green_too",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-133::q53250|Anybody young person covered in blue and green will be kind.": {
+        "type": "predicate",
+        "name": "young_person_covered_in_blue_and_green_is_kind",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-133::q53250|Rough, cold people are blue.": {
+        "type": "predicate",
+        "name": "rough_cold_people_blue",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-133::q53250|Most big and cold people are also rough.": {
+        "type": "predicate",
+        "name": "most_big_and_cold_people_are_also_rough",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-133::q53250|Kind people that are round are on the big side.": {
+        "type": "predicate",
+        "name": "kind_people_that_are_round_are_on_the_big_side",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-133::q53250|Someone who has a round shape with a nice personality with big size are always kind.": {
+        "type": "predicate",
+        "name": "kind",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-133::q53250|Bob is red.": {
+        "type": "predicate",
+        "name": "bob_is_red",
+        "args": []
+      },
+      "AttNeg-OWA-D1-2498::q169660|Bob is big.": {
+        "type": "predicate",
+        "name": "big",
+        "args": [
+          "bob"
+        ]
+      },
+      "AttNeg-OWA-D1-2498::q169660|Bob is blue.": {
+        "type": "predicate",
+        "name": "is_blue",
+        "args": [
+          "bob"
+        ]
+      },
+      "AttNeg-OWA-D1-2498::q169660|Bob is not furry.": {
+        "type": "predicate",
+        "name": "is_not_furry",
+        "args": [
+          "bob"
+        ]
+      },
+      "AttNeg-OWA-D1-2498::q169660|Bob is not quiet.": {
+        "type": "predicate",
+        "name": "bob_is_not_quiet",
+        "args": []
+      },
+      "AttNeg-OWA-D1-2498::q169660|Bob is not young.": {
+        "type": "predicate",
+        "name": "is_not_young",
+        "args": [
+          "bob"
+        ]
+      },
+      "AttNeg-OWA-D1-2498::q169660|Charlie is kind.": {
+        "type": "predicate",
+        "name": "kind",
+        "args": [
+          "charlie"
+        ]
+      },
+      "AttNeg-OWA-D1-2498::q169660|Charlie is not quiet.": {
+        "type": "predicate",
+        "name": "charlie_is_not_quiet",
+        "args": []
+      },
+      "AttNeg-OWA-D1-2498::q169660|Dave is big.": {
+        "type": "predicate",
+        "name": "big",
+        "args": [
+          "dave"
+        ]
+      },
+      "AttNeg-OWA-D1-2498::q169660|Dave is blue.": {
+        "type": "predicate",
+        "name": "is_blue",
+        "args": [
+          "dave"
+        ]
+      },
+      "AttNeg-OWA-D1-2498::q169660|Dave is kind.": {
+        "type": "predicate",
+        "name": "kind",
+        "args": [
+          "dave"
+        ]
+      },
+      "AttNeg-OWA-D1-2498::q169660|Dave is red.": {
+        "type": "predicate",
+        "name": "is_red",
+        "args": [
+          "dave"
+        ]
+      },
+      "AttNeg-OWA-D1-2498::q169660|Gary is big.": {
+        "type": "predicate",
+        "name": "big",
+        "args": [
+          "gary"
+        ]
+      },
+      "AttNeg-OWA-D1-2498::q169660|Gary is blue.": {
+        "type": "predicate",
+        "name": "is_blue",
+        "args": [
+          "gary"
+        ]
+      },
+      "AttNeg-OWA-D1-2498::q169660|Gary is kind.": {
+        "type": "predicate",
+        "name": "gary_is_kind",
+        "args": []
+      },
+      "AttNeg-OWA-D1-2498::q169660|Gary is quiet.": {
+        "type": "predicate",
+        "name": "quiet",
+        "args": [
+          "gary"
+        ]
+      },
+      "AttNeg-OWA-D1-2498::q169660|Gary is red.": {
+        "type": "predicate",
+        "name": "gary_is_red",
+        "args": []
+      },
+      "AttNeg-OWA-D1-2498::q169660|Dave is young": {
+        "type": "predicate",
+        "name": "is_young",
+        "args": [
+          "dave"
+        ]
+      },
+      "AttNeg-OWA-D1-2498::q169660|Dave is furry": {
+        "type": "equals",
+        "left": "dave",
+        "right": "furry"
+      },
+      "AttNeg-OWA-D1-2498::q169660|Red things are big.": {
+        "type": "predicate",
+        "name": "red_things_are_big",
+        "args": []
+      },
+      "AttNeg-OWA-D1-2498::q169660|Bob is young": {
+        "type": "predicate",
+        "name": "is_young",
+        "args": [
+          "bob"
+        ]
+      },
+      "AttNeg-OWA-D1-2498::q169660|Bob is kind": {
+        "type": "equals",
+        "left": "bob",
+        "right": "kind"
+      },
+      "AttNeg-OWA-D1-2498::q169660|All furry things are not young.": {
+        "type": "predicate",
+        "name": "all_furry_things_are_not_young",
+        "args": []
+      },
+      "AttNeg-OWA-D1-2498::q169660|something is young": {
+        "type": "predicate",
+        "name": "young",
+        "args": []
+      },
+      "AttNeg-OWA-D1-2498::q169660|something is big": {
+        "type": "predicate",
+        "name": "something_is_big",
+        "args": []
+      },
+      "AttNeg-OWA-D1-2498::q169660|Big, red things are quiet.": {
+        "type": "predicate",
+        "name": "big_red_things_are_quiet",
+        "args": []
+      },
+      "AttNeg-OWA-D1-2498::q169660|Charlie is not red.": {
+        "type": "predicate",
+        "name": "not_red",
+        "args": [
+          "charlie"
+        ]
+      },
+      "RelNoneg-OWA-D2-1649::q75422|The cat is kind.": {
+        "type": "predicate",
+        "name": "the_cat_is_kind",
+        "args": []
+      },
+      "RelNoneg-OWA-D2-1649::q75422|The rabbit is round.": {
+        "type": "equals",
+        "left": "rabbit",
+        "right": "round"
+      },
+      "RelNoneg-OWA-D2-1649::q75422|The rabbit needs the cat.": {
+        "type": "predicate",
+        "name": "the_rabbit_needs_the_cat",
+        "args": []
+      },
+      "RelNoneg-OWA-D2-1649::q75422|the cat likes the rabbit": {
+        "type": "predicate",
+        "name": "the_cat_likes_the_rabbit",
+        "args": []
+      },
+      "RelNoneg-OWA-D2-1649::q75422|something needs the rabbit and it likes the cat": {
+        "type": "predicate",
+        "name": "something_needs_the_rabbit_and_it_likes_the_cat",
+        "args": []
+      },
+      "RelNoneg-OWA-D2-1649::q75422|the cat is young": {
+        "type": "equals",
+        "left": "cat",
+        "right": "young"
+      },
+      "RelNoneg-OWA-D2-1649::q75422|If something needs the cat then the cat likes the rabbit.": {
+        "type": "predicate",
+        "name": "needs_cat_likes_rabbit",
+        "args": []
+      },
+      "RelNoneg-OWA-D2-1649::q75422|The cat chases the rabbit.": {
+        "type": "predicate",
+        "name": "chases",
+        "args": [
+          "the_cat",
+          "the_rabbit"
+        ]
+      },
+      "AttNeg-OWA-D1-518::q157393|Bob is smart.": {
+        "type": "predicate",
+        "name": "bob_is_smart",
+        "args": []
+      },
+      "AttNeg-OWA-D1-518::q157393|Charlie is rough.": {
+        "type": "predicate",
+        "name": "rough",
+        "args": [
+          "charlie"
+        ]
+      },
+      "AttNeg-OWA-D1-518::q157393|Dave is round.": {
+        "type": "predicate",
+        "name": "round",
+        "args": [
+          "dave"
+        ]
+      },
+      "AttNeg-OWA-D1-518::q157393|Erin is smart.": {
+        "type": "predicate",
+        "name": "erin_is_smart",
+        "args": []
+      },
+      "AttNeg-OWA-D1-518::q157393|Bob is big": {
+        "type": "equals",
+        "left": "bob",
+        "right": "big"
+      },
+      "AttNeg-OWA-D1-518::q157393|Bob is green": {
+        "type": "equals",
+        "left": "bob",
+        "right": "green"
+      },
+      "AttNeg-OWA-D1-518::q157393|If someone is round then they are not smart.": {
+        "type": "predicate",
+        "name": "round_not_smart",
+        "args": []
+      },
+      "AttNeg-OWA-D1-518::q157393|Dave is smart.": {
+        "type": "predicate",
+        "name": "dave_is_smart",
+        "args": []
+      },
+      "AttNeg-OWA-D0-4416::q16881|Bob is not blue.": {
+        "type": "predicate",
+        "name": "is_not_blue",
+        "args": [
+          "bob"
+        ]
+      },
+      "AttNeg-OWA-D0-4416::q16881|Bob is quiet.": {
+        "type": "predicate",
+        "name": "quiet",
+        "args": [
+          "bob"
+        ]
+      },
+      "AttNeg-OWA-D0-4416::q16881|Bob is round.": {
+        "type": "equals",
+        "left": "bob",
+        "right": "round"
+      },
+      "AttNeg-OWA-D0-4416::q16881|Charlie is rough.": {
+        "type": "predicate",
+        "name": "rough",
+        "args": [
+          "charlie"
+        ]
+      },
+      "AttNeg-OWA-D0-4416::q16881|Dave is blue.": {
+        "type": "predicate",
+        "name": "is_blue",
+        "args": [
+          "dave"
+        ]
+      },
+      "AttNeg-OWA-D0-4416::q16881|Dave is nice.": {
+        "type": "predicate",
+        "name": "dave_is_nice",
+        "args": []
+      },
+      "AttNeg-OWA-D0-4416::q16881|Harry is quiet.": {
+        "type": "predicate",
+        "name": "quiet",
+        "args": [
+          "harry"
+        ]
+      },
+      "AttNeg-OWA-D0-4416::q16881|someone is blue": {
+        "type": "predicate",
+        "name": "someone_is_blue",
+        "args": []
+      },
+      "AttNeg-OWA-D0-4416::q16881|someone is cold": {
+        "type": "predicate",
+        "name": "cold",
+        "args": []
+      },
+      "AttNeg-OWA-D0-4416::q16881|they are round": {
+        "type": "predicate",
+        "name": "round",
+        "args": [
+          "they"
+        ]
+      },
+      "AttNeg-OWA-D0-4416::q16881|someone is round": {
+        "type": "predicate",
+        "name": "someone_is_round",
+        "args": []
+      },
+      "AttNeg-OWA-D0-4416::q16881|blue": {
+        "type": "predicate",
+        "name": "blue",
+        "args": []
+      },
+      "AttNeg-OWA-D0-4416::q16881|they are not cold": {
+        "type": "equals",
+        "left": "cold",
+        "right": "not"
+      },
+      "AttNeg-OWA-D0-4416::q16881|Charlie is not rough.": {
+        "type": "predicate",
+        "name": "not_rough",
+        "args": [
+          "charlie"
+        ]
+      },
+      "AttNeg-OWA-D1-2824::q169230|Charlie is not big.": {
+        "type": "predicate",
+        "name": "is_not_big",
+        "args": [
+          "charlie"
+        ]
+      },
+      "AttNeg-OWA-D1-2824::q169230|Charlie is cold.": {
+        "type": "predicate",
+        "name": "is_cold",
+        "args": [
+          "charlie"
+        ]
+      },
+      "AttNeg-OWA-D1-2824::q169230|Charlie is not green.": {
+        "type": "predicate",
+        "name": "not_green",
+        "args": [
+          "charlie"
+        ]
+      },
+      "AttNeg-OWA-D1-2824::q169230|Charlie is nice.": {
+        "type": "predicate",
+        "name": "nice",
+        "args": [
+          "charlie"
+        ]
+      },
+      "AttNeg-OWA-D1-2824::q169230|Charlie is not round.": {
+        "type": "predicate",
+        "name": "is_not_round",
+        "args": [
+          "charlie"
+        ]
+      },
+      "AttNeg-OWA-D1-2824::q169230|Dave is big.": {
+        "type": "predicate",
+        "name": "big",
+        "args": [
+          "dave"
+        ]
+      },
+      "AttNeg-OWA-D1-2824::q169230|Dave is green.": {
+        "type": "predicate",
+        "name": "green",
+        "args": [
+          "dave"
+        ]
+      },
+      "AttNeg-OWA-D1-2824::q169230|Dave is not round.": {
+        "type": "predicate",
+        "name": "is_not_round",
+        "args": [
+          "dave"
+        ]
+      },
+      "AttNeg-OWA-D1-2824::q169230|Gary is not blue.": {
+        "type": "predicate",
+        "name": "is_not_blue",
+        "args": [
+          "gary"
+        ]
+      },
+      "AttNeg-OWA-D1-2824::q169230|Gary is cold.": {
+        "type": "predicate",
+        "name": "is_cold",
+        "args": [
+          "gary"
+        ]
+      },
+      "AttNeg-OWA-D1-2824::q169230|Gary is green.": {
+        "type": "predicate",
+        "name": "green",
+        "args": [
+          "gary"
+        ]
+      },
+      "AttNeg-OWA-D1-2824::q169230|Gary is not nice.": {
+        "type": "predicate",
+        "name": "not_nice",
+        "args": [
+          "gary"
+        ]
+      },
+      "AttNeg-OWA-D1-2824::q169230|Harry is big.": {
+        "type": "predicate",
+        "name": "big",
+        "args": [
+          "harry"
+        ]
+      },
+      "AttNeg-OWA-D1-2824::q169230|Harry is not cold.": {
+        "type": "predicate",
+        "name": "is_not_cold",
+        "args": [
+          "harry"
+        ]
+      },
+      "AttNeg-OWA-D1-2824::q169230|Harry is not nice.": {
+        "type": "equals",
+        "left": "harry",
+        "right": "nice"
+      },
+      "AttNeg-OWA-D1-2824::q169230|Harry is smart.": {
+        "type": "predicate",
+        "name": "harry_is_smart",
+        "args": []
+      },
+      "AttNeg-OWA-D1-2824::q169230|If Charlie is not big then Charlie is smart.": {
+        "type": "predicate",
+        "name": "charlie_is_smart",
+        "args": []
+      },
+      "AttNeg-OWA-D1-2824::q169230|something is blue": {
+        "type": "predicate",
+        "name": "something_is_blue",
+        "args": []
+      },
+      "AttNeg-OWA-D1-2824::q169230|nice": {
+        "type": "predicate",
+        "name": "nice",
+        "args": []
+      },
+      "AttNeg-OWA-D1-2824::q169230|it is cold": {
+        "type": "predicate",
+        "name": "is_cold",
+        "args": [
+          "it"
+        ]
+      },
+      "AttNoneg-OWA-D3-1332::q114981|Anne is nice.": {
+        "type": "predicate",
+        "name": "anne_is_nice",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-1332::q114981|Anne is quiet.": {
+        "type": "predicate",
+        "name": "quiet",
+        "args": [
+          "anne"
+        ]
+      },
+      "AttNoneg-OWA-D3-1332::q114981|Bob is cold.": {
+        "type": "predicate",
+        "name": "is_cold",
+        "args": [
+          "bob"
+        ]
+      },
+      "AttNoneg-OWA-D3-1332::q114981|Bob is nice.": {
+        "type": "predicate",
+        "name": "nice",
+        "args": [
+          "bob"
+        ]
+      },
+      "AttNoneg-OWA-D3-1332::q114981|Bob is white.": {
+        "type": "predicate",
+        "name": "is_white",
+        "args": [
+          "bob"
+        ]
+      },
+      "AttNoneg-OWA-D3-1332::q114981|Charlie is big.": {
+        "type": "predicate",
+        "name": "big",
+        "args": [
+          "charlie"
+        ]
+      },
+      "AttNoneg-OWA-D3-1332::q114981|Charlie is blue.": {
+        "type": "predicate",
+        "name": "is_blue",
+        "args": [
+          "charlie"
+        ]
+      },
+      "AttNoneg-OWA-D3-1332::q114981|Charlie is quiet.": {
+        "type": "predicate",
+        "name": "quiet",
+        "args": [
+          "charlie"
+        ]
+      },
+      "AttNoneg-OWA-D3-1332::q114981|Charlie is smart.": {
+        "type": "predicate",
+        "name": "charlie_is_smart",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-1332::q114981|Charlie is white.": {
+        "type": "predicate",
+        "name": "is_white",
+        "args": [
+          "charlie"
+        ]
+      },
+      "AttNoneg-OWA-D3-1332::q114981|someone is nice": {
+        "type": "predicate",
+        "name": "someone_is_nice",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-1332::q114981|someone is smart": {
+        "type": "predicate",
+        "name": "smart",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-1332::q114981|they are big": {
+        "type": "predicate",
+        "name": "big",
+        "args": [
+          "they"
+        ]
+      },
+      "AttNoneg-OWA-D3-1332::q114981|Quiet, white people are smart.": {
+        "type": "predicate",
+        "name": "quiet_white_people_are_smart",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-1332::q114981|If someone is cold then they are smart.": {
+        "type": "predicate",
+        "name": "cold_smart",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-1332::q114981|Big, quiet people are nice.": {
+        "type": "predicate",
+        "name": "bigquietpeople_are_nice",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-1332::q114981|Charlie is nice": {
+        "type": "equals",
+        "left": "charlie",
+        "right": "nice"
+      },
+      "AttNoneg-OWA-D3-1332::q114981|All big people are nice.": {
+        "type": "predicate",
+        "name": "all_big_people_are_nice",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-1332::q114981|Nice people are cold.": {
+        "type": "predicate",
+        "name": "nice_people_are_cold",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-1332::q114981|If someone is white then they are smart.": {
+        "type": "predicate",
+        "name": "if_someone_is_white_then_they_are_smart",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-1332::q114981|Charlie is not cold.": {
+        "type": "predicate",
+        "name": "is_not_cold",
+        "args": [
+          "charlie"
+        ]
+      },
+      "RelNoneg-OWA-D5-556::q145032|The cow eats the squirrel.": {
+        "type": "predicate",
+        "name": "eats",
+        "args": [
+          "the_cow",
+          "the_squirrel"
+        ]
+      },
+      "RelNoneg-OWA-D5-556::q145032|The cow is blue.": {
+        "type": "predicate",
+        "name": "is_blue",
+        "args": [
+          "cow"
+        ]
+      },
+      "RelNoneg-OWA-D5-556::q145032|The cow is nice.": {
+        "type": "equals",
+        "left": "cow",
+        "right": "nice"
+      },
+      "RelNoneg-OWA-D5-556::q145032|The cow is red.": {
+        "type": "predicate",
+        "name": "is_red",
+        "args": [
+          "cow"
+        ]
+      },
+      "RelNoneg-OWA-D5-556::q145032|The dog eats the cow.": {
+        "type": "predicate",
+        "name": "eats",
+        "args": [
+          "the_dog",
+          "the_cow"
+        ]
+      },
+      "RelNoneg-OWA-D5-556::q145032|The mouse is big.": {
+        "type": "equals",
+        "left": "mouse",
+        "right": "big"
+      },
+      "RelNoneg-OWA-D5-556::q145032|The mouse is kind.": {
+        "type": "predicate",
+        "name": "the_mouse_is_kind",
+        "args": []
+      },
+      "RelNoneg-OWA-D5-556::q145032|The mouse is red.": {
+        "type": "equals",
+        "left": "mouse",
+        "right": "red"
+      },
+      "RelNoneg-OWA-D5-556::q145032|The mouse visits the dog.": {
+        "type": "predicate",
+        "name": "the_mouse_visits_the_dog",
+        "args": []
+      },
+      "RelNoneg-OWA-D5-556::q145032|The squirrel chases the cow.": {
+        "type": "predicate",
+        "name": "chases",
+        "args": [
+          "squirrel",
+          "cow"
+        ]
+      },
+      "RelNoneg-OWA-D5-556::q145032|The squirrel visits the cow.": {
+        "type": "predicate",
+        "name": "the_squirrel_visits_the_cow",
+        "args": []
+      },
+      "RelNoneg-OWA-D5-556::q145032|The squirrel visits the dog.": {
+        "type": "predicate",
+        "name": "the_squirrel_visits_the_dog",
+        "args": []
+      },
+      "RelNoneg-OWA-D5-556::q145032|someone eats the cow": {
+        "type": "predicate",
+        "name": "eats",
+        "args": [
+          "someone",
+          "the_cow"
+        ]
+      },
+      "RelNoneg-OWA-D5-556::q145032|they visit the dog": {
+        "type": "predicate",
+        "name": "visit_the_dog",
+        "args": []
+      },
+      "RelNoneg-OWA-D5-556::q145032|someone eats the mouse": {
+        "type": "predicate",
+        "name": "eats",
+        "args": [
+          "someone",
+          "the_mouse"
+        ]
+      },
+      "RelNoneg-OWA-D5-556::q145032|they chase the squirrel": {
+        "type": "predicate",
+        "name": "they_chase_the_squirrel",
+        "args": []
+      },
+      "RelNoneg-OWA-D5-556::q145032|If someone chases the squirrel": {
+        "type": "predicate",
+        "name": "chases",
+        "args": [
+          "someone",
+          "the_squirrel"
+        ]
+      },
+      "RelNoneg-OWA-D5-556::q145032|the squirrel chases the mouse": {
+        "type": "predicate",
+        "name": "chases",
+        "args": [
+          "the_squirrel",
+          "the_mouse"
+        ]
+      },
+      "RelNoneg-OWA-D5-556::q145032|If someone visits the cow then the cow eats the dog.": {
+        "type": "predicate",
+        "name": "visit_cow_visit_cow_cow_eats_dog",
+        "args": []
+      },
+      "RelNoneg-OWA-D5-556::q145032|someone is red": {
+        "type": "predicate",
+        "name": "red",
+        "args": []
+      },
+      "RelNoneg-OWA-D5-556::q145032|they eat the mouse": {
+        "type": "predicate",
+        "name": "eat",
+        "args": [
+          "they",
+          "the_mouse"
+        ]
+      },
+      "RelNoneg-OWA-D5-556::q145032|the mouse eats the cow": {
+        "type": "predicate",
+        "name": "eats",
+        "args": [
+          "the_mouse",
+          "the_cow"
+        ]
+      },
+      "RelNoneg-OWA-D5-556::q145032|the cow is big": {
+        "type": "equals",
+        "left": "cow",
+        "right": "big"
+      },
+      "RelNoneg-OWA-D5-556::q145032|the cow visits the dog": {
+        "type": "predicate",
+        "name": "the_cow_visits_the_dog",
+        "args": []
+      },
+      "RelNoneg-OWA-D5-556::q145032|someone visits the squirrel": {
+        "type": "predicate",
+        "name": "visit_squirrel",
+        "args": []
+      },
+      "RelNoneg-OWA-D5-556::q145032|mouse visits dog": {
+        "type": "predicate",
+        "name": "mouse_visits_dog",
+        "args": []
+      },
+      "RelNoneg-OWA-D5-556::q145032|dog visits squirrel": {
+        "type": "predicate",
+        "name": "dog_visits_squirrel",
+        "args": []
+      },
+      "RelNoneg-OWA-D5-556::q145032|The cow does not chase the squirrel.": {
+        "type": "equals",
+        "left": "cow",
+        "right": "squirrel"
+      },
+      "AttNeg-OWA-D5-439::q141564|Anne is nice.": {
+        "type": "predicate",
+        "name": "anne_is_nice",
+        "args": []
+      },
+      "AttNeg-OWA-D5-439::q141564|Anne is smart.": {
+        "type": "predicate",
+        "name": "anne_is_smart",
+        "args": []
+      },
+      "AttNeg-OWA-D5-439::q141564|Charlie is green.": {
+        "type": "predicate",
+        "name": "green",
+        "args": [
+          "charlie"
+        ]
+      },
+      "AttNeg-OWA-D5-439::q141564|Fiona is nice.": {
+        "type": "predicate",
+        "name": "fiona_is_nice",
+        "args": []
+      },
+      "AttNeg-OWA-D5-439::q141564|Fiona is round.": {
+        "type": "predicate",
+        "name": "round",
+        "args": [
+          "fiona"
+        ]
+      },
+      "AttNeg-OWA-D5-439::q141564|Fiona is white.": {
+        "type": "predicate",
+        "name": "is_white",
+        "args": [
+          "fiona"
+        ]
+      },
+      "AttNeg-OWA-D5-439::q141564|Harry is blue.": {
+        "type": "predicate",
+        "name": "harry_is_blue",
+        "args": []
+      },
+      "AttNeg-OWA-D5-439::q141564|White, kind things are nice.": {
+        "type": "predicate",
+        "name": "white_kind_things_nice",
+        "args": []
+      },
+      "AttNeg-OWA-D5-439::q141564|If something is smart and kind then it is green.": {
+        "type": "predicate",
+        "name": "smart_and_kind_green",
+        "args": []
+      },
+      "AttNeg-OWA-D5-439::q141564|If something is round and kind then it is white.": {
+        "type": "predicate",
+        "name": "round_kind_white",
+        "args": []
+      },
+      "AttNeg-OWA-D5-439::q141564|Smart things are kind.": {
+        "type": "predicate",
+        "name": "smart_things_are_kind",
+        "args": []
+      },
+      "AttNeg-OWA-D5-439::q141564|Nice, white things are kind.": {
+        "type": "predicate",
+        "name": "nice_white_things_are_kind",
+        "args": []
+      },
+      "AttNeg-OWA-D5-439::q141564|Round things are kind.": {
+        "type": "predicate",
+        "name": "round_things_are_kind",
+        "args": []
+      },
+      "AttNeg-OWA-D5-439::q141564|If something is nice then it is smart.": {
+        "type": "predicate",
+        "name": "nice_smart",
+        "args": []
+      },
+      "AttNeg-OWA-D5-439::q141564|All white things are round.": {
+        "type": "predicate",
+        "name": "all_white_things_are_round",
+        "args": []
+      },
+      "AttNeg-OWA-D5-439::q141564|Charlie is white": {
+        "type": "predicate",
+        "name": "is_white",
+        "args": [
+          "charlie"
+        ]
+      },
+      "AttNeg-OWA-D5-439::q141564|Charlie is nice.": {
+        "type": "predicate",
+        "name": "nice",
+        "args": [
+          "charlie"
+        ]
+      },
+      "AttNoneg-OWA-D0-1648::q1527|Anne is kind.": {
+        "type": "predicate",
+        "name": "kind",
+        "args": [
+          "anne"
+        ]
+      },
+      "AttNoneg-OWA-D0-1648::q1527|Charlie is quiet.": {
+        "type": "predicate",
+        "name": "quiet",
+        "args": [
+          "charlie"
+        ]
+      },
+      "AttNoneg-OWA-D0-1648::q1527|Dave is round.": {
+        "type": "predicate",
+        "name": "round",
+        "args": [
+          "dave"
+        ]
+      },
+      "AttNoneg-OWA-D0-1648::q1527|Harry is rough.": {
+        "type": "predicate",
+        "name": "rough",
+        "args": [
+          "harry"
+        ]
+      },
+      "AttNoneg-OWA-D0-1648::q1527|All rough things are young.": {
+        "type": "predicate",
+        "name": "all_rough_things_are_young",
+        "args": []
+      },
+      "AttNoneg-OWA-D0-1648::q1527|Round things are young.": {
+        "type": "predicate",
+        "name": "round_things_are_young",
+        "args": []
+      },
+      "AttNoneg-OWA-D0-1648::q1527|All cold, round things are smart.": {
+        "type": "predicate",
+        "name": "all_cold_round_things_are_smart",
+        "args": []
+      },
+      "AttNoneg-OWA-D0-1648::q1527|Dave is kind.": {
+        "type": "predicate",
+        "name": "kind",
+        "args": [
+          "dave"
+        ]
+      },
+      "RelNoneg-OWA-D1-1889::q158168|The bear needs the cow.": {
+        "type": "predicate",
+        "name": "the_bear_needs_the_cow",
+        "args": []
+      },
+      "RelNoneg-OWA-D1-1889::q158168|The bear sees the cow.": {
+        "type": "predicate",
+        "name": "the_bear_sees_the_cow",
+        "args": []
+      },
+      "RelNoneg-OWA-D1-1889::q158168|The bear visits the cow.": {
+        "type": "predicate",
+        "name": "bear_visits_cow",
+        "args": []
+      },
+      "RelNoneg-OWA-D1-1889::q158168|The cow is nice.": {
+        "type": "equals",
+        "left": "cow",
+        "right": "nice"
+      },
+      "RelNoneg-OWA-D1-1889::q158168|The cow is young.": {
+        "type": "predicate",
+        "name": "young",
+        "args": [
+          "cow"
+        ]
+      },
+      "RelNoneg-OWA-D1-1889::q158168|The cow sees the bear.": {
+        "type": "predicate",
+        "name": "the_cow_sees_the_bear",
+        "args": []
+      },
+      "RelNoneg-OWA-D1-1889::q158168|The cow visits the bear.": {
+        "type": "predicate",
+        "name": "the_cow_visits_the_bear",
+        "args": []
+      },
+      "RelNoneg-OWA-D1-1889::q158168|the cow needs the bear": {
+        "type": "predicate",
+        "name": "the_cow_needs_the_bear",
+        "args": []
+      },
+      "RelNoneg-OWA-D1-1889::q158168|If the cow is green": {
+        "type": "predicate",
+        "name": "cow_is_green",
+        "args": []
+      },
+      "RelNoneg-OWA-D1-1889::q158168|someone needs the cow": {
+        "type": "predicate",
+        "name": "needs_the_cow",
+        "args": []
+      },
+      "RelNoneg-OWA-D1-1889::q158168|they visit the cow": {
+        "type": "predicate",
+        "name": "visit_the_cow",
+        "args": []
+      },
+      "RelNoneg-OWA-D1-1889::q158168|they are red": {
+        "type": "predicate",
+        "name": "red",
+        "args": [
+          "they"
+        ]
+      },
+      "RelNoneg-OWA-D1-1889::q158168|someone is big": {
+        "type": "predicate",
+        "name": "big",
+        "args": []
+      },
+      "RelNoneg-OWA-D1-1889::q158168|the bear is red": {
+        "type": "equals",
+        "left": "bear",
+        "right": "red"
+      },
+      "RelNoneg-OWA-D1-1889::q158168|someone sees the cow": {
+        "type": "predicate",
+        "name": "sees_the_cow",
+        "args": []
+      },
+      "RelNoneg-OWA-D1-1889::q158168|they are nice": {
+        "type": "predicate",
+        "name": "they_are_nice",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-109::q33235|Alan is green": {
+        "type": "predicate",
+        "name": "green",
+        "args": [
+          "alan"
+        ]
+      },
+      "AttNonegNatLang-OWA-109::q33235|Alan is cold": {
+        "type": "predicate",
+        "name": "is_cold",
+        "args": [
+          "alan"
+        ]
+      },
+      "AttNonegNatLang-OWA-109::q33235|Bob who is young and nice is also quite big and feels green.": {
+        "type": "predicate",
+        "name": "young_and_nice_and_big_and_green",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-109::q33235|Eric is a big fellow, often blue and sad, but he is nice.": {
+        "type": "predicate",
+        "name": "eric_is_big_fellow_often_blue_and_sad_but_he_is_nice",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-109::q33235|Harry was proud of being round, yet rough.": {
+        "type": "predicate",
+        "name": "was_proud_of_being_round_and_rough",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-109::q33235|His red cheeks glowed.": {
+        "type": "predicate",
+        "name": "glowed",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-109::q33235|nice and round and cold": {
+        "type": "predicate",
+        "name": "nice_and_round_and_cold",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-109::q33235|look blue": {
+        "type": "predicate",
+        "name": "look_blue",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-109::q33235|Rough people who are red in color and big": {
+        "type": "predicate",
+        "name": "rough_red_big",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-109::q33235|are usually round in shape": {
+        "type": "predicate",
+        "name": "are_usually_round_in_shape",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-109::q33235|A rather big person is a red person.": {
+        "type": "predicate",
+        "name": "bigpersonisredperson",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-109::q33235|Kind people with rough skin are usually red because it's wind burn.": {
+        "type": "predicate",
+        "name": "kind_people_with_rough_skin_are_usually_red_because_it_s_wind_burn",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-109::q33235|Kind red and round people often look green.": {
+        "type": "predicate",
+        "name": "kind_red_and_round_people_often_look_green",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-109::q33235|Big people who are blue": {
+        "type": "predicate",
+        "name": "big_people_who_are_blue",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-109::q33235|and red": {
+        "type": "predicate",
+        "name": "red",
+        "args": [
+          "and"
+        ]
+      },
+      "AttNonegNatLang-OWA-109::q33235|are afflicted with rough skin": {
+        "type": "predicate",
+        "name": "rough_skin_afflicted",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-109::q33235|Rough people who look red are cold.": {
+        "type": "predicate",
+        "name": "rough_people_who_look_red_are_cold",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-109::q33235|Harry is kind.": {
+        "type": "predicate",
+        "name": "kind",
+        "args": [
+          "harry"
+        ]
+      },
+      "AttNoneg-OWA-D3-728::q115123|Anne is blue.": {
+        "type": "predicate",
+        "name": "is_blue",
+        "args": [
+          "anne"
+        ]
+      },
+      "AttNoneg-OWA-D3-728::q115123|Anne is kind.": {
+        "type": "predicate",
+        "name": "kind",
+        "args": [
+          "anne"
+        ]
+      },
+      "AttNoneg-OWA-D3-728::q115123|Anne is nice.": {
+        "type": "predicate",
+        "name": "anne_is_nice",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-728::q115123|Bob is big.": {
+        "type": "predicate",
+        "name": "big",
+        "args": [
+          "bob"
+        ]
+      },
+      "AttNoneg-OWA-D3-728::q115123|Bob is blue.": {
+        "type": "predicate",
+        "name": "is_blue",
+        "args": [
+          "bob"
+        ]
+      },
+      "AttNoneg-OWA-D3-728::q115123|Bob is furry.": {
+        "type": "predicate",
+        "name": "is_furry",
+        "args": [
+          "bob"
+        ]
+      },
+      "AttNoneg-OWA-D3-728::q115123|Bob is kind.": {
+        "type": "predicate",
+        "name": "bob_is_kind",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-728::q115123|Bob is smart.": {
+        "type": "predicate",
+        "name": "bob_is_smart",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-728::q115123|Dave is big.": {
+        "type": "predicate",
+        "name": "big",
+        "args": [
+          "dave"
+        ]
+      },
+      "AttNoneg-OWA-D3-728::q115123|Dave is kind.": {
+        "type": "predicate",
+        "name": "kind",
+        "args": [
+          "dave"
+        ]
+      },
+      "AttNoneg-OWA-D3-728::q115123|Dave is nice.": {
+        "type": "predicate",
+        "name": "dave_is_nice",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-728::q115123|Dave is smart.": {
+        "type": "predicate",
+        "name": "dave_is_smart",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-728::q115123|Dave is young.": {
+        "type": "predicate",
+        "name": "is_young",
+        "args": [
+          "dave"
+        ]
+      },
+      "AttNoneg-OWA-D3-728::q115123|Erin is furry.": {
+        "type": "predicate",
+        "name": "is_furry",
+        "args": [
+          "erin"
+        ]
+      },
+      "AttNoneg-OWA-D3-728::q115123|Erin is smart.": {
+        "type": "predicate",
+        "name": "erin_is_smart",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-728::q115123|If something is blue then it is big.": {
+        "type": "predicate",
+        "name": "blue_big",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-728::q115123|Young things are big.": {
+        "type": "predicate",
+        "name": "young_things_are_big",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-728::q115123|Blue things are kind.": {
+        "type": "predicate",
+        "name": "blue_things_are_kind",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-728::q115123|All smart, kind things are young.": {
+        "type": "predicate",
+        "name": "all_smart_kinds_are_young",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-728::q115123|All blue, big things are smart.": {
+        "type": "predicate",
+        "name": "all_blue_big_things_are_smart",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-728::q115123|All nice, furry things are kind.": {
+        "type": "predicate",
+        "name": "all_nice_furry_things_are_kind",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-728::q115123|Erin is nice.": {
+        "type": "predicate",
+        "name": "erin_is_nice",
+        "args": []
+      },
+      "AttNeg-OWA-D2-1118::q69001|Bob is smart.": {
+        "type": "predicate",
+        "name": "bob_is_smart",
+        "args": []
+      },
+      "AttNeg-OWA-D2-1118::q69001|Charlie is blue.": {
+        "type": "predicate",
+        "name": "is_blue",
+        "args": [
+          "charlie"
+        ]
+      },
+      "AttNeg-OWA-D2-1118::q69001|Charlie is nice.": {
+        "type": "predicate",
+        "name": "nice",
+        "args": [
+          "charlie"
+        ]
+      },
+      "AttNeg-OWA-D2-1118::q69001|Charlie is quiet.": {
+        "type": "predicate",
+        "name": "quiet",
+        "args": [
+          "charlie"
+        ]
+      },
+      "AttNeg-OWA-D2-1118::q69001|Erin is not kind.": {
+        "type": "predicate",
+        "name": "not_kind",
+        "args": [
+          "erin"
+        ]
+      },
+      "AttNeg-OWA-D2-1118::q69001|Erin is nice.": {
+        "type": "predicate",
+        "name": "erin_is_nice",
+        "args": []
+      },
+      "AttNeg-OWA-D2-1118::q69001|Erin is round.": {
+        "type": "predicate",
+        "name": "round",
+        "args": [
+          "erin"
+        ]
+      },
+      "AttNeg-OWA-D2-1118::q69001|Erin is smart.": {
+        "type": "predicate",
+        "name": "erin_is_smart",
+        "args": []
+      },
+      "AttNeg-OWA-D2-1118::q69001|Harry is blue.": {
+        "type": "predicate",
+        "name": "harry_is_blue",
+        "args": []
+      },
+      "AttNeg-OWA-D2-1118::q69001|Harry is quiet.": {
+        "type": "predicate",
+        "name": "quiet",
+        "args": [
+          "harry"
+        ]
+      },
+      "AttNeg-OWA-D2-1118::q69001|If someone is red then they are blue.": {
+        "type": "predicate",
+        "name": "if_someone_is_red_then_they_are_blue",
+        "args": []
+      },
+      "AttNeg-OWA-D2-1118::q69001|someone is red": {
+        "type": "predicate",
+        "name": "red",
+        "args": []
+      },
+      "AttNeg-OWA-D2-1118::q69001|someone is quiet": {
+        "type": "predicate",
+        "name": "quiet",
+        "args": []
+      },
+      "AttNeg-OWA-D2-1118::q69001|they are smart": {
+        "type": "predicate",
+        "name": "they_are_smart",
+        "args": []
+      },
+      "AttNeg-OWA-D2-1118::q69001|Smart, nice people are red.": {
+        "type": "predicate",
+        "name": "smart_nice_people_are_red",
+        "args": []
+      },
+      "AttNeg-OWA-D2-1118::q69001|Bob is blue.": {
+        "type": "predicate",
+        "name": "is_blue",
+        "args": [
+          "bob"
+        ]
+      }
+    }
+  },
+  "normalized": {
+    "run_id": "prototype2_pw_c4_20_normalized",
+    "variant": "normalized",
+    "examples": 20,
+    "atomic_nodes": 333,
+    "predicate_nodes": 311,
+    "echo_nodes": 0,
+    "echo_rate": 0.0,
+    "long_name_nodes": 0,
+    "long_name_rate": 0.0,
+    "copula_prefixed_nodes": 54,
+    "copula_prefixed_rate": 0.17363344051446947,
+    "is_prefix_collisions": 29,
+    "relation_mix": {
+      "atomic.proposition": 193,
+      "atomic.equality": 22,
+      "atomic.adjective": 91,
+      "atomic.transitive": 22,
+      "atomic.intransitive": 5
+    },
+    "parser_failures": 0,
+    "system_failures": 1,
+    "correct": 12,
+    "incorrect": 7,
+    "correct_with_degenerate_predicate": 11,
+    "total_runtime_minutes": 9.862856038333849,
+    "mean_runtime_seconds": 29.588568115001543,
+    "model_invocations": 414,
+    "error_categories": {
+      "AttNonegNatLang-OWA-205::q28348": null,
+      "AttNoneg-OWA-D0-1600::q18855": null,
+      "AttNoneg-OWA-D0-5942::q10124": null,
+      "RelNeg-OWA-D1-622::q172964": null,
+      "RelNeg-OWA-D3-851::q42464": null,
+      "RelNeg-OWA-D0-4134::q6502": null,
+      "AttNonegNatLang-OWA-133::q53250": "incorrect_final_symbolic_answer",
+      "AttNeg-OWA-D1-2498::q169660": null,
+      "RelNoneg-OWA-D2-1649::q75422": "incorrect_final_symbolic_answer",
+      "AttNeg-OWA-D1-518::q157393": "incorrect_final_symbolic_answer",
+      "AttNeg-OWA-D0-4416::q16881": "incorrect_final_symbolic_answer",
+      "AttNeg-OWA-D1-2824::q169230": "inconsistent_premises",
+      "AttNoneg-OWA-D3-1332::q114981": "incorrect_final_symbolic_answer",
+      "RelNoneg-OWA-D5-556::q145032": null,
+      "AttNeg-OWA-D5-439::q141564": null,
+      "AttNoneg-OWA-D0-1648::q1527": null,
+      "RelNoneg-OWA-D1-1889::q158168": null,
+      "AttNonegNatLang-OWA-109::q33235": null,
+      "AttNoneg-OWA-D3-728::q115123": "incorrect_final_symbolic_answer",
+      "AttNeg-OWA-D2-1118::q69001": "incorrect_final_symbolic_answer"
+    },
+    "predicted_labels": {
+      "AttNonegNatLang-OWA-205::q28348": "Unknown",
+      "AttNoneg-OWA-D0-1600::q18855": "Unknown",
+      "AttNoneg-OWA-D0-5942::q10124": "True",
+      "RelNeg-OWA-D1-622::q172964": "Unknown",
+      "RelNeg-OWA-D3-851::q42464": "Unknown",
+      "RelNeg-OWA-D0-4134::q6502": "Unknown",
+      "AttNonegNatLang-OWA-133::q53250": "Unknown",
+      "AttNeg-OWA-D1-2498::q169660": "Unknown",
+      "RelNoneg-OWA-D2-1649::q75422": "Unknown",
+      "AttNeg-OWA-D1-518::q157393": "Unknown",
+      "AttNeg-OWA-D0-4416::q16881": "Unknown",
+      "AttNeg-OWA-D1-2824::q169230": null,
+      "AttNoneg-OWA-D3-1332::q114981": "Unknown",
+      "RelNoneg-OWA-D5-556::q145032": "Unknown",
+      "AttNeg-OWA-D5-439::q141564": "True",
+      "AttNoneg-OWA-D0-1648::q1527": "Unknown",
+      "RelNoneg-OWA-D1-1889::q158168": "True",
+      "AttNonegNatLang-OWA-109::q33235": "Unknown",
+      "AttNoneg-OWA-D3-728::q115123": "True",
+      "AttNeg-OWA-D2-1118::q69001": "True"
+    },
+    "atomic_parses": {
+      "AttNonegNatLang-OWA-205::q28348|Green, big and red are qualities which all describe Alan.": {
+        "type": "predicate",
+        "name": "describe",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-205::q28348|Green, big and red are qualities which all describe Charlie.": {
+        "type": "predicate",
+        "name": "describe",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-205::q28348|That guy Fred sure is nice.": {
+        "type": "predicate",
+        "name": "nice",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-205::q28348|Harry is a round and rough around the edges, and he is also big.": {
+        "type": "equals",
+        "left": "harry",
+        "right": "round"
+      },
+      "AttNonegNatLang-OWA-205::q28348|Red people are almost always rough.": {
+        "type": "predicate",
+        "name": "rough",
+        "args": [
+          "red"
+        ]
+      },
+      "AttNonegNatLang-OWA-205::q28348|If a person is described as being nice, cold and young it usually follow that they are red.": {
+        "type": "predicate",
+        "name": "red",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-205::q28348|Cold people that are big and red": {
+        "type": "predicate",
+        "name": "big",
+        "args": [
+          "people"
+        ]
+      },
+      "AttNonegNatLang-OWA-205::q28348|are usually nice": {
+        "type": "predicate",
+        "name": "nice",
+        "args": [
+          "usually"
+        ]
+      },
+      "AttNonegNatLang-OWA-205::q28348|People who are feeling blue and green are said to be red.": {
+        "type": "predicate",
+        "name": "red",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-205::q28348|Rough people who look red are cold.": {
+        "type": "predicate",
+        "name": "cold",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-205::q28348|Alan is not round.": {
+        "type": "predicate",
+        "name": "is_not_round",
+        "args": []
+      },
+      "AttNoneg-OWA-D0-1600::q18855|Anne is green.": {
+        "type": "predicate",
+        "name": "is_green",
+        "args": []
+      },
+      "AttNoneg-OWA-D0-1600::q18855|Anne is kind.": {
+        "type": "predicate",
+        "name": "is_kind",
+        "args": []
+      },
+      "AttNoneg-OWA-D0-1600::q18855|Anne is round.": {
+        "type": "equals",
+        "left": "anne",
+        "right": "round"
+      },
+      "AttNoneg-OWA-D0-1600::q18855|Charlie is green.": {
+        "type": "predicate",
+        "name": "green",
+        "args": [
+          "charlie"
+        ]
+      },
+      "AttNoneg-OWA-D0-1600::q18855|Charlie is kind.": {
+        "type": "predicate",
+        "name": "kind",
+        "args": [
+          "charlie"
+        ]
+      },
+      "AttNoneg-OWA-D0-1600::q18855|Gary is furry.": {
+        "type": "predicate",
+        "name": "furry",
+        "args": [
+          "gary"
+        ]
+      },
+      "AttNoneg-OWA-D0-1600::q18855|Gary is kind.": {
+        "type": "predicate",
+        "name": "kind",
+        "args": [
+          "gary"
+        ]
+      },
+      "AttNoneg-OWA-D0-1600::q18855|Gary is quiet.": {
+        "type": "predicate",
+        "name": "quiet",
+        "args": []
+      },
+      "AttNoneg-OWA-D0-1600::q18855|Gary is round.": {
+        "type": "equals",
+        "left": "gary",
+        "right": "round"
+      },
+      "AttNoneg-OWA-D0-1600::q18855|Gary is young.": {
+        "type": "predicate",
+        "name": "young",
+        "args": [
+          "gary"
+        ]
+      },
+      "AttNoneg-OWA-D0-1600::q18855|Furry things are kind.": {
+        "type": "predicate",
+        "name": "kind",
+        "args": []
+      },
+      "AttNoneg-OWA-D0-1600::q18855|Gary is green.": {
+        "type": "predicate",
+        "name": "green",
+        "args": [
+          "gary"
+        ]
+      },
+      "AttNoneg-OWA-D0-5942::q10124|Harry is smart.": {
+        "type": "predicate",
+        "name": "is_smart",
+        "args": []
+      },
+      "AttNoneg-OWA-D0-5942::q10124|If someone is nice then they are red.": {
+        "type": "predicate",
+        "name": "red",
+        "args": []
+      },
+      "AttNoneg-OWA-D0-5942::q10124|If someone is quiet then they are big.": {
+        "type": "predicate",
+        "name": "quiet",
+        "args": []
+      },
+      "AttNoneg-OWA-D0-5942::q10124|Quiet people are red.": {
+        "type": "predicate",
+        "name": "quiet",
+        "args": []
+      },
+      "RelNeg-OWA-D1-622::q172964|The cat eats the lion.": {
+        "type": "predicate",
+        "name": "eats",
+        "args": [
+          "cat",
+          "lion"
+        ]
+      },
+      "RelNeg-OWA-D1-622::q172964|The cat does not eat the tiger.": {
+        "type": "predicate",
+        "name": "does_not_eat",
+        "args": []
+      },
+      "RelNeg-OWA-D1-622::q172964|The cat is blue.": {
+        "type": "predicate",
+        "name": "is",
+        "args": []
+      },
+      "RelNeg-OWA-D1-622::q172964|The cat is kind.": {
+        "type": "predicate",
+        "name": "is",
+        "args": []
+      },
+      "RelNeg-OWA-D1-622::q172964|The cat sees the tiger.": {
+        "type": "predicate",
+        "name": "see",
+        "args": [
+          "cat",
+          "tiger"
+        ]
+      },
+      "RelNeg-OWA-D1-622::q172964|The cat does not visit the lion.": {
+        "type": "predicate",
+        "name": "does_not_visit",
+        "args": []
+      },
+      "RelNeg-OWA-D1-622::q172964|The lion eats the cat.": {
+        "type": "predicate",
+        "name": "eats",
+        "args": [
+          "lion",
+          "cat"
+        ]
+      },
+      "RelNeg-OWA-D1-622::q172964|The lion eats the tiger.": {
+        "type": "predicate",
+        "name": "eats",
+        "args": [
+          "lion",
+          "tiger"
+        ]
+      },
+      "RelNeg-OWA-D1-622::q172964|The lion is kind.": {
+        "type": "predicate",
+        "name": "kind",
+        "args": []
+      },
+      "RelNeg-OWA-D1-622::q172964|The lion is nice.": {
+        "type": "predicate",
+        "name": "is_nice",
+        "args": []
+      },
+      "RelNeg-OWA-D1-622::q172964|The lion is young.": {
+        "type": "predicate",
+        "name": "young",
+        "args": [
+          "lion"
+        ]
+      },
+      "RelNeg-OWA-D1-622::q172964|The lion does not see the tiger.": {
+        "type": "predicate",
+        "name": "see",
+        "args": []
+      },
+      "RelNeg-OWA-D1-622::q172964|The lion visits the tiger.": {
+        "type": "predicate",
+        "name": "visit",
+        "args": [
+          "lion",
+          "tiger"
+        ]
+      },
+      "RelNeg-OWA-D1-622::q172964|The tiger is nice.": {
+        "type": "predicate",
+        "name": "is_nice",
+        "args": []
+      },
+      "RelNeg-OWA-D1-622::q172964|The tiger is round.": {
+        "type": "predicate",
+        "name": "round",
+        "args": []
+      },
+      "RelNeg-OWA-D1-622::q172964|something visits the lion": {
+        "type": "predicate",
+        "name": "visits",
+        "args": [
+          "something",
+          "the_lion"
+        ]
+      },
+      "RelNeg-OWA-D1-622::q172964|If something visits the lion": {
+        "type": "predicate",
+        "name": "visit",
+        "args": [
+          "something"
+        ]
+      },
+      "RelNeg-OWA-D1-622::q172964|the lion does not visit the tiger": {
+        "type": "predicate",
+        "name": "does_not_visit",
+        "args": []
+      },
+      "RelNeg-OWA-D1-622::q172964|the lion is round": {
+        "type": "equals",
+        "left": "lion",
+        "right": "round"
+      },
+      "RelNeg-OWA-D1-622::q172964|the lion is blue": {
+        "type": "predicate",
+        "name": "blue",
+        "args": [
+          "lion"
+        ]
+      },
+      "RelNeg-OWA-D1-622::q172964|something visits the tiger": {
+        "type": "predicate",
+        "name": "visits",
+        "args": [
+          "something"
+        ]
+      },
+      "RelNeg-OWA-D1-622::q172964|the tiger eats the cat": {
+        "type": "predicate",
+        "name": "eats",
+        "args": [
+          "the_tiger",
+          "the_cat"
+        ]
+      },
+      "RelNeg-OWA-D1-622::q172964|something is nice": {
+        "type": "predicate",
+        "name": "is_nice",
+        "args": []
+      },
+      "RelNeg-OWA-D1-622::q172964|it does not eat the cat": {
+        "type": "predicate",
+        "name": "does_not_eat",
+        "args": []
+      },
+      "RelNeg-OWA-D1-622::q172964|something sees the lion": {
+        "type": "predicate",
+        "name": "sees",
+        "args": [
+          "something"
+        ]
+      },
+      "RelNeg-OWA-D1-622::q172964|the lion sees the cat": {
+        "type": "predicate",
+        "name": "sees",
+        "args": [
+          "the_lion"
+        ]
+      },
+      "RelNeg-OWA-D1-622::q172964|The lion is not blue.": {
+        "type": "predicate",
+        "name": "is_not_blue",
+        "args": []
+      },
+      "RelNeg-OWA-D3-851::q42464|The bald eagle does not chase the squirrel.": {
+        "type": "predicate",
+        "name": "does_not_chase",
+        "args": []
+      },
+      "RelNeg-OWA-D3-851::q42464|The bald eagle is blue.": {
+        "type": "predicate",
+        "name": "blue",
+        "args": []
+      },
+      "RelNeg-OWA-D3-851::q42464|The bald eagle likes the lion.": {
+        "type": "predicate",
+        "name": "like",
+        "args": []
+      },
+      "RelNeg-OWA-D3-851::q42464|The bald eagle likes the squirrel.": {
+        "type": "predicate",
+        "name": "like",
+        "args": []
+      },
+      "RelNeg-OWA-D3-851::q42464|The lion does not chase the bald eagle.": {
+        "type": "predicate",
+        "name": "does_not_chase",
+        "args": []
+      },
+      "RelNeg-OWA-D3-851::q42464|The lion chases the squirrel.": {
+        "type": "predicate",
+        "name": "chases",
+        "args": [
+          "lion",
+          "squirrel"
+        ]
+      },
+      "RelNeg-OWA-D3-851::q42464|The lion is not blue.": {
+        "type": "predicate",
+        "name": "is_not_blue",
+        "args": []
+      },
+      "RelNeg-OWA-D3-851::q42464|The squirrel is big.": {
+        "type": "equals",
+        "left": "squirrel",
+        "right": "big"
+      },
+      "RelNeg-OWA-D3-851::q42464|The squirrel is young.": {
+        "type": "equals",
+        "left": "squirrel",
+        "right": "young"
+      },
+      "RelNeg-OWA-D3-851::q42464|The squirrel needs the lion.": {
+        "type": "predicate",
+        "name": "needs",
+        "args": [
+          "squirrel"
+        ]
+      },
+      "RelNeg-OWA-D3-851::q42464|If someone needs the bald eagle then they like the squirrel.": {
+        "type": "predicate",
+        "name": "like",
+        "args": []
+      },
+      "RelNeg-OWA-D3-851::q42464|If someone chases the lion": {
+        "type": "predicate",
+        "name": "chase",
+        "args": [
+          "lion"
+        ]
+      },
+      "RelNeg-OWA-D3-851::q42464|the lion is red": {
+        "type": "predicate",
+        "name": "red",
+        "args": [
+          "lion"
+        ]
+      },
+      "RelNeg-OWA-D3-851::q42464|someone is young": {
+        "type": "predicate",
+        "name": "young",
+        "args": []
+      },
+      "RelNeg-OWA-D3-851::q42464|they need the squirrel": {
+        "type": "predicate",
+        "name": "need",
+        "args": []
+      },
+      "RelNeg-OWA-D3-851::q42464|someone needs the bald eagle": {
+        "type": "predicate",
+        "name": "needs",
+        "args": []
+      },
+      "RelNeg-OWA-D3-851::q42464|the bald eagle needs the squirrel": {
+        "type": "predicate",
+        "name": "needs",
+        "args": [
+          "the_bald_eagle"
+        ]
+      },
+      "RelNeg-OWA-D3-851::q42464|If someone chases the squirrel": {
+        "type": "predicate",
+        "name": "chase",
+        "args": [
+          "someone"
+        ]
+      },
+      "RelNeg-OWA-D3-851::q42464|they like the bald eagle": {
+        "type": "predicate",
+        "name": "like",
+        "args": []
+      },
+      "RelNeg-OWA-D3-851::q42464|the squirrel is nice": {
+        "type": "predicate",
+        "name": "nice",
+        "args": []
+      },
+      "RelNeg-OWA-D3-851::q42464|If someone needs the lion then they are nice.": {
+        "type": "predicate",
+        "name": "nice",
+        "args": []
+      },
+      "RelNeg-OWA-D3-851::q42464|the bald eagle does not chase the lion": {
+        "type": "predicate",
+        "name": "does_not_chase",
+        "args": []
+      },
+      "RelNeg-OWA-D3-851::q42464|the bald eagle chases the squirrel": {
+        "type": "predicate",
+        "name": "chases",
+        "args": [
+          "bald_eagle"
+        ]
+      },
+      "RelNeg-OWA-D3-851::q42464|The squirrel does not like the bald eagle.": {
+        "type": "predicate",
+        "name": "does_not_like",
+        "args": []
+      },
+      "RelNeg-OWA-D0-4134::q6502|The bald eagle sees the squirrel.": {
+        "type": "predicate",
+        "name": "sees",
+        "args": [
+          "the_bald_eagle"
+        ]
+      },
+      "RelNeg-OWA-D0-4134::q6502|The mouse visits the bald eagle.": {
+        "type": "predicate",
+        "name": "visits",
+        "args": [
+          "mouse"
+        ]
+      },
+      "RelNeg-OWA-D0-4134::q6502|The squirrel eats the tiger.": {
+        "type": "predicate",
+        "name": "eats",
+        "args": [
+          "squirrel",
+          "tiger"
+        ]
+      },
+      "RelNeg-OWA-D0-4134::q6502|The tiger eats the bald eagle.": {
+        "type": "predicate",
+        "name": "eats",
+        "args": [
+          "tiger",
+          "bald_eagle"
+        ]
+      },
+      "RelNeg-OWA-D0-4134::q6502|the bald eagle does not see the mouse": {
+        "type": "predicate",
+        "name": "see",
+        "args": []
+      },
+      "RelNeg-OWA-D0-4134::q6502|the bald eagle is young": {
+        "type": "predicate",
+        "name": "young",
+        "args": [
+          "bald_eagle"
+        ]
+      },
+      "RelNeg-OWA-D0-4134::q6502|the squirrel is young": {
+        "type": "predicate",
+        "name": "young",
+        "args": [
+          "squirrel"
+        ]
+      },
+      "RelNeg-OWA-D0-4134::q6502|If someone eats the tiger then they eat the bald eagle.": {
+        "type": "predicate",
+        "name": "eat",
+        "args": []
+      },
+      "RelNeg-OWA-D0-4134::q6502|young": {
+        "type": "predicate",
+        "name": "young",
+        "args": [
+          "the_entity"
+        ]
+      },
+      "RelNeg-OWA-D0-4134::q6502|do not eat the tiger": {
+        "type": "predicate",
+        "name": "drop",
+        "args": []
+      },
+      "RelNeg-OWA-D0-4134::q6502|the bald eagle sees the mouse": {
+        "type": "predicate",
+        "name": "sees",
+        "args": [
+          "the_bald_eagle"
+        ]
+      },
+      "RelNeg-OWA-D0-4134::q6502|the bald eagle does not visit the mouse": {
+        "type": "predicate",
+        "name": "does_not_visit",
+        "args": []
+      },
+      "RelNeg-OWA-D0-4134::q6502|If someone eats the bald eagle": {
+        "type": "predicate",
+        "name": "eats",
+        "args": [
+          "the_bald_eagle"
+        ]
+      },
+      "RelNeg-OWA-D0-4134::q6502|the bald eagle does not eat the mouse": {
+        "type": "predicate",
+        "name": "does_not_eat",
+        "args": []
+      },
+      "RelNeg-OWA-D0-4134::q6502|visit tiger": {
+        "type": "predicate",
+        "name": "visit",
+        "args": [
+          "tiger"
+        ]
+      },
+      "RelNeg-OWA-D0-4134::q6502|round": {
+        "type": "predicate",
+        "name": "round",
+        "args": []
+      },
+      "RelNeg-OWA-D0-4134::q6502|someone visits the mouse": {
+        "type": "predicate",
+        "name": "visit",
+        "args": [
+          "someone"
+        ]
+      },
+      "RelNeg-OWA-D0-4134::q6502|the mouse sees the tiger": {
+        "type": "predicate",
+        "name": "sees",
+        "args": [
+          "the_mouse"
+        ]
+      },
+      "RelNeg-OWA-D0-4134::q6502|The bald eagle is not round.": {
+        "type": "predicate",
+        "name": "is_not_round",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-133::q53250|Bob is cold to his ex-wife.": {
+        "type": "predicate",
+        "name": "cold",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-133::q53250|She knows he is round and red.": {
+        "type": "predicate",
+        "name": "knows",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-133::q53250|He is kind to everyone else.": {
+        "type": "predicate",
+        "name": "is",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-133::q53250|That guy Dave sure is nice.": {
+        "type": "predicate",
+        "name": "nice",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-133::q53250|For being so cold, it's good Eric can remain nice.": {
+        "type": "predicate",
+        "name": "remain_nice",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-133::q53250|If you're truly nice, cold, and blue, you're kind, too.": {
+        "type": "predicate",
+        "name": "kind",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-133::q53250|Every time you meet someone kind and nice": {
+        "type": "predicate",
+        "name": "meet",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-133::q53250|they'll be green, too": {
+        "type": "predicate",
+        "name": "green",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-133::q53250|Anybody young person covered in blue and green will be kind.": {
+        "type": "predicate",
+        "name": "kind",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-133::q53250|Rough, cold people are blue.": {
+        "type": "predicate",
+        "name": "blue",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-133::q53250|Most big and cold people are also rough.": {
+        "type": "predicate",
+        "name": "are_rough",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-133::q53250|Kind people that are round are on the big side.": {
+        "type": "predicate",
+        "name": "round",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-133::q53250|Someone who has a round shape with a nice personality with big size are always kind.": {
+        "type": "predicate",
+        "name": "kind",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-133::q53250|Bob is red.": {
+        "type": "predicate",
+        "name": "red",
+        "args": [
+          "bob"
+        ]
+      },
+      "AttNeg-OWA-D1-2498::q169660|Bob is big.": {
+        "type": "predicate",
+        "name": "big",
+        "args": [
+          "bob"
+        ]
+      },
+      "AttNeg-OWA-D1-2498::q169660|Bob is blue.": {
+        "type": "predicate",
+        "name": "is_blue",
+        "args": []
+      },
+      "AttNeg-OWA-D1-2498::q169660|Bob is not furry.": {
+        "type": "equals",
+        "left": "bob",
+        "right": "furry"
+      },
+      "AttNeg-OWA-D1-2498::q169660|Bob is not quiet.": {
+        "type": "predicate",
+        "name": "is_not_quiet",
+        "args": []
+      },
+      "AttNeg-OWA-D1-2498::q169660|Bob is not young.": {
+        "type": "predicate",
+        "name": "is_not_young",
+        "args": []
+      },
+      "AttNeg-OWA-D1-2498::q169660|Charlie is kind.": {
+        "type": "predicate",
+        "name": "kind",
+        "args": [
+          "charlie"
+        ]
+      },
+      "AttNeg-OWA-D1-2498::q169660|Charlie is not quiet.": {
+        "type": "predicate",
+        "name": "quiet",
+        "args": []
+      },
+      "AttNeg-OWA-D1-2498::q169660|Dave is big.": {
+        "type": "predicate",
+        "name": "big",
+        "args": [
+          "dave"
+        ]
+      },
+      "AttNeg-OWA-D1-2498::q169660|Dave is blue.": {
+        "type": "predicate",
+        "name": "is_blue",
+        "args": []
+      },
+      "AttNeg-OWA-D1-2498::q169660|Dave is kind.": {
+        "type": "predicate",
+        "name": "kind",
+        "args": [
+          "dave"
+        ]
+      },
+      "AttNeg-OWA-D1-2498::q169660|Dave is red.": {
+        "type": "predicate",
+        "name": "red",
+        "args": [
+          "dave"
+        ]
+      },
+      "AttNeg-OWA-D1-2498::q169660|Gary is big.": {
+        "type": "predicate",
+        "name": "big",
+        "args": [
+          "gary"
+        ]
+      },
+      "AttNeg-OWA-D1-2498::q169660|Gary is blue.": {
+        "type": "predicate",
+        "name": "is_blue",
+        "args": []
+      },
+      "AttNeg-OWA-D1-2498::q169660|Gary is kind.": {
+        "type": "predicate",
+        "name": "kind",
+        "args": [
+          "gary"
+        ]
+      },
+      "AttNeg-OWA-D1-2498::q169660|Gary is quiet.": {
+        "type": "predicate",
+        "name": "quiet",
+        "args": []
+      },
+      "AttNeg-OWA-D1-2498::q169660|Gary is red.": {
+        "type": "predicate",
+        "name": "red",
+        "args": []
+      },
+      "AttNeg-OWA-D1-2498::q169660|Dave is young": {
+        "type": "predicate",
+        "name": "young",
+        "args": [
+          "dave"
+        ]
+      },
+      "AttNeg-OWA-D1-2498::q169660|Dave is furry": {
+        "type": "predicate",
+        "name": "furry",
+        "args": [
+          "dave"
+        ]
+      },
+      "AttNeg-OWA-D1-2498::q169660|Red things are big.": {
+        "type": "predicate",
+        "name": "big",
+        "args": []
+      },
+      "AttNeg-OWA-D1-2498::q169660|Bob is young": {
+        "type": "equals",
+        "left": "bob",
+        "right": "young"
+      },
+      "AttNeg-OWA-D1-2498::q169660|Bob is kind": {
+        "type": "predicate",
+        "name": "kind",
+        "args": [
+          "bob"
+        ]
+      },
+      "AttNeg-OWA-D1-2498::q169660|All furry things are not young.": {
+        "type": "predicate",
+        "name": "drop",
+        "args": []
+      },
+      "AttNeg-OWA-D1-2498::q169660|something is young": {
+        "type": "predicate",
+        "name": "is_young",
+        "args": []
+      },
+      "AttNeg-OWA-D1-2498::q169660|something is big": {
+        "type": "predicate",
+        "name": "is_big",
+        "args": []
+      },
+      "AttNeg-OWA-D1-2498::q169660|Big, red things are quiet.": {
+        "type": "predicate",
+        "name": "quiet",
+        "args": []
+      },
+      "AttNeg-OWA-D1-2498::q169660|Charlie is not red.": {
+        "type": "predicate",
+        "name": "is_not_red",
+        "args": []
+      },
+      "RelNoneg-OWA-D2-1649::q75422|The cat is kind.": {
+        "type": "predicate",
+        "name": "is",
+        "args": []
+      },
+      "RelNoneg-OWA-D2-1649::q75422|The rabbit is round.": {
+        "type": "predicate",
+        "name": "round",
+        "args": []
+      },
+      "RelNoneg-OWA-D2-1649::q75422|The rabbit needs the cat.": {
+        "type": "predicate",
+        "name": "needs",
+        "args": [
+          "rabbit"
+        ]
+      },
+      "RelNoneg-OWA-D2-1649::q75422|the cat likes the rabbit": {
+        "type": "predicate",
+        "name": "likes",
+        "args": []
+      },
+      "RelNoneg-OWA-D2-1649::q75422|something needs the rabbit and it likes the cat": {
+        "type": "predicate",
+        "name": "needs",
+        "args": []
+      },
+      "RelNoneg-OWA-D2-1649::q75422|the cat is young": {
+        "type": "equals",
+        "left": "cat",
+        "right": "young"
+      },
+      "RelNoneg-OWA-D2-1649::q75422|If something needs the cat then the cat likes the rabbit.": {
+        "type": "predicate",
+        "name": "likes",
+        "args": []
+      },
+      "RelNoneg-OWA-D2-1649::q75422|The cat chases the rabbit.": {
+        "type": "predicate",
+        "name": "chases",
+        "args": [
+          "cat",
+          "rabbit"
+        ]
+      },
+      "AttNeg-OWA-D1-518::q157393|Bob is smart.": {
+        "type": "equals",
+        "left": "bob",
+        "right": "smart"
+      },
+      "AttNeg-OWA-D1-518::q157393|Charlie is rough.": {
+        "type": "predicate",
+        "name": "rough",
+        "args": [
+          "charlie"
+        ]
+      },
+      "AttNeg-OWA-D1-518::q157393|Dave is round.": {
+        "type": "equals",
+        "left": "dave",
+        "right": "round"
+      },
+      "AttNeg-OWA-D1-518::q157393|Erin is smart.": {
+        "type": "predicate",
+        "name": "is_smart",
+        "args": []
+      },
+      "AttNeg-OWA-D1-518::q157393|Bob is big": {
+        "type": "equals",
+        "left": "bob",
+        "right": "big"
+      },
+      "AttNeg-OWA-D1-518::q157393|Bob is green": {
+        "type": "equals",
+        "left": "bob",
+        "right": "green"
+      },
+      "AttNeg-OWA-D1-518::q157393|If someone is round then they are not smart.": {
+        "type": "predicate",
+        "name": "round",
+        "args": []
+      },
+      "AttNeg-OWA-D1-518::q157393|Dave is smart.": {
+        "type": "predicate",
+        "name": "smart",
+        "args": [
+          "dave"
+        ]
+      },
+      "AttNeg-OWA-D0-4416::q16881|Bob is not blue.": {
+        "type": "predicate",
+        "name": "is_not_blue",
+        "args": []
+      },
+      "AttNeg-OWA-D0-4416::q16881|Bob is quiet.": {
+        "type": "predicate",
+        "name": "quiet",
+        "args": []
+      },
+      "AttNeg-OWA-D0-4416::q16881|Bob is round.": {
+        "type": "equals",
+        "left": "bob",
+        "right": "round"
+      },
+      "AttNeg-OWA-D0-4416::q16881|Charlie is rough.": {
+        "type": "predicate",
+        "name": "rough",
+        "args": [
+          "charlie"
+        ]
+      },
+      "AttNeg-OWA-D0-4416::q16881|Dave is blue.": {
+        "type": "predicate",
+        "name": "is_blue",
+        "args": []
+      },
+      "AttNeg-OWA-D0-4416::q16881|Dave is nice.": {
+        "type": "predicate",
+        "name": "nice",
+        "args": []
+      },
+      "AttNeg-OWA-D0-4416::q16881|Harry is quiet.": {
+        "type": "predicate",
+        "name": "quiet",
+        "args": []
+      },
+      "AttNeg-OWA-D0-4416::q16881|someone is blue": {
+        "type": "predicate",
+        "name": "is",
+        "args": []
+      },
+      "AttNeg-OWA-D0-4416::q16881|someone is cold": {
+        "type": "predicate",
+        "name": "cold",
+        "args": []
+      },
+      "AttNeg-OWA-D0-4416::q16881|they are round": {
+        "type": "predicate",
+        "name": "are",
+        "args": []
+      },
+      "AttNeg-OWA-D0-4416::q16881|someone is round": {
+        "type": "predicate",
+        "name": "round",
+        "args": []
+      },
+      "AttNeg-OWA-D0-4416::q16881|blue": {
+        "type": "predicate",
+        "name": "blue",
+        "args": []
+      },
+      "AttNeg-OWA-D0-4416::q16881|they are not cold": {
+        "type": "predicate",
+        "name": "are_not_cold",
+        "args": []
+      },
+      "AttNeg-OWA-D0-4416::q16881|Charlie is not rough.": {
+        "type": "predicate",
+        "name": "is_not_rough",
+        "args": []
+      },
+      "AttNeg-OWA-D1-2824::q169230|Charlie is not big.": {
+        "type": "predicate",
+        "name": "is_not_big",
+        "args": []
+      },
+      "AttNeg-OWA-D1-2824::q169230|Charlie is cold.": {
+        "type": "predicate",
+        "name": "cold",
+        "args": [
+          "charlie"
+        ]
+      },
+      "AttNeg-OWA-D1-2824::q169230|Charlie is not green.": {
+        "type": "predicate",
+        "name": "is_not_green",
+        "args": []
+      },
+      "AttNeg-OWA-D1-2824::q169230|Charlie is nice.": {
+        "type": "predicate",
+        "name": "nice",
+        "args": []
+      },
+      "AttNeg-OWA-D1-2824::q169230|Charlie is not round.": {
+        "type": "predicate",
+        "name": "is_not_round",
+        "args": []
+      },
+      "AttNeg-OWA-D1-2824::q169230|Dave is big.": {
+        "type": "predicate",
+        "name": "big",
+        "args": [
+          "dave"
+        ]
+      },
+      "AttNeg-OWA-D1-2824::q169230|Dave is green.": {
+        "type": "predicate",
+        "name": "green",
+        "args": [
+          "dave"
+        ]
+      },
+      "AttNeg-OWA-D1-2824::q169230|Dave is not round.": {
+        "type": "predicate",
+        "name": "is_not_round",
+        "args": []
+      },
+      "AttNeg-OWA-D1-2824::q169230|Gary is not blue.": {
+        "type": "predicate",
+        "name": "is_not_blue",
+        "args": []
+      },
+      "AttNeg-OWA-D1-2824::q169230|Gary is cold.": {
+        "type": "predicate",
+        "name": "cold",
+        "args": [
+          "gary"
+        ]
+      },
+      "AttNeg-OWA-D1-2824::q169230|Gary is green.": {
+        "type": "predicate",
+        "name": "green",
+        "args": [
+          "gary"
+        ]
+      },
+      "AttNeg-OWA-D1-2824::q169230|Gary is not nice.": {
+        "type": "predicate",
+        "name": "is_not_nice",
+        "args": []
+      },
+      "AttNeg-OWA-D1-2824::q169230|Harry is big.": {
+        "type": "predicate",
+        "name": "big",
+        "args": [
+          "harry"
+        ]
+      },
+      "AttNeg-OWA-D1-2824::q169230|Harry is not cold.": {
+        "type": "predicate",
+        "name": "is_not_cold",
+        "args": []
+      },
+      "AttNeg-OWA-D1-2824::q169230|Harry is not nice.": {
+        "type": "predicate",
+        "name": "is_not_nice",
+        "args": []
+      },
+      "AttNeg-OWA-D1-2824::q169230|Harry is smart.": {
+        "type": "predicate",
+        "name": "is_smart",
+        "args": []
+      },
+      "AttNeg-OWA-D1-2824::q169230|If Charlie is not big then Charlie is smart.": {
+        "type": "predicate",
+        "name": "smart",
+        "args": []
+      },
+      "AttNeg-OWA-D1-2824::q169230|something is blue": {
+        "type": "predicate",
+        "name": "is",
+        "args": []
+      },
+      "AttNeg-OWA-D1-2824::q169230|nice": {
+        "type": "predicate",
+        "name": "nice",
+        "args": []
+      },
+      "AttNeg-OWA-D1-2824::q169230|it is cold": {
+        "type": "predicate",
+        "name": "cold",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-1332::q114981|Anne is nice.": {
+        "type": "predicate",
+        "name": "is_nice",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-1332::q114981|Anne is quiet.": {
+        "type": "predicate",
+        "name": "quiet",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-1332::q114981|Bob is cold.": {
+        "type": "predicate",
+        "name": "cold",
+        "args": [
+          "bob"
+        ]
+      },
+      "AttNoneg-OWA-D3-1332::q114981|Bob is nice.": {
+        "type": "predicate",
+        "name": "nice",
+        "args": [
+          "bob"
+        ]
+      },
+      "AttNoneg-OWA-D3-1332::q114981|Bob is white.": {
+        "type": "predicate",
+        "name": "white",
+        "args": [
+          "bob"
+        ]
+      },
+      "AttNoneg-OWA-D3-1332::q114981|Charlie is big.": {
+        "type": "predicate",
+        "name": "big",
+        "args": [
+          "charlie"
+        ]
+      },
+      "AttNoneg-OWA-D3-1332::q114981|Charlie is blue.": {
+        "type": "predicate",
+        "name": "blue",
+        "args": [
+          "charlie"
+        ]
+      },
+      "AttNoneg-OWA-D3-1332::q114981|Charlie is quiet.": {
+        "type": "predicate",
+        "name": "quiet",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-1332::q114981|Charlie is smart.": {
+        "type": "equals",
+        "left": "charlie",
+        "right": "smart"
+      },
+      "AttNoneg-OWA-D3-1332::q114981|Charlie is white.": {
+        "type": "predicate",
+        "name": "white",
+        "args": [
+          "charlie"
+        ]
+      },
+      "AttNoneg-OWA-D3-1332::q114981|someone is nice": {
+        "type": "predicate",
+        "name": "is_nice",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-1332::q114981|someone is smart": {
+        "type": "predicate",
+        "name": "smart",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-1332::q114981|they are big": {
+        "type": "predicate",
+        "name": "big",
+        "args": [
+          "they"
+        ]
+      },
+      "AttNoneg-OWA-D3-1332::q114981|Quiet, white people are smart.": {
+        "type": "predicate",
+        "name": "quiet",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-1332::q114981|If someone is cold then they are smart.": {
+        "type": "predicate",
+        "name": "cold_smart",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-1332::q114981|Big, quiet people are nice.": {
+        "type": "predicate",
+        "name": "nice",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-1332::q114981|Charlie is nice": {
+        "type": "predicate",
+        "name": "nice",
+        "args": [
+          "charlie"
+        ]
+      },
+      "AttNoneg-OWA-D3-1332::q114981|All big people are nice.": {
+        "type": "predicate",
+        "name": "nice",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-1332::q114981|Nice people are cold.": {
+        "type": "predicate",
+        "name": "cold",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-1332::q114981|If someone is white then they are smart.": {
+        "type": "predicate",
+        "name": "smart",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-1332::q114981|Charlie is not cold.": {
+        "type": "predicate",
+        "name": "is_not_cold",
+        "args": []
+      },
+      "RelNoneg-OWA-D5-556::q145032|The cow eats the squirrel.": {
+        "type": "predicate",
+        "name": "eats",
+        "args": [
+          "cow",
+          "squirrel"
+        ]
+      },
+      "RelNoneg-OWA-D5-556::q145032|The cow is blue.": {
+        "type": "predicate",
+        "name": "is",
+        "args": []
+      },
+      "RelNoneg-OWA-D5-556::q145032|The cow is nice.": {
+        "type": "predicate",
+        "name": "is_nice",
+        "args": []
+      },
+      "RelNoneg-OWA-D5-556::q145032|The cow is red.": {
+        "type": "predicate",
+        "name": "is",
+        "args": []
+      },
+      "RelNoneg-OWA-D5-556::q145032|The dog eats the cow.": {
+        "type": "predicate",
+        "name": "eats",
+        "args": [
+          "dog",
+          "cow"
+        ]
+      },
+      "RelNoneg-OWA-D5-556::q145032|The mouse is big.": {
+        "type": "equals",
+        "left": "mouse",
+        "right": "big"
+      },
+      "RelNoneg-OWA-D5-556::q145032|The mouse is kind.": {
+        "type": "predicate",
+        "name": "kind",
+        "args": []
+      },
+      "RelNoneg-OWA-D5-556::q145032|The mouse is red.": {
+        "type": "predicate",
+        "name": "is",
+        "args": []
+      },
+      "RelNoneg-OWA-D5-556::q145032|The mouse visits the dog.": {
+        "type": "predicate",
+        "name": "visit",
+        "args": [
+          "mouse"
+        ]
+      },
+      "RelNoneg-OWA-D5-556::q145032|The squirrel chases the cow.": {
+        "type": "predicate",
+        "name": "chases",
+        "args": [
+          "squirrel",
+          "cow"
+        ]
+      },
+      "RelNoneg-OWA-D5-556::q145032|The squirrel visits the cow.": {
+        "type": "predicate",
+        "name": "visit",
+        "args": []
+      },
+      "RelNoneg-OWA-D5-556::q145032|The squirrel visits the dog.": {
+        "type": "predicate",
+        "name": "visit",
+        "args": [
+          "squirrel"
+        ]
+      },
+      "RelNoneg-OWA-D5-556::q145032|someone eats the cow": {
+        "type": "predicate",
+        "name": "eats",
+        "args": [
+          "someone",
+          "the_cow"
+        ]
+      },
+      "RelNoneg-OWA-D5-556::q145032|they visit the dog": {
+        "type": "predicate",
+        "name": "visit",
+        "args": [
+          "they"
+        ]
+      },
+      "RelNoneg-OWA-D5-556::q145032|someone eats the mouse": {
+        "type": "predicate",
+        "name": "eats",
+        "args": [
+          "someone",
+          "mouse"
+        ]
+      },
+      "RelNoneg-OWA-D5-556::q145032|they chase the squirrel": {
+        "type": "predicate",
+        "name": "chase",
+        "args": [
+          "squirrel"
+        ]
+      },
+      "RelNoneg-OWA-D5-556::q145032|If someone chases the squirrel": {
+        "type": "predicate",
+        "name": "chase",
+        "args": [
+          "someone"
+        ]
+      },
+      "RelNoneg-OWA-D5-556::q145032|the squirrel chases the mouse": {
+        "type": "predicate",
+        "name": "chases",
+        "args": [
+          "the_squirrel",
+          "the_mouse"
+        ]
+      },
+      "RelNoneg-OWA-D5-556::q145032|If someone visits the cow then the cow eats the dog.": {
+        "type": "predicate",
+        "name": "visit",
+        "args": []
+      },
+      "RelNoneg-OWA-D5-556::q145032|someone is red": {
+        "type": "predicate",
+        "name": "is",
+        "args": []
+      },
+      "RelNoneg-OWA-D5-556::q145032|they eat the mouse": {
+        "type": "predicate",
+        "name": "eat",
+        "args": [
+          "they",
+          "mouse"
+        ]
+      },
+      "RelNoneg-OWA-D5-556::q145032|the mouse eats the cow": {
+        "type": "predicate",
+        "name": "eats",
+        "args": [
+          "the_mouse",
+          "the_cow"
+        ]
+      },
+      "RelNoneg-OWA-D5-556::q145032|the cow is big": {
+        "type": "equals",
+        "left": "cow",
+        "right": "big"
+      },
+      "RelNoneg-OWA-D5-556::q145032|the cow visits the dog": {
+        "type": "predicate",
+        "name": "visit",
+        "args": [
+          "the_cow"
+        ]
+      },
+      "RelNoneg-OWA-D5-556::q145032|someone visits the squirrel": {
+        "type": "predicate",
+        "name": "visit",
+        "args": [
+          "someone"
+        ]
+      },
+      "RelNoneg-OWA-D5-556::q145032|mouse visits dog": {
+        "type": "predicate",
+        "name": "visit",
+        "args": [
+          "mouse"
+        ]
+      },
+      "RelNoneg-OWA-D5-556::q145032|dog visits squirrel": {
+        "type": "predicate",
+        "name": "visit",
+        "args": [
+          "dog"
+        ]
+      },
+      "RelNoneg-OWA-D5-556::q145032|The cow does not chase the squirrel.": {
+        "type": "predicate",
+        "name": "does_not_chase",
+        "args": []
+      },
+      "AttNeg-OWA-D5-439::q141564|Anne is nice.": {
+        "type": "predicate",
+        "name": "is_nice",
+        "args": []
+      },
+      "AttNeg-OWA-D5-439::q141564|Anne is smart.": {
+        "type": "predicate",
+        "name": "is_smart",
+        "args": []
+      },
+      "AttNeg-OWA-D5-439::q141564|Charlie is green.": {
+        "type": "predicate",
+        "name": "green",
+        "args": [
+          "charlie"
+        ]
+      },
+      "AttNeg-OWA-D5-439::q141564|Fiona is nice.": {
+        "type": "predicate",
+        "name": "nice",
+        "args": []
+      },
+      "AttNeg-OWA-D5-439::q141564|Fiona is round.": {
+        "type": "predicate",
+        "name": "round",
+        "args": [
+          "fiona"
+        ]
+      },
+      "AttNeg-OWA-D5-439::q141564|Fiona is white.": {
+        "type": "predicate",
+        "name": "is_white",
+        "args": []
+      },
+      "AttNeg-OWA-D5-439::q141564|Harry is blue.": {
+        "type": "predicate",
+        "name": "is_blue",
+        "args": []
+      },
+      "AttNeg-OWA-D5-439::q141564|White, kind things are nice.": {
+        "type": "predicate",
+        "name": "nice",
+        "args": []
+      },
+      "AttNeg-OWA-D5-439::q141564|If something is smart and kind then it is green.": {
+        "type": "predicate",
+        "name": "green",
+        "args": []
+      },
+      "AttNeg-OWA-D5-439::q141564|If something is round and kind then it is white.": {
+        "type": "predicate",
+        "name": "round",
+        "args": []
+      },
+      "AttNeg-OWA-D5-439::q141564|Smart things are kind.": {
+        "type": "predicate",
+        "name": "are_kind",
+        "args": []
+      },
+      "AttNeg-OWA-D5-439::q141564|Nice, white things are kind.": {
+        "type": "predicate",
+        "name": "kind",
+        "args": []
+      },
+      "AttNeg-OWA-D5-439::q141564|Round things are kind.": {
+        "type": "predicate",
+        "name": "round_things_are_kind",
+        "args": []
+      },
+      "AttNeg-OWA-D5-439::q141564|If something is nice then it is smart.": {
+        "type": "predicate",
+        "name": "smart",
+        "args": []
+      },
+      "AttNeg-OWA-D5-439::q141564|All white things are round.": {
+        "type": "predicate",
+        "name": "round",
+        "args": []
+      },
+      "AttNeg-OWA-D5-439::q141564|Charlie is white": {
+        "type": "predicate",
+        "name": "white",
+        "args": [
+          "charlie"
+        ]
+      },
+      "AttNeg-OWA-D5-439::q141564|Charlie is nice.": {
+        "type": "predicate",
+        "name": "nice",
+        "args": []
+      },
+      "AttNoneg-OWA-D0-1648::q1527|Anne is kind.": {
+        "type": "predicate",
+        "name": "is_kind",
+        "args": []
+      },
+      "AttNoneg-OWA-D0-1648::q1527|Charlie is quiet.": {
+        "type": "predicate",
+        "name": "quiet",
+        "args": []
+      },
+      "AttNoneg-OWA-D0-1648::q1527|Dave is round.": {
+        "type": "equals",
+        "left": "dave",
+        "right": "round"
+      },
+      "AttNoneg-OWA-D0-1648::q1527|Harry is rough.": {
+        "type": "predicate",
+        "name": "rough",
+        "args": [
+          "harry"
+        ]
+      },
+      "AttNoneg-OWA-D0-1648::q1527|All rough things are young.": {
+        "type": "predicate",
+        "name": "young",
+        "args": []
+      },
+      "AttNoneg-OWA-D0-1648::q1527|Round things are young.": {
+        "type": "predicate",
+        "name": "round_things_are_young",
+        "args": []
+      },
+      "AttNoneg-OWA-D0-1648::q1527|All cold, round things are smart.": {
+        "type": "predicate",
+        "name": "cold",
+        "args": []
+      },
+      "AttNoneg-OWA-D0-1648::q1527|Dave is kind.": {
+        "type": "predicate",
+        "name": "kind",
+        "args": [
+          "dave"
+        ]
+      },
+      "RelNoneg-OWA-D1-1889::q158168|The bear needs the cow.": {
+        "type": "predicate",
+        "name": "needs",
+        "args": [
+          "bear"
+        ]
+      },
+      "RelNoneg-OWA-D1-1889::q158168|The bear sees the cow.": {
+        "type": "predicate",
+        "name": "see",
+        "args": [
+          "bear",
+          "cow"
+        ]
+      },
+      "RelNoneg-OWA-D1-1889::q158168|The bear visits the cow.": {
+        "type": "predicate",
+        "name": "visit",
+        "args": [
+          "bear",
+          "cow"
+        ]
+      },
+      "RelNoneg-OWA-D1-1889::q158168|The cow is nice.": {
+        "type": "predicate",
+        "name": "is_nice",
+        "args": []
+      },
+      "RelNoneg-OWA-D1-1889::q158168|The cow is young.": {
+        "type": "equals",
+        "left": "cow",
+        "right": "young"
+      },
+      "RelNoneg-OWA-D1-1889::q158168|The cow sees the bear.": {
+        "type": "predicate",
+        "name": "see",
+        "args": [
+          "the_cow",
+          "the_bear"
+        ]
+      },
+      "RelNoneg-OWA-D1-1889::q158168|The cow visits the bear.": {
+        "type": "predicate",
+        "name": "visit",
+        "args": []
+      },
+      "RelNoneg-OWA-D1-1889::q158168|the cow needs the bear": {
+        "type": "predicate",
+        "name": "needs",
+        "args": [
+          "the_cow"
+        ]
+      },
+      "RelNoneg-OWA-D1-1889::q158168|If the cow is green": {
+        "type": "predicate",
+        "name": "green",
+        "args": []
+      },
+      "RelNoneg-OWA-D1-1889::q158168|someone needs the cow": {
+        "type": "predicate",
+        "name": "needs",
+        "args": []
+      },
+      "RelNoneg-OWA-D1-1889::q158168|they visit the cow": {
+        "type": "predicate",
+        "name": "visit",
+        "args": [
+          "they"
+        ]
+      },
+      "RelNoneg-OWA-D1-1889::q158168|they are red": {
+        "type": "predicate",
+        "name": "are",
+        "args": []
+      },
+      "RelNoneg-OWA-D1-1889::q158168|someone is big": {
+        "type": "predicate",
+        "name": "big",
+        "args": [
+          "someone"
+        ]
+      },
+      "RelNoneg-OWA-D1-1889::q158168|the bear is red": {
+        "type": "predicate",
+        "name": "is",
+        "args": []
+      },
+      "RelNoneg-OWA-D1-1889::q158168|someone sees the cow": {
+        "type": "predicate",
+        "name": "sees",
+        "args": [
+          "someone"
+        ]
+      },
+      "RelNoneg-OWA-D1-1889::q158168|they are nice": {
+        "type": "predicate",
+        "name": "are",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-109::q33235|Alan is green": {
+        "type": "predicate",
+        "name": "green",
+        "args": [
+          "alan"
+        ]
+      },
+      "AttNonegNatLang-OWA-109::q33235|Alan is cold": {
+        "type": "predicate",
+        "name": "cold",
+        "args": [
+          "alan"
+        ]
+      },
+      "AttNonegNatLang-OWA-109::q33235|Bob who is young and nice is also quite big and feels green.": {
+        "type": "predicate",
+        "name": "feel",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-109::q33235|Eric is a big fellow, often blue and sad, but he is nice.": {
+        "type": "predicate",
+        "name": "nice",
+        "args": [
+          "eric"
+        ]
+      },
+      "AttNonegNatLang-OWA-109::q33235|Harry was proud of being round, yet rough.": {
+        "type": "predicate",
+        "name": "round",
+        "args": [
+          "harry"
+        ]
+      },
+      "AttNonegNatLang-OWA-109::q33235|His red cheeks glowed.": {
+        "type": "predicate",
+        "name": "glowed",
+        "args": [
+          "his_red_cheeks"
+        ]
+      },
+      "AttNonegNatLang-OWA-109::q33235|nice and round and cold": {
+        "type": "predicate",
+        "name": "round",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-109::q33235|look blue": {
+        "type": "predicate",
+        "name": "look",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-109::q33235|Rough people who are red in color and big": {
+        "type": "predicate",
+        "name": "red",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-109::q33235|are usually round in shape": {
+        "type": "predicate",
+        "name": "round",
+        "args": [
+          "shape"
+        ]
+      },
+      "AttNonegNatLang-OWA-109::q33235|A rather big person is a red person.": {
+        "type": "predicate",
+        "name": "is",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-109::q33235|Kind people with rough skin are usually red because it's wind burn.": {
+        "type": "predicate",
+        "name": "wind_burn",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-109::q33235|Kind red and round people often look green.": {
+        "type": "predicate",
+        "name": "look",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-109::q33235|Big people who are blue": {
+        "type": "predicate",
+        "name": "blue",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-109::q33235|and red": {
+        "type": "predicate",
+        "name": "and",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-109::q33235|are afflicted with rough skin": {
+        "type": "predicate",
+        "name": "afflicted",
+        "args": [
+          "rough"
+        ]
+      },
+      "AttNonegNatLang-OWA-109::q33235|Rough people who look red are cold.": {
+        "type": "predicate",
+        "name": "cold",
+        "args": []
+      },
+      "AttNonegNatLang-OWA-109::q33235|Harry is kind.": {
+        "type": "predicate",
+        "name": "kind",
+        "args": [
+          "harry"
+        ]
+      },
+      "AttNoneg-OWA-D3-728::q115123|Anne is blue.": {
+        "type": "predicate",
+        "name": "is_blue",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-728::q115123|Anne is kind.": {
+        "type": "predicate",
+        "name": "is_kind",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-728::q115123|Anne is nice.": {
+        "type": "predicate",
+        "name": "is_nice",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-728::q115123|Bob is big.": {
+        "type": "predicate",
+        "name": "big",
+        "args": [
+          "bob"
+        ]
+      },
+      "AttNoneg-OWA-D3-728::q115123|Bob is blue.": {
+        "type": "predicate",
+        "name": "is_blue",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-728::q115123|Bob is furry.": {
+        "type": "predicate",
+        "name": "furry",
+        "args": [
+          "bob"
+        ]
+      },
+      "AttNoneg-OWA-D3-728::q115123|Bob is kind.": {
+        "type": "predicate",
+        "name": "kind",
+        "args": [
+          "bob"
+        ]
+      },
+      "AttNoneg-OWA-D3-728::q115123|Bob is smart.": {
+        "type": "equals",
+        "left": "bob",
+        "right": "smart"
+      },
+      "AttNoneg-OWA-D3-728::q115123|Dave is big.": {
+        "type": "predicate",
+        "name": "big",
+        "args": [
+          "dave"
+        ]
+      },
+      "AttNoneg-OWA-D3-728::q115123|Dave is kind.": {
+        "type": "predicate",
+        "name": "kind",
+        "args": [
+          "dave"
+        ]
+      },
+      "AttNoneg-OWA-D3-728::q115123|Dave is nice.": {
+        "type": "predicate",
+        "name": "nice",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-728::q115123|Dave is smart.": {
+        "type": "predicate",
+        "name": "smart",
+        "args": [
+          "dave"
+        ]
+      },
+      "AttNoneg-OWA-D3-728::q115123|Dave is young.": {
+        "type": "predicate",
+        "name": "young",
+        "args": [
+          "dave"
+        ]
+      },
+      "AttNoneg-OWA-D3-728::q115123|Erin is furry.": {
+        "type": "predicate",
+        "name": "furry",
+        "args": [
+          "erin"
+        ]
+      },
+      "AttNoneg-OWA-D3-728::q115123|Erin is smart.": {
+        "type": "predicate",
+        "name": "is_smart",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-728::q115123|If something is blue then it is big.": {
+        "type": "predicate",
+        "name": "blue_big",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-728::q115123|Young things are big.": {
+        "type": "predicate",
+        "name": "big",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-728::q115123|Blue things are kind.": {
+        "type": "predicate",
+        "name": "are_kind",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-728::q115123|All smart, kind things are young.": {
+        "type": "predicate",
+        "name": "young",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-728::q115123|All blue, big things are smart.": {
+        "type": "predicate",
+        "name": "smart",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-728::q115123|All nice, furry things are kind.": {
+        "type": "predicate",
+        "name": "kind",
+        "args": []
+      },
+      "AttNoneg-OWA-D3-728::q115123|Erin is nice.": {
+        "type": "predicate",
+        "name": "nice",
+        "args": []
+      },
+      "AttNeg-OWA-D2-1118::q69001|Bob is smart.": {
+        "type": "equals",
+        "left": "bob",
+        "right": "smart"
+      },
+      "AttNeg-OWA-D2-1118::q69001|Charlie is blue.": {
+        "type": "predicate",
+        "name": "blue",
+        "args": [
+          "charlie"
+        ]
+      },
+      "AttNeg-OWA-D2-1118::q69001|Charlie is nice.": {
+        "type": "predicate",
+        "name": "nice",
+        "args": []
+      },
+      "AttNeg-OWA-D2-1118::q69001|Charlie is quiet.": {
+        "type": "predicate",
+        "name": "quiet",
+        "args": []
+      },
+      "AttNeg-OWA-D2-1118::q69001|Erin is not kind.": {
+        "type": "predicate",
+        "name": "is_not_kind",
+        "args": []
+      },
+      "AttNeg-OWA-D2-1118::q69001|Erin is nice.": {
+        "type": "predicate",
+        "name": "nice",
+        "args": []
+      },
+      "AttNeg-OWA-D2-1118::q69001|Erin is round.": {
+        "type": "equals",
+        "left": "erin",
+        "right": "round"
+      },
+      "AttNeg-OWA-D2-1118::q69001|Erin is smart.": {
+        "type": "predicate",
+        "name": "is_smart",
+        "args": []
+      },
+      "AttNeg-OWA-D2-1118::q69001|Harry is blue.": {
+        "type": "predicate",
+        "name": "is_blue",
+        "args": []
+      },
+      "AttNeg-OWA-D2-1118::q69001|Harry is quiet.": {
+        "type": "predicate",
+        "name": "quiet",
+        "args": []
+      },
+      "AttNeg-OWA-D2-1118::q69001|If someone is red then they are blue.": {
+        "type": "predicate",
+        "name": "red_blue",
+        "args": []
+      },
+      "AttNeg-OWA-D2-1118::q69001|someone is red": {
+        "type": "predicate",
+        "name": "is",
+        "args": []
+      },
+      "AttNeg-OWA-D2-1118::q69001|someone is quiet": {
+        "type": "predicate",
+        "name": "quiet",
+        "args": []
+      },
+      "AttNeg-OWA-D2-1118::q69001|they are smart": {
+        "type": "predicate",
+        "name": "are",
+        "args": []
+      },
+      "AttNeg-OWA-D2-1118::q69001|Smart, nice people are red.": {
+        "type": "predicate",
+        "name": "red",
+        "args": []
+      },
+      "AttNeg-OWA-D2-1118::q69001|Bob is blue.": {
+        "type": "predicate",
+        "name": "is_blue",
+        "args": []
+      }
+    }
+  }
+}

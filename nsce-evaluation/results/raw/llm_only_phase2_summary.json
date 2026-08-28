@@ -1,0 +1,65 @@
+{
+  "phase": 2,
+  "method": "llm_only",
+  "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+  "settings": {
+    "temperature": 0.0,
+    "max_new_tokens": 128,
+    "seed": 42,
+    "quantization": "nf4"
+  },
+  "model_runtime": {
+    "torch_version": "2.11.0+cu128",
+    "cuda_runtime": "12.8",
+    "cuda_available": true,
+    "gpu_name": "NVIDIA GeForce RTX 5050 Laptop GPU",
+    "quantization": "nf4",
+    "device_map_summary": {
+      "0": 1
+    }
+  },
+  "prompt_sha256": "b04aad83e75e3208d9814e7597afe2ecfed037ff998ee66b93c29d5642c44016",
+  "samples": 20,
+  "correct": 9,
+  "accuracy": 0.45,
+  "format_valid": 20,
+  "error_categories": {
+    "llm_reasoning_error": 11,
+    "none": 9
+  },
+  "average_latency_ms": 346.6035,
+  "total_input_tokens": 5089,
+  "total_output_tokens": 40,
+  "by_reasoning_depth": {
+    "0": {
+      "samples": 5,
+      "correct": 2,
+      "accuracy": 0.4
+    },
+    "1": {
+      "samples": 2,
+      "correct": 0,
+      "accuracy": 0.0
+    },
+    "2": {
+      "samples": 5,
+      "correct": 3,
+      "accuracy": 0.6
+    },
+    "3": {
+      "samples": 4,
+      "correct": 1,
+      "accuracy": 0.25
+    },
+    "4": {
+      "samples": 2,
+      "correct": 2,
+      "accuracy": 1.0
+    },
+    "5": {
+      "samples": 2,
+      "correct": 1,
+      "accuracy": 0.5
+    }
+  }
+}

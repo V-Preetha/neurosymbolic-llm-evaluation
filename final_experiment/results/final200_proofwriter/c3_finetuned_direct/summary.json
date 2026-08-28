@@ -1,0 +1,46 @@
+{
+  "condition": 3,
+  "condition_name": "finetuned_direct",
+  "n": 200,
+  "valid_output_count": 200,
+  "valid_output_rate": 1.0,
+  "accuracy": 0.825,
+  "accuracy_on_valid": 0.825,
+  "macro_f1": 0.8262677737263688,
+  "classwise_f1": {
+    "True": 0.8543689320388349,
+    "False": 0.803921568627451,
+    "Unknown": 0.8205128205128205
+  },
+  "gold_distribution": {
+    "False": 53,
+    "True": 53,
+    "Unknown": 94
+  },
+  "prediction_distribution": {
+    "False": 49,
+    "True": 50,
+    "Unknown": 101
+  },
+  "error_categories": {
+    "None": 165,
+    "incorrect_direct_llm_prediction": 35
+  },
+  "latency": {
+    "mean_ms": 226.97796249965904,
+    "median_ms": 175.1154499943368,
+    "p95_ms": 342.2621999925468,
+    "total_s": 45.39559249993181
+  },
+  "total_ms": {
+    "mean_ms": 228.25586099963402,
+    "median_ms": 176.30875000031665,
+    "p95_ms": 343.85000000474975,
+    "total_s": 45.651172199926805
+  },
+  "tokens": {
+    "total": 34916,
+    "mean": 174.58
+  },
+  "wall_clock_s": 45.675136600009864
+}

@@ -1,0 +1,91 @@
+{
+  "condition": 4,
+  "condition_name": "finetuned_bridge",
+  "n": 200,
+  "valid_output_count": 179,
+  "valid_output_rate": 0.895,
+  "accuracy": 0.495,
+  "accuracy_on_valid": 0.553072625698324,
+  "macro_f1": 0.4589251516792152,
+  "classwise_f1": {
+    "True": 0.39080459770114945,
+    "False": 0.36923076923076925,
+    "Unknown": 0.6167400881057269
+  },
+  "gold_distribution": {
+    "False": 53,
+    "True": 53,
+    "Unknown": 94
+  },
+  "prediction_distribution": {
+    "False": 12,
+    "INVALID": 21,
+    "True": 34,
+    "Unknown": 133
+  },
+  "error_categories": {
+    "None": 99,
+    "inconsistent_premises": 1,
+    "incorrect_final_symbolic_answer": 80,
+    "malformed_output": 11,
+    "schema_invalid": 9
+  },
+  "latency": {
+    "mean_ms": 21557.0718389978,
+    "median_ms": 20891.645300071104,
+    "p95_ms": 38594.8713000107,
+    "total_s": 4311.41436779956
+  },
+  "total_ms": {
+    "mean_ms": 22599.962168499624,
+    "median_ms": 21273.538649984403,
+    "p95_ms": 38663.21229998721,
+    "total_s": 4519.992433699925
+  },
+  "tokens": {
+    "total": 956554,
+    "mean": 4782.77
+  },
+  "wall_clock_s": 4520.141101200017,
+  "bridge_diagnostics": {
+    "schema_valid_rate": 0.9,
+    "parser_valid_rate": 0.9,
+    "ast_valid_rate": 0.9,
+    "compile_success_rate": 0.9,
+    "executable_rate": 0.895,
+    "parser_status": {
+      "malformed_output": 11,
+      "schema_invalid": 9,
+      "success": 180
+    },
+    "compiler_status": {
+      "None": 20,
+      "success": 180
+    },
+    "solver_status": {
+      "None": 20,
+      "inconsistent_premises": 1,
+      "success": 179
+    },
+    "semantic_equivalence": {
+      "different": 158,
+      "not_available": 42
+    },
+    "exact_match_rate": 0.0,
+    "normalized_logic_match_rate": 0.0,
+    "llm_calls": {
+      "total": 11726,
+      "mean": 58.63,
+      "max": 110
+    },
+    "cache_hit_rate": 0.6052286725199842,
+    "stage_ms_mean": {
+      "parser_ms": 23157.427434444413,
+      "compiler_ms": 0.7756461108025784,
+      "z3_ms": 4.094827224131829,
+      "solver_ms": 0.8621245803761519,
+      "selector_ms": 10529.850939997123,
+      "subparser_ms": 12000.127180000853
+    }
+  }
+}

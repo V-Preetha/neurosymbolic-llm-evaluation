@@ -1,0 +1,21 @@
+sample_id,gold,direct_prediction,bridge_prediction,direct_correct,bridge_correct,bridge_status,error_type,classification
+AttNonegNatLang-OWA-205::q28348,Unknown,Unknown,Unknown,True,True,success,,both correct
+AttNoneg-OWA-D0-1600::q18855,Unknown,Unknown,Unknown,True,True,success,,both correct
+AttNoneg-OWA-D0-5942::q10124,True,True,True,True,True,success,,both correct
+RelNeg-OWA-D1-622::q172964,Unknown,Unknown,Unknown,True,True,success,,both correct
+RelNeg-OWA-D3-851::q42464,Unknown,Unknown,Unknown,True,True,success,,both correct
+RelNeg-OWA-D0-4134::q6502,Unknown,Unknown,Unknown,True,True,success,,both correct
+AttNonegNatLang-OWA-133::q53250,True,Unknown,Unknown,False,False,success,incorrect_final_symbolic_answer,both wrong
+AttNeg-OWA-D1-2498::q169660,Unknown,Unknown,Unknown,True,True,success,,both correct
+RelNoneg-OWA-D2-1649::q75422,True,True,Unknown,True,False,success,incorrect_final_symbolic_answer,bridge breaks neural correct answer
+AttNeg-OWA-D1-518::q157393,False,False,Unknown,True,False,success,incorrect_final_symbolic_answer,bridge breaks neural correct answer
+AttNeg-OWA-D0-4416::q16881,False,False,False,True,True,success,,both correct
+AttNeg-OWA-D1-2824::q169230,True,True,True,True,True,success,,both correct
+AttNoneg-OWA-D3-1332::q114981,False,False,Unknown,True,False,success,incorrect_final_symbolic_answer,bridge breaks neural correct answer
+RelNoneg-OWA-D5-556::q145032,Unknown,False,Unknown,False,True,success,,bridge fixes neural error
+AttNeg-OWA-D5-439::q141564,True,True,Unknown,True,False,success,incorrect_final_symbolic_answer,bridge breaks neural correct answer
+AttNoneg-OWA-D0-1648::q1527,Unknown,Unknown,Unknown,True,True,success,,both correct
+RelNoneg-OWA-D1-1889::q158168,True,True,Unknown,True,False,success,incorrect_final_symbolic_answer,bridge breaks neural correct answer
+AttNonegNatLang-OWA-109::q33235,Unknown,Unknown,Unknown,True,True,success,,both correct
+AttNoneg-OWA-D3-728::q115123,Unknown,Unknown,Unknown,True,True,success,,both correct
+AttNeg-OWA-D2-1118::q69001,Unknown,True,Unknown,False,True,success,,bridge fixes neural error

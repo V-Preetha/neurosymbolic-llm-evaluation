@@ -1,0 +1,106 @@
+{
+  "phase": 8,
+  "scope": "FELM evidence audit and conditional verifier evaluation",
+  "warning": "Phase 7 smoke and Phase 8 conditional results are not full FELM benchmark results.",
+  "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+  "model_runtime": {
+    "torch_version": "2.11.0+cu128",
+    "cuda_runtime": "12.8",
+    "cuda_available": true,
+    "gpu_name": "NVIDIA GeForce RTX 5050 Laptop GPU",
+    "quantization": "nf4",
+    "device_map_summary": {
+      "0": 1
+    }
+  },
+  "audit_method": {
+    "label_blind": true,
+    "verifier_predictions_excluded": true,
+    "web_retrieval": false,
+    "semantic_relevance_threshold": 0.25,
+    "lexical_relevance_threshold": 0.15,
+    "semantic_sufficiency_threshold": 0.5,
+    "lexical_sufficiency_threshold": 0.5,
+    "all_claim_numbers_must_be_covered": true
+  },
+  "felm_full": {
+    "claims": 4426,
+    "evidence_statuses": {
+      "NO_EVIDENCE": 2683,
+      "IRRELEVANT_EVIDENCE": 542,
+      "PARTIAL_EVIDENCE": 1071,
+      "SUFFICIENT_EVIDENCE": 130
+    },
+    "total_evidence_coverage": 0.02937189335743335,
+    "pipeline_unknown_rate": 0.9751468594667871,
+    "missing_evidence_rate": 0.6061906913691821,
+    "irrelevant_evidence_rate": 0.12245820153637596
+  },
+  "felm_evidence": {
+    "claims": 130,
+    "coverage": 0.8461538461538461,
+    "selective_accuracy": 0.7909090909090909,
+    "accuracy_including_unknown": 0.6692307692307692,
+    "supported": {
+      "true_positive": 75,
+      "false_positive": 8,
+      "false_negative": 32,
+      "precision": 0.9036144578313253,
+      "recall": 0.7009345794392523,
+      "f1": 0.7894736842105263
+    },
+    "contradicted": {
+      "true_positive": 12,
+      "false_positive": 15,
+      "false_negative": 11,
+      "precision": 0.4444444444444444,
+      "recall": 0.5217391304347826,
+      "f1": 0.48
+    },
+    "abstention_rate": 0.15384615384615385,
+    "false_support_rate": 0.06153846153846154,
+    "false_contradiction_rate": 0.11538461538461539,
+    "abstention_calibration": {
+      "unknown_count": 20,
+      "unnecessary_unknown_rate_on_sufficient_evidence": 0.15384615384615385,
+      "note": "FELM gold is binary, so Unknown is never scored correct on FELM-EVIDENCE."
+    }
+  },
+  "failure_categories": {
+    "NO_EVIDENCE": 2683,
+    "IRRELEVANT_EVIDENCE": 542,
+    "PARTIAL_EVIDENCE": 1071,
+    "CLAIM_EXTRACTION_FAILURE": 71,
+    "CLAIM_NORMALIZATION_FAILURE": 14,
+    "VERIFIER_FALSE_SUPPORT": 8,
+    "VERIFIER_FALSE_CONTRADICTION": 15,
+    "VERIFIER_UNNECESSARY_UNKNOWN": 20,
+    "CORRECT_ABSTENTION": 4296,
+    "CORRECT_SUPPORTED": 75,
+    "CORRECT_CONTRADICTED": 12
+  },
+  "failure_decomposition_note": "Evidence, extraction, and normalization counts are overlapping diagnostics. CORRECT_ABSTENTION is the controlled pipeline disposition for non-sufficient evidence and remains subject to the exported manual audit.",
+  "latency": {
+    "average_ms": 495.9003230769231,
+    "total_input_tokens": 108099,
+    "total_output_tokens": 314
+  },
+  "integrity": {
+    "full_and_evidence_ids_reconciled": true,
+    "gold_excluded_from_audit_decisions_and_verifier_prompts": true,
+    "atomic_fact_support_status_excluded": true
+  },
+  "prompt_sha256": "d46558777c93442b8f008acefeeaaefe9af2ee269f557a9bc3b17abf8f53790e",
+  "artifacts": {
+    "felm_full": "E:\\SRM\\Projects and Internships\\Univeristy of Hull\\nsce-evaluation\\data\\processed\\felm_full_claims.jsonl",
+    "felm_evidence": "E:\\SRM\\Projects and Internships\\Univeristy of Hull\\nsce-evaluation\\data\\processed\\felm_evidence_claims.jsonl",
+    "verifier_results": "E:\\SRM\\Projects and Internships\\Univeristy of Hull\\nsce-evaluation\\results\\raw\\felm_evidence_phase8.jsonl",
+    "manual_audit_jsonl": "E:\\SRM\\Projects and Internships\\Univeristy of Hull\\nsce-evaluation\\reports\\felm_phase8_manual_audit_50.jsonl",
+    "manual_audit_csv": "E:\\SRM\\Projects and Internships\\Univeristy of Hull\\nsce-evaluation\\reports\\felm_phase8_manual_audit_50.csv"
+  },
+  "blockers": [
+    "Bundled evidence is absent for most claims.",
+    "Automated evidence sufficiency and extraction checks require validation with the exported 50-claim manual audit.",
+    "FELM factual_error is binary and does not distinguish explicit contradiction from unsupported content."
+  ]
+}

@@ -1,0 +1,217 @@
+{
+  "dataset": "proofwriter",
+  "frozen_subset": {
+    "size": 200,
+    "seed": 42,
+    "ids_sha256": "1b4665a0472a3aa15541be13d538336a00bd8ed1d104cd76bf80b8b360bd9092",
+    "selection": "data.stratified_sample(size=200, seed=42) over test_main rows",
+    "strata": {
+      "False|0": 22,
+      "False|1": 13,
+      "False|2": 9,
+      "False|3": 7,
+      "False|4": 1,
+      "False|5": 1,
+      "True|0": 22,
+      "True|1": 13,
+      "True|2": 9,
+      "True|3": 7,
+      "True|4": 1,
+      "True|5": 1,
+      "Unknown|0": 60,
+      "Unknown|1": 27,
+      "Unknown|2": 6,
+      "Unknown|3": 1
+    }
+  },
+  "conditions_run": [
+    1,
+    3,
+    4
+  ],
+  "c2_excluded": "C2 (base + bridge) intentionally not run at 200",
+  "summaries": {
+    "1": {
+      "condition": 1,
+      "condition_name": "base_direct",
+      "n": 200,
+      "valid_output_count": 200,
+      "valid_output_rate": 1.0,
+      "accuracy": 0.485,
+      "accuracy_on_valid": 0.485,
+      "macro_f1": 0.25106365570283096,
+      "classwise_f1": {
+        "True": 0.10714285714285714,
+        "False": 0.0,
+        "Unknown": 0.6460481099656358
+      },
+      "gold_distribution": {
+        "False": 53,
+        "True": 53,
+        "Unknown": 94
+      },
+      "prediction_distribution": {
+        "True": 3,
+        "Unknown": 197
+      },
+      "error_categories": {
+        "None": 97,
+        "incorrect_direct_llm_prediction": 103
+      },
+      "latency": {
+        "mean_ms": 134.62552400131244,
+        "median_ms": 109.02444999373984,
+        "p95_ms": 213.36779999546707,
+        "total_s": 26.92510480026249
+      },
+      "total_ms": {
+        "mean_ms": 136.0474549983337,
+        "median_ms": 110.10414999327622,
+        "p95_ms": 215.47090000240132,
+        "total_s": 27.20949099966674
+      },
+      "tokens": {
+        "total": 34918,
+        "mean": 174.59
+      },
+      "wall_clock_s": 27.2330185000028
+    },
+    "3": {
+      "condition": 3,
+      "condition_name": "finetuned_direct",
+      "n": 200,
+      "valid_output_count": 200,
+      "valid_output_rate": 1.0,
+      "accuracy": 0.825,
+      "accuracy_on_valid": 0.825,
+      "macro_f1": 0.8262677737263688,
+      "classwise_f1": {
+        "True": 0.8543689320388349,
+        "False": 0.803921568627451,
+        "Unknown": 0.8205128205128205
+      },
+      "gold_distribution": {
+        "False": 53,
+        "True": 53,
+        "Unknown": 94
+      },
+      "prediction_distribution": {
+        "False": 49,
+        "True": 50,
+        "Unknown": 101
+      },
+      "error_categories": {
+        "None": 165,
+        "incorrect_direct_llm_prediction": 35
+      },
+      "latency": {
+        "mean_ms": 226.97796249965904,
+        "median_ms": 175.1154499943368,
+        "p95_ms": 342.2621999925468,
+        "total_s": 45.39559249993181
+      },
+      "total_ms": {
+        "mean_ms": 228.25586099963402,
+        "median_ms": 176.30875000031665,
+        "p95_ms": 343.85000000474975,
+        "total_s": 45.651172199926805
+      },
+      "tokens": {
+        "total": 34916,
+        "mean": 174.58
+      },
+      "wall_clock_s": 45.675136600009864
+    },
+    "4": {
+      "condition": 4,
+      "condition_name": "finetuned_bridge",
+      "n": 200,
+      "valid_output_count": 179,
+      "valid_output_rate": 0.895,
+      "accuracy": 0.495,
+      "accuracy_on_valid": 0.553072625698324,
+      "macro_f1": 0.4589251516792152,
+      "classwise_f1": {
+        "True": 0.39080459770114945,
+        "False": 0.36923076923076925,
+        "Unknown": 0.6167400881057269
+      },
+      "gold_distribution": {
+        "False": 53,
+        "True": 53,
+        "Unknown": 94
+      },
+      "prediction_distribution": {
+        "False": 12,
+        "INVALID": 21,
+        "True": 34,
+        "Unknown": 133
+      },
+      "error_categories": {
+        "None": 99,
+        "inconsistent_premises": 1,
+        "incorrect_final_symbolic_answer": 80,
+        "malformed_output": 11,
+        "schema_invalid": 9
+      },
+      "latency": {
+        "mean_ms": 21557.0718389978,
+        "median_ms": 20891.645300071104,
+        "p95_ms": 38594.8713000107,
+        "total_s": 4311.41436779956
+      },
+      "total_ms": {
+        "mean_ms": 22599.962168499624,
+        "median_ms": 21273.538649984403,
+        "p95_ms": 38663.21229998721,
+        "total_s": 4519.992433699925
+      },
+      "tokens": {
+        "total": 956554,
+        "mean": 4782.77
+      },
+      "wall_clock_s": 4520.141101200017,
+      "bridge_diagnostics": {
+        "schema_valid_rate": 0.9,
+        "parser_valid_rate": 0.9,
+        "ast_valid_rate": 0.9,
+        "compile_success_rate": 0.9,
+        "executable_rate": 0.895,
+        "parser_status": {
+          "malformed_output": 11,
+          "schema_invalid": 9,
+          "success": 180
+        },
+        "compiler_status": {
+          "None": 20,
+          "success": 180
+        },
+        "solver_status": {
+          "None": 20,
+          "inconsistent_premises": 1,
+          "success": 179
+        },
+        "semantic_equivalence": {
+          "different": 158,
+          "not_available": 42
+        },
+        "exact_match_rate": 0.0,
+        "normalized_logic_match_rate": 0.0,
+        "llm_calls": {
+          "total": 11726,
+          "mean": 58.63,
+          "max": 110
+        },
+        "cache_hit_rate": 0.6052286725199842,
+        "stage_ms_mean": {
+          "parser_ms": 23157.427434444413,
+          "compiler_ms": 0.7756461108025784,
+          "z3_ms": 4.094827224131829,
+          "solver_ms": 0.8621245803761519,
+          "selector_ms": 10529.850939997123,
+          "subparser_ms": 12000.127180000853
+        }
+      }
+    }
+  }
+}

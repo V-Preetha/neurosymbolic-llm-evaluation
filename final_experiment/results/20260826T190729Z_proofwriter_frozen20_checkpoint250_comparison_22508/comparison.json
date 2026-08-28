@@ -1,0 +1,395 @@
+{
+  "direct_dir": "E:\\SRM\\Projects and Internships\\Univeristy of Hull\\final_experiment\\results\\20260826T185153Z_proofwriter_frozen20_checkpoint250_direct_37624",
+  "bridge_dir": "E:\\SRM\\Projects and Internships\\Univeristy of Hull\\final_experiment\\results\\20260826T185200Z_proofwriter_frozen20_checkpoint250_bridge_descriptive_37624",
+  "same_ordered_ids": true,
+  "gold_distribution": {
+    "Unknown": 11,
+    "True": 6,
+    "False": 3
+  },
+  "all_unknown_baseline": 0.55,
+  "direct_metrics": {
+    "n_total": 20,
+    "n_scored": 20,
+    "coverage": 1.0,
+    "system_failures": 0,
+    "accuracy": 0.85,
+    "macro_precision": 0.8277777777777778,
+    "macro_recall": 0.8838383838383839,
+    "macro_f1": 0.8492063492063492,
+    "weighted_f1": 0.85,
+    "per_class": {
+      "True": {
+        "precision": 0.8333333333333334,
+        "recall": 0.8333333333333334,
+        "f1": 0.8333333333333334,
+        "support": 6
+      },
+      "False": {
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1": 0.8571428571428571,
+        "support": 3
+      },
+      "Unknown": {
+        "precision": 0.9,
+        "recall": 0.8181818181818182,
+        "f1": 0.8571428571428572,
+        "support": 11
+      }
+    },
+    "confusion_matrix": [
+      [
+        5,
+        0,
+        1
+      ],
+      [
+        0,
+        3,
+        0
+      ],
+      [
+        1,
+        1,
+        9
+      ]
+    ],
+    "efficiency": {
+      "total_runtime_s": 7.287960099958582,
+      "mean_latency_ms": 364.3980049979291,
+      "median_latency_ms": 334.7291999962181,
+      "p95_latency_ms": 839.7499000129756,
+      "generated_token_count": 2945
+    }
+  },
+  "bridge_metrics": {
+    "n_total": 20,
+    "n_scored": 20,
+    "coverage": 1.0,
+    "system_failures": 0,
+    "accuracy": 0.7,
+    "macro_precision": 0.8823529411764706,
+    "macro_recall": 0.5555555555555556,
+    "macro_f1": 0.5952380952380952,
+    "weighted_f1": 0.6571428571428573,
+    "per_class": {
+      "True": {
+        "precision": 1.0,
+        "recall": 0.3333333333333333,
+        "f1": 0.5,
+        "support": 6
+      },
+      "False": {
+        "precision": 1.0,
+        "recall": 0.3333333333333333,
+        "f1": 0.5,
+        "support": 3
+      },
+      "Unknown": {
+        "precision": 0.6470588235294118,
+        "recall": 1.0,
+        "f1": 0.7857142857142858,
+        "support": 11
+      }
+    },
+    "confusion_matrix": [
+      [
+        2,
+        0,
+        4
+      ],
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        0,
+        11
+      ]
+    ],
+    "efficiency": {
+      "total_runtime_s": 854.9653718000045,
+      "mean_latency_ms": 42748.268590000225,
+      "median_latency_ms": 40980.48535006819,
+      "p95_latency_ms": 92091.73690003809,
+      "generated_token_count": 104592
+    }
+  },
+  "bridge_translation": {
+    "attempts": 20,
+    "schema_valid": 20,
+    "parser_valid": 20,
+    "ast_valid": 20,
+    "ast_valid_rate": 1.0,
+    "compile_success": 20,
+    "compile_success_rate": 1.0,
+    "executable": 20,
+    "executable_rate": 1.0,
+    "successful_solver_executions": 20,
+    "semantic_agreement": {
+      "not_available": 3,
+      "different": 17
+    },
+    "final_solver_accuracy": 0.7,
+    "executable_solver_accuracy": 0.7,
+    "failure_counts": {
+      "incorrect_final_symbolic_answer": 6
+    },
+    "solver_time_ms": {
+      "mean": 1.4677849976578727,
+      "median": 1.4623999886680394,
+      "p95": 3.283899975940585
+    }
+  },
+  "bridge_diagnostics": {
+    "trace_rows": 389,
+    "binary_selector_decisions": 77,
+    "binary_decompositions_accepted": 48,
+    "binary_fallbacks": 29,
+    "opaque_atom_fallbacks": 26,
+    "dropped_consequent_guards": 14,
+    "empty_right_operand_guards": 15,
+    "negation_lifts": 17,
+    "inconsistent_premises": 0,
+    "parser_system_failures": 0,
+    "all_system_failures": 0,
+    "total_pipeline_ms_mean": 42812.60681499989,
+    "total_pipeline_ms_median": 41035.89319999446
+  },
+  "classification_counts": {
+    "both correct": 12,
+    "both wrong": 1,
+    "bridge breaks neural correct answer": 5,
+    "bridge fixes neural error": 2
+  },
+  "prior_bridge_reproduction": {
+    "prior_dir": "E:\\SRM\\Projects and Internships\\Univeristy of Hull\\final_experiment\\results\\prototype5_pw_c4_20_descriptive",
+    "same_predictions": 20,
+    "changed_ids": []
+  },
+  "per_example": [
+    {
+      "sample_id": "AttNonegNatLang-OWA-205::q28348",
+      "gold": "Unknown",
+      "direct_prediction": "Unknown",
+      "bridge_prediction": "Unknown",
+      "direct_correct": true,
+      "bridge_correct": true,
+      "bridge_status": "success",
+      "error_type": null,
+      "classification": "both correct"
+    },
+    {
+      "sample_id": "AttNoneg-OWA-D0-1600::q18855",
+      "gold": "Unknown",
+      "direct_prediction": "Unknown",
+      "bridge_prediction": "Unknown",
+      "direct_correct": true,
+      "bridge_correct": true,
+      "bridge_status": "success",
+      "error_type": null,
+      "classification": "both correct"
+    },
+    {
+      "sample_id": "AttNoneg-OWA-D0-5942::q10124",
+      "gold": "True",
+      "direct_prediction": "True",
+      "bridge_prediction": "True",
+      "direct_correct": true,
+      "bridge_correct": true,
+      "bridge_status": "success",
+      "error_type": null,
+      "classification": "both correct"
+    },
+    {
+      "sample_id": "RelNeg-OWA-D1-622::q172964",
+      "gold": "Unknown",
+      "direct_prediction": "Unknown",
+      "bridge_prediction": "Unknown",
+      "direct_correct": true,
+      "bridge_correct": true,
+      "bridge_status": "success",
+      "error_type": null,
+      "classification": "both correct"
+    },
+    {
+      "sample_id": "RelNeg-OWA-D3-851::q42464",
+      "gold": "Unknown",
+      "direct_prediction": "Unknown",
+      "bridge_prediction": "Unknown",
+      "direct_correct": true,
+      "bridge_correct": true,
+      "bridge_status": "success",
+      "error_type": null,
+      "classification": "both correct"
+    },
+    {
+      "sample_id": "RelNeg-OWA-D0-4134::q6502",
+      "gold": "Unknown",
+      "direct_prediction": "Unknown",
+      "bridge_prediction": "Unknown",
+      "direct_correct": true,
+      "bridge_correct": true,
+      "bridge_status": "success",
+      "error_type": null,
+      "classification": "both correct"
+    },
+    {
+      "sample_id": "AttNonegNatLang-OWA-133::q53250",
+      "gold": "True",
+      "direct_prediction": "Unknown",
+      "bridge_prediction": "Unknown",
+      "direct_correct": false,
+      "bridge_correct": false,
+      "bridge_status": "success",
+      "error_type": "incorrect_final_symbolic_answer",
+      "classification": "both wrong"
+    },
+    {
+      "sample_id": "AttNeg-OWA-D1-2498::q169660",
+      "gold": "Unknown",
+      "direct_prediction": "Unknown",
+      "bridge_prediction": "Unknown",
+      "direct_correct": true,
+      "bridge_correct": true,
+      "bridge_status": "success",
+      "error_type": null,
+      "classification": "both correct"
+    },
+    {
+      "sample_id": "RelNoneg-OWA-D2-1649::q75422",
+      "gold": "True",
+      "direct_prediction": "True",
+      "bridge_prediction": "Unknown",
+      "direct_correct": true,
+      "bridge_correct": false,
+      "bridge_status": "success",
+      "error_type": "incorrect_final_symbolic_answer",
+      "classification": "bridge breaks neural correct answer"
+    },
+    {
+      "sample_id": "AttNeg-OWA-D1-518::q157393",
+      "gold": "False",
+      "direct_prediction": "False",
+      "bridge_prediction": "Unknown",
+      "direct_correct": true,
+      "bridge_correct": false,
+      "bridge_status": "success",
+      "error_type": "incorrect_final_symbolic_answer",
+      "classification": "bridge breaks neural correct answer"
+    },
+    {
+      "sample_id": "AttNeg-OWA-D0-4416::q16881",
+      "gold": "False",
+      "direct_prediction": "False",
+      "bridge_prediction": "False",
+      "direct_correct": true,
+      "bridge_correct": true,
+      "bridge_status": "success",
+      "error_type": null,
+      "classification": "both correct"
+    },
+    {
+      "sample_id": "AttNeg-OWA-D1-2824::q169230",
+      "gold": "True",
+      "direct_prediction": "True",
+      "bridge_prediction": "True",
+      "direct_correct": true,
+      "bridge_correct": true,
+      "bridge_status": "success",
+      "error_type": null,
+      "classification": "both correct"
+    },
+    {
+      "sample_id": "AttNoneg-OWA-D3-1332::q114981",
+      "gold": "False",
+      "direct_prediction": "False",
+      "bridge_prediction": "Unknown",
+      "direct_correct": true,
+      "bridge_correct": false,
+      "bridge_status": "success",
+      "error_type": "incorrect_final_symbolic_answer",
+      "classification": "bridge breaks neural correct answer"
+    },
+    {
+      "sample_id": "RelNoneg-OWA-D5-556::q145032",
+      "gold": "Unknown",
+      "direct_prediction": "False",
+      "bridge_prediction": "Unknown",
+      "direct_correct": false,
+      "bridge_correct": true,
+      "bridge_status": "success",
+      "error_type": null,
+      "classification": "bridge fixes neural error"
+    },
+    {
+      "sample_id": "AttNeg-OWA-D5-439::q141564",
+      "gold": "True",
+      "direct_prediction": "True",
+      "bridge_prediction": "Unknown",
+      "direct_correct": true,
+      "bridge_correct": false,
+      "bridge_status": "success",
+      "error_type": "incorrect_final_symbolic_answer",
+      "classification": "bridge breaks neural correct answer"
+    },
+    {
+      "sample_id": "AttNoneg-OWA-D0-1648::q1527",
+      "gold": "Unknown",
+      "direct_prediction": "Unknown",
+      "bridge_prediction": "Unknown",
+      "direct_correct": true,
+      "bridge_correct": true,
+      "bridge_status": "success",
+      "error_type": null,
+      "classification": "both correct"
+    },
+    {
+      "sample_id": "RelNoneg-OWA-D1-1889::q158168",
+      "gold": "True",
+      "direct_prediction": "True",
+      "bridge_prediction": "Unknown",
+      "direct_correct": true,
+      "bridge_correct": false,
+      "bridge_status": "success",
+      "error_type": "incorrect_final_symbolic_answer",
+      "classification": "bridge breaks neural correct answer"
+    },
+    {
+      "sample_id": "AttNonegNatLang-OWA-109::q33235",
+      "gold": "Unknown",
+      "direct_prediction": "Unknown",
+      "bridge_prediction": "Unknown",
+      "direct_correct": true,
+      "bridge_correct": true,
+      "bridge_status": "success",
+      "error_type": null,
+      "classification": "both correct"
+    },
+    {
+      "sample_id": "AttNoneg-OWA-D3-728::q115123",
+      "gold": "Unknown",
+      "direct_prediction": "Unknown",
+      "bridge_prediction": "Unknown",
+      "direct_correct": true,
+      "bridge_correct": true,
+      "bridge_status": "success",
+      "error_type": null,
+      "classification": "both correct"
+    },
+    {
+      "sample_id": "AttNeg-OWA-D2-1118::q69001",
+      "gold": "Unknown",
+      "direct_prediction": "True",
+      "bridge_prediction": "Unknown",
+      "direct_correct": false,
+      "bridge_correct": true,
+      "bridge_status": "success",
+      "error_type": null,
+      "classification": "bridge fixes neural error"
+    }
+  ]
+}
