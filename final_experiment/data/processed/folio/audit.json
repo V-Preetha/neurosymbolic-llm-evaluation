@@ -1,0 +1,44 @@
+{
+  "counts": {
+    "train": 896,
+    "validation": 105,
+    "test": 203
+  },
+  "world_overlap": {},
+  "labels": {
+    "train": {
+      "True": 352,
+      "False": 259,
+      "Unknown": 285
+    },
+    "validation": {
+      "Unknown": 39,
+      "False": 30,
+      "True": 36
+    },
+    "test": {
+      "Unknown": 69,
+      "True": 72,
+      "False": 62
+    }
+  },
+  "available_splits": [
+    "train",
+    "validation"
+  ],
+  "prepared_mode": "main",
+  "manifests": {
+    "train": {
+      "size": 896,
+      "ids_sha256": "a49f42f4fd1b9f16135a052d51a0b23173c53b0d1341eead41e803e0bc420add"
+    },
+    "validation": {
+      "size": 105,
+      "ids_sha256": "86c7bab85ce8f2ca5eb36ab61e2cc50c5037b4f9fb856ddbd777b1a8989cee8b"
+    },
+    "test": {
+      "size": 203,
+      "ids_sha256": "03fb420de3bb548779cafdc5897bbf96c7bbb2872b66ea516fea10e188c9a45f"
+    }
+  }
+}

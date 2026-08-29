@@ -1,0 +1,49 @@
+{
+  "counts": {
+    "train": 585552,
+    "validation": 85468,
+    "test": 174476
+  },
+  "world_overlap": {},
+  "labels": {
+    "train": {
+      "True": 158805,
+      "False": 158805,
+      "Unknown": 267942
+    },
+    "validation": {
+      "True": 23199,
+      "False": 23199,
+      "Unknown": 39070
+    },
+    "test": {
+      "True": 46398,
+      "False": 46398,
+      "Unknown": 81680
+    }
+  },
+  "available_splits": [
+    "train",
+    "test",
+    "validation"
+  ],
+  "prepared_mode": "main",
+  "manifests": {
+    "train": {
+      "size": 2000,
+      "ids_sha256": "514fbeedf81ad1f3e11b46f09698c57a9a39ff819d67aa24f61e180c7b2ec45c"
+    },
+    "validation": {
+      "size": 85468,
+      "ids_sha256": "708a76c5a9c463cfdc11dc5c8bc66e9f18a6dd9b730dd658005387357c3e2555"
+    },
+    "test": {
+      "size": 2000,
+      "ids_sha256": "1d032b6c1172de008b3fd9ec5b081c1da20308f399c83c67b7ceeee283cb4edc"
+    },
+    "training_validation": {
+      "size": 2000,
+      "ids_sha256": "2536e485a99dceba6e61f685d9d3a42e4e8e0c42394e92b43504f0da99789847"
+    }
+  }
+}

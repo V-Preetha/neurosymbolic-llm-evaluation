@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software or its results, please cite the accompanying paper."
+title: "Evaluating Logical Reasoning in Large Language Models Through Fine-Tuning and Neuro-Symbolic Bridging"
+abstract: >-
+  Code and canonical evaluation artifacts for a matched 200-example ProofWriter
+  study comparing a base Qwen3-1.7B model, the same model with a direct LoRA
+  adapter, and that identical fine-tuned checkpoint routed through a frozen
+  NL2Logic-to-Z3 symbolic bridge.
+authors:
+  - family-names: "V."
+    given-names: "Preetha"
+license: MIT
+repository-code: "https://github.com/V-Preetha/neurosymbolic-llm-evaluation"
+keywords:
+  - neuro-symbolic
+  - large language models
+  - logical reasoning
+  - LoRA
+  - ProofWriter
+  - Z3

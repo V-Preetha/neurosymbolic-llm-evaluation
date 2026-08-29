@@ -1,2 +1,0 @@
-"""Comparative baseline architectures."""
-

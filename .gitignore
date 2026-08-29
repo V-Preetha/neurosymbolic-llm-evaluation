@@ -14,27 +14,46 @@ model_offload/
 *.bin
 *.pt
 
-# --- Large derived / raw data (regenerate with the build scripts) ---
-final_experiment/data/processed/
-nsce-evaluation/data/factual_corpus/
-nsce-evaluation/data/processed/
+# --- Large derived data (regenerate with scripts.prepare_data) ---
+# The 1.3 GB processed corpora are excluded, but the two tiny audit.json
+# manifests are kept: they are the only files under data/processed that
+# analysis.generate_paper_artifacts reads, so the paper's tables and figures
+# can be regenerated from a fresh clone without rebuilding the corpora.
+final_experiment/data/processed/**
+!final_experiment/data/processed/folio/
+!final_experiment/data/processed/proofwriter/
+!final_experiment/data/processed/folio/audit.json
+!final_experiment/data/processed/proofwriter/audit.json
 *.faiss
 *.bz2
 
 # --- Archives ---
 *.zip
 
-# --- Papers, templates, planning docs (implementation + results only) ---
+# --- Manuscript sources and planning docs (not part of the code artifact) ---
 *.pdf
 *.docx
-conference-latex-template/
-Evaluating_Logical_Reasoning_in_Large_Language_Models_Through_Fine_Tuning_and_Neuro_Symbolic_Bridging__1_/
-docs/
+/docs/
 final_experiment/docs/
 final_experiment/paper/
+conference-latex-template/
+Evaluating_Logical_Reasoning_in_Large_Language_Models_Through_Fine_Tuning_and_Neuro_Symbolic_Bridging__1_/
 
-# --- Separately versioned sibling repo ---
+# --- Run outputs: only the frozen canonical run is versioned ---
+# The paper regenerates every reported value from results/final200_proofwriter.
+# Exploratory prototype/profile/frozen runs are preserved on the
+# archive/nsce-exploration branch and are excluded here by design.
+final_experiment/results/*
+!final_experiment/results/final200_proofwriter/
+
+# --- Earlier NSCE line of work (see archive/nsce-exploration branch) ---
+nsce-evaluation/
+nsce_dataset_package/
 nsce-llm-reliability-benchmark/
+
+# --- Misc run output ---
+logs/
+plots/
 
 # --- OS ---
 Thumbs.db

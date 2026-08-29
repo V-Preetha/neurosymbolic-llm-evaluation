@@ -31,30 +31,46 @@ ProofWriter trains for at most three epochs. FOLIO inherits the five-epoch defau
 
 ## Setup and permitted checks
 
-Run from the directory containing `final_experiment`:
+All commands are run from the **repository root** (the directory that contains
+`final_experiment/`), so that `final_experiment` resolves as an importable package.
+Python 3.12 is required.
+
+Linux / macOS:
+
+```bash
+python3.12 -m venv final_experiment/.venv
+source final_experiment/.venv/bin/activate
+python -m pip install --upgrade pip
+python -m pip install -r final_experiment/requirements.txt
+python -m unittest discover -s final_experiment/tests -v
+python -m compileall -q final_experiment
+python -m final_experiment.scripts.environment
+python -m final_experiment.scripts.smoke
+```
+
+Windows PowerShell:
 
 ```powershell
-Set-Location "E:\SRM\Projects and Internships\Univeristy of Hull"
 py -3.12 -m venv final_experiment\.venv
-$py = Resolve-Path ".\final_experiment\.venv\Scripts\python.exe"
-& $py -m pip install --upgrade pip
-& $py -m pip install -r ".\final_experiment\requirements.txt"
-& $py -m unittest discover -s ".\final_experiment\tests" -v
-& $py -m compileall -q ".\final_experiment"
-& $py -m final_experiment.scripts.environment
-& $py -m final_experiment.scripts.smoke
+final_experiment\.venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+python -m pip install -r final_experiment\requirements.txt
+python -m unittest discover -s final_experiment\tests -v
+python -m compileall -q final_experiment
+python -m final_experiment.scripts.environment
+python -m final_experiment.scripts.smoke
 ```
 
 The no-model smoke command exercises schemas, sampling, parser traces, AST/compiler/Z3 behavior, metrics, and result saving. It does not load Qwen weights. Do not add `--with-model` unless model inference is explicitly intended.
 
 ## Data preparation and the only two training commands
 
-```powershell
-& $py -m final_experiment.scripts.prepare_data --dataset proofwriter --mode main
-& $py -m final_experiment.scripts.prepare_data --dataset folio --mode main
+```bash
+python -m final_experiment.scripts.prepare_data --dataset proofwriter --mode main
+python -m final_experiment.scripts.prepare_data --dataset folio --mode main
 
-& $py -m final_experiment.scripts.train --dataset proofwriter --task direct --mode main
-& $py -m final_experiment.scripts.train --dataset folio --task direct --mode main
+python -m final_experiment.scripts.train --dataset proofwriter --task direct --mode main
+python -m final_experiment.scripts.train --dataset folio --task direct --mode main
 ```
 
 There are no bridge-training commands. The completed direct adapters are reused by both C3 and C4.
@@ -63,16 +79,16 @@ There are no bridge-training commands. The completed direct adapters are reused 
 
 Run all four conditions against each dataset's same frozen evaluation manifest:
 
-```powershell
-& $py -m final_experiment.scripts.evaluate --dataset proofwriter --condition 1 --mode main
-& $py -m final_experiment.scripts.evaluate --dataset proofwriter --condition 2 --mode main
-& $py -m final_experiment.scripts.evaluate --dataset proofwriter --condition 3 --mode main
-& $py -m final_experiment.scripts.evaluate --dataset proofwriter --condition 4 --mode main
+```bash
+python -m final_experiment.scripts.evaluate --dataset proofwriter --condition 1 --mode main
+python -m final_experiment.scripts.evaluate --dataset proofwriter --condition 2 --mode main
+python -m final_experiment.scripts.evaluate --dataset proofwriter --condition 3 --mode main
+python -m final_experiment.scripts.evaluate --dataset proofwriter --condition 4 --mode main
 
-& $py -m final_experiment.scripts.evaluate --dataset folio --condition 1 --mode main
-& $py -m final_experiment.scripts.evaluate --dataset folio --condition 2 --mode main
-& $py -m final_experiment.scripts.evaluate --dataset folio --condition 3 --mode main
-& $py -m final_experiment.scripts.evaluate --dataset folio --condition 4 --mode main
+python -m final_experiment.scripts.evaluate --dataset folio --condition 1 --mode main
+python -m final_experiment.scripts.evaluate --dataset folio --condition 2 --mode main
+python -m final_experiment.scripts.evaluate --dataset folio --condition 3 --mode main
+python -m final_experiment.scripts.evaluate --dataset folio --condition 4 --mode main
 ```
 
 Parser/compiler/solver/model failures remain system failures and are never converted to logical `Unknown`. No command launches training automatically.
