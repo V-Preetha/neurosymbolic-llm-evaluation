@@ -1,12 +1,22 @@
 import re
 from pathlib import Path
 
+import pytest
+
 from final_experiment.analysis import figures
 
 
 ROOT = Path(__file__).resolve().parents[2]
 TEX = ROOT / "paper" / "main.tex"
 BIB = ROOT / "paper" / "references.bib"
+
+# The LaTeX manuscript is not distributed with the code artifact. These checks
+# guard the manuscript against the canonical results and are skipped when the
+# sources are absent, so a fresh clone still runs green.
+pytestmark = pytest.mark.skipif(
+    not (TEX.exists() and BIB.exists()),
+    reason="manuscript sources (paper/main.tex, paper/references.bib) not present in this checkout",
+)
 
 
 def _tex() -> str:

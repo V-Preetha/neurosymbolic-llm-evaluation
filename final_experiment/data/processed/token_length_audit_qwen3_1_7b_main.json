@@ -1,0 +1,245 @@
+{
+  "model": {
+    "model_id": "Qwen/Qwen3-1.7B",
+    "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e"
+  },
+  "mode": "main",
+  "selection_policy": "maximum observed train/development record length",
+  "heldout_test_used_for_selection": false,
+  "datasets": {
+    "proofwriter": {
+      "manifests": {
+        "train": {
+          "path": "E:\\SRM\\Projects and Internships\\Univeristy of Hull\\final_experiment\\data\\processed\\proofwriter\\manifests\\train_main.json",
+          "size": 2000,
+          "seed": 42,
+          "stratify_by": [
+            "label",
+            "QDep"
+          ],
+          "strata": {
+            "False|0": 231,
+            "False|1": 136,
+            "False|2": 90,
+            "False|3": 59,
+            "False|4": 15,
+            "False|5": 15,
+            "True|0": 231,
+            "True|1": 136,
+            "True|2": 91,
+            "True|3": 59,
+            "True|4": 15,
+            "True|5": 15,
+            "Unknown|0": 558,
+            "Unknown|1": 266,
+            "Unknown|2": 57,
+            "Unknown|3": 19,
+            "Unknown|4": 6,
+            "Unknown|5": 1
+          },
+          "ids_sha256": "514fbeedf81ad1f3e11b46f09698c57a9a39ff819d67aa24f61e180c7b2ec45c",
+          "sampling_pool": "controlled_language",
+          "eligibility": "config does not contain NatLang",
+          "eligible_pool_size": 439164,
+          "excluded_pool_size": 146388
+        },
+        "training_validation": {
+          "path": "E:\\SRM\\Projects and Internships\\Univeristy of Hull\\final_experiment\\data\\processed\\proofwriter\\manifests\\validation_train_main.json",
+          "size": 2000,
+          "seed": 42,
+          "stratify_by": [
+            "label",
+            "QDep"
+          ],
+          "strata": {
+            "False|0": 229,
+            "False|1": 136,
+            "False|2": 91,
+            "False|3": 60,
+            "False|4": 15,
+            "False|5": 15,
+            "True|0": 229,
+            "True|1": 136,
+            "True|2": 91,
+            "True|3": 60,
+            "True|4": 15,
+            "True|5": 15,
+            "Unknown|0": 561,
+            "Unknown|1": 261,
+            "Unknown|2": 60,
+            "Unknown|3": 20,
+            "Unknown|4": 5,
+            "Unknown|5": 1
+          },
+          "ids_sha256": "2536e485a99dceba6e61f685d9d3a42e4e8e0c42394e92b43504f0da99789847",
+          "sampling_pool": "controlled_language",
+          "eligibility": "config does not contain NatLang",
+          "eligible_pool_size": 64152,
+          "excluded_pool_size": 21316
+        },
+        "heldout_evaluation": {
+          "path": "E:\\SRM\\Projects and Internships\\Univeristy of Hull\\final_experiment\\data\\processed\\proofwriter\\manifests\\test_main.json",
+          "size": 2000,
+          "seed": 42,
+          "stratify_by": [
+            "label",
+            "QDep"
+          ],
+          "strata": {
+            "False|0": 211,
+            "False|1": 133,
+            "False|2": 95,
+            "False|3": 70,
+            "False|4": 12,
+            "False|5": 11,
+            "True|0": 211,
+            "True|1": 133,
+            "True|2": 95,
+            "True|3": 70,
+            "True|4": 12,
+            "True|5": 11,
+            "Unknown|0": 585,
+            "Unknown|1": 265,
+            "Unknown|2": 62,
+            "Unknown|3": 18,
+            "Unknown|4": 5,
+            "Unknown|5": 1
+          },
+          "ids_sha256": "1d032b6c1172de008b3fd9ec5b081c1da20308f399c83c67b7ceeee283cb4edc"
+        }
+      },
+      "groups": {
+        "direct_train": {
+          "count": 2000,
+          "min": 42,
+          "p50": 132,
+          "p90": 216,
+          "p95": 231,
+          "p99": 256,
+          "max": 287,
+          "selected_rows": 2000
+        },
+        "bridge_train": {
+          "count": 200968,
+          "min": 55,
+          "p50": 78,
+          "p90": 94,
+          "p95": 102,
+          "p99": 112,
+          "max": 132,
+          "selected_rows": 2000
+        },
+        "direct_validation": {
+          "count": 2000,
+          "min": 42,
+          "p50": 133,
+          "p90": 219,
+          "p95": 237,
+          "p99": 255,
+          "max": 274,
+          "selected_rows": 2000
+        },
+        "bridge_validation": {
+          "count": 200131,
+          "min": 55,
+          "p50": 78,
+          "p90": 94,
+          "p95": 102,
+          "p99": 112,
+          "max": 132,
+          "selected_rows": 2000
+        }
+      }
+    },
+    "folio": {
+      "manifests": {
+        "train": {
+          "path": "E:\\SRM\\Projects and Internships\\Univeristy of Hull\\final_experiment\\data\\processed\\folio\\manifests\\train_main.json",
+          "size": 896,
+          "seed": 42,
+          "stratify_by": [
+            "label"
+          ],
+          "strata": {
+            "False": 259,
+            "True": 352,
+            "Unknown": 285
+          },
+          "ids_sha256": "a49f42f4fd1b9f16135a052d51a0b23173c53b0d1341eead41e803e0bc420add"
+        },
+        "training_validation": {
+          "path": "E:\\SRM\\Projects and Internships\\Univeristy of Hull\\final_experiment\\data\\processed\\folio\\manifests\\validation.json",
+          "size": 105,
+          "seed": 42,
+          "stratify_by": [
+            "label"
+          ],
+          "strata": {
+            "False": 30,
+            "True": 36,
+            "Unknown": 39
+          },
+          "ids_sha256": "86c7bab85ce8f2ca5eb36ab61e2cc50c5037b4f9fb856ddbd777b1a8989cee8b"
+        },
+        "heldout_evaluation": {
+          "path": "E:\\SRM\\Projects and Internships\\Univeristy of Hull\\final_experiment\\data\\processed\\folio\\manifests\\test_main.json",
+          "size": 203,
+          "seed": 42,
+          "stratify_by": [
+            "label"
+          ],
+          "strata": {
+            "False": 62,
+            "True": 72,
+            "Unknown": 69
+          },
+          "ids_sha256": "03fb420de3bb548779cafdc5897bbf96c7bbb2872b66ea516fea10e188c9a45f"
+        }
+      },
+      "groups": {
+        "direct_train": {
+          "count": 896,
+          "min": 44,
+          "p50": 109,
+          "p90": 174,
+          "p95": 193,
+          "p99": 236,
+          "max": 292,
+          "selected_rows": 896
+        },
+        "bridge_train": {
+          "count": 74136,
+          "min": 54,
+          "p50": 80,
+          "p90": 111,
+          "p95": 122,
+          "p99": 158,
+          "max": 656,
+          "selected_rows": 896
+        },
+        "direct_validation": {
+          "count": 105,
+          "min": 46,
+          "p50": 106,
+          "p90": 175,
+          "p95": 187,
+          "p99": 226,
+          "max": 227,
+          "selected_rows": 105
+        },
+        "bridge_validation": {
+          "count": 7948,
+          "min": 54,
+          "p50": 80,
+          "p90": 110,
+          "p95": 124,
+          "p99": 153,
+          "max": 241,
+          "selected_rows": 105
+        }
+      }
+    }
+  },
+  "chosen_max_sequence_length": 656,
+  "truncated_training_records_at_chosen_length": 0
+}

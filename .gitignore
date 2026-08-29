@@ -24,6 +24,7 @@ final_experiment/data/processed/**
 !final_experiment/data/processed/proofwriter/
 !final_experiment/data/processed/folio/audit.json
 !final_experiment/data/processed/proofwriter/audit.json
+!final_experiment/data/processed/token_length_audit_qwen3_1_7b_main.json
 *.faiss
 *.bz2
 
