@@ -73,16 +73,6 @@ conditions — requires a GPU and is documented in
 [`final_experiment/README.md`](final_experiment/README.md), including the frozen manifest
 hashes and the base-model revision pin.
 
-## Not versioned here
-
-Virtual environments, LoRA checkpoints, model caches, and the ~1.3 GB processed corpora are
-excluded; rebuild them with `python -m final_experiment.scripts.prepare_data`. The two small
-`data/processed/*/audit.json` manifests **are** committed, because they are the only files the
-analysis reads from that tree — so the paper's tables and figures regenerate from a fresh clone
-without rebuilding the corpora.
-
-The LaTeX manuscript sources are not published in this repository.
-
 ## Third-party code
 
 The bridge implements the AST-guided NL-to-FOL translation method of NL2Logic
