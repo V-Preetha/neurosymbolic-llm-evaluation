@@ -85,8 +85,11 @@ The LaTeX manuscript sources are not published in this repository.
 
 ## Third-party code
 
-The neuro-symbolic bridge builds on [`peng-gao-lab/nl2logic`](https://github.com/peng-gao-lab/nl2logic)
-(MIT), used at commit `3d625c5`. It is a frozen dependency and is never fine-tuned.
+The bridge implements the AST-guided NL-to-FOL translation method of NL2Logic
+(Putra et al.; reference implementation: [`peng-gao-lab/nl2logic`](https://github.com/peng-gao-lab/nl2logic), MIT).
+The parser, typed AST, two-pass compiler, and Z3 solver in this repository are a
+self-contained implementation with no runtime dependency on that codebase; the bridge is
+frozen at identity `nl2logic_ast_two_pass_z3_v1` and is never fine-tuned.
 
 ## Citation
 
